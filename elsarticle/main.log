@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.8.18)  3 SEP 2015 14:29
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.8.18)  3 SEP 2015 15:06
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -117,11 +117,7 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \float@box=\box30
 \@float@everytoks=\toks19
 \@floatcapt=\box31
-) (./main.aux
-
-LaTeX Warning: Label `compPV' multiply defined.
-
-)
+) (./main.aux)
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 11.
@@ -136,7 +132,8 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 11.
 LaTeX Font Info:    ... okay on input line 11.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 11.
 LaTeX Font Info:    ... okay on input line 11.
- (/usr/local/texlive/2015/texmf-dist/tex/context/base/supp-pdf.mkii
+
+(/usr/local/texlive/2015/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count96
 \scratchdimen=\dimen109
@@ -197,12 +194,12 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-LaTeX Font Info:    Try loading font information for U+msa on input line 47.
+LaTeX Font Info:    Try loading font information for U+msa on input line 48.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 47.
+LaTeX Font Info:    Try loading font information for U+msb on input line 48.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -218,68 +215,77 @@ Underfull \hbox (badness 10000) in paragraph at lines 5--6
  []
 
 )
-Underfull \hbox (badness 10000) in paragraph at lines 7--52
+Underfull \hbox (badness 10000) in paragraph at lines 7--53
 
  []
 
-(./methodology.tex [1
+(./methodology.tex
+Overfull \hbox (1.45427pt too wide) in paragraph at lines 2--3
+[]\OT1/cmr/m/n/12 The anal-y-sis is per-formed ac-cord-ing to ISO14040, ISO1404
+4 and ISO15804 
+ []
+
+[1
 
 
-{/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] <./Imag
-es/BOS.pdf, id=18, 442.65375pt x 545.03625pt>
+{/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+<./Images/BOS.pdf, id=18, 442.65375pt x 545.03625pt>
 File: ./Images/BOS.pdf Graphic file (type pdf)
-
-<use ./Images/BOS.pdf>
+ <use ./Images/BOS.pdf>
 Package pdftex.def Info: ./Images/BOS.pdf used on input line 17.
 (pdftex.def)             Requested size: 142.26378pt x 175.17197pt.
 
+<./Images/schema.pdf, id=20, 500.87125pt x 263.98625pt>
+File: ./Images/schema.pdf Graphic file (type pdf)
 
-LaTeX Warning: Reference `simulation' on page 2 undefined on input line 33.
+<use ./Images/schema.pdf>
+Package pdftex.def Info: ./Images/schema.pdf used on input line 29.
+(pdftex.def)             Requested size: 227.62204pt x 119.9689pt.
+ [2 <./Images/BOS.pdf>]
+
+LaTeX Warning: Reference `simulation' on page 3 undefined on input line 40.
 
 
-LaTeX Warning: Reference `netenergy' on page 2 undefined on input line 33.
+LaTeX Warning: Reference `netenergy' on page 3 undefined on input line 40.
 
 
-LaTeX Warning: Reference `' on page 2 undefined on input line 36.
+LaTeX Warning: Reference `' on page 3 undefined on input line 43.
 
-[2 <./Images/BOS.pdf>]) (./profile.tex
-<./Images/waterfall.pdf, id=37, 1107.13625pt x 656.4525pt>
+) (./profile.tex <./Images/waterfall.pdf, id=38, 1107.13625pt x 656.4525pt>
 File: ./Images/waterfall.pdf Graphic file (type pdf)
 
 <use ./Images/waterfall.pdf>
-Package pdftex.def Info: ./Images/waterfall.pdf used on input line 4.
-(pdftex.def)             Requested size: 369.88582pt x 219.31445pt.
-) (./comparison.tex
-<./Images/louvres.pdf, id=39, 1308.89pt x 806.01125pt>
+Package pdftex.def Info: ./Images/waterfall.pdf used on input line 5.
+(pdftex.def)             Requested size: 284.52756pt x 168.70035pt.
+) [3 <./Images/schema.pdf>] (./comparison.tex
+<./Images/louvres.pdf, id=56, 1308.89pt x 806.01125pt>
 File: ./Images/louvres.pdf Graphic file (type pdf)
 
 <use ./Images/louvres.pdf>
-Package pdftex.def Info: ./Images/louvres.pdf used on input line 4.
-(pdftex.def)             Requested size: 369.88582pt x 227.77238pt.
- [3 <./Images/waterfall.pdf>]
-<./Images/compPV.pdf, id=56, 1503.6175pt x 849.1725pt>
+Package pdftex.def Info: ./Images/louvres.pdf used on input line 5.
+(pdftex.def)             Requested size: 284.52756pt x 175.20764pt.
+
+<./Images/compPV.pdf, id=58, 1503.6175pt x 849.1725pt>
 File: ./Images/compPV.pdf Graphic file (type pdf)
 
 <use ./Images/compPV.pdf>
-Package pdftex.def Info: ./Images/compPV.pdf used on input line 10.
-(pdftex.def)             Requested size: 369.88582pt x 208.88483pt.
-) (./conclusion.tex) [4 <./Images/louvres.pdf> <./Images/compPV.pdf>] (./acknow
-ledgments.tex) [5] (./main.aux)
+Package pdftex.def Info: ./Images/compPV.pdf used on input line 13.
+(pdftex.def)             Requested size: 284.52756pt x 160.68362pt.
+) [4 <./Images/waterfall.pdf> <./Images/louvres.pdf>]
+(./conclusion.tex) (./acknowledgments.tex) [5 <./Images/compPV.pdf>]
+(./main.aux)
 
 LaTeX Warning: There were undefined references.
 
-
-LaTeX Warning: There were multiply-defined labels.
-
  ) 
 Here is how much of TeX's memory you used:
- 2506 strings out of 493089
- 33119 string characters out of 6134842
- 92986 words of memory out of 5000000
- 5927 multiletter control sequences out of 15000+600000
+ 2513 strings out of 493089
+ 33237 string characters out of 6134842
+ 92963 words of memory out of 5000000
+ 5933 multiletter control sequences out of 15000+600000
  14097 words of font info for 54 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 38i,8n,30p,341b,277s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 38i,8n,30p,341b,279s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
 ></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb>
 </usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></
@@ -296,10 +302,10 @@ e/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/
 15/texmf-dist/fonts/type1/public/amsfonts/cm/cmti7.pfb></usr/local/texlive/2015
 /texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2015/
 texmf-dist/fonts/type1/urw/zapfding/uzdr.pfb>
-Output written on main.pdf (5 pages, 448749 bytes).
+Output written on main.pdf (5 pages, 555677 bytes).
 PDF statistics:
- 136 PDF objects out of 1000 (max. 8388607)
- 92 compressed objects within 1 object stream
+ 149 PDF objects out of 1000 (max. 8388607)
+ 100 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 45 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 56 words of extra memory for PDF output out of 10000 (max. 10000000)
 
