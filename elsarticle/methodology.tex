@@ -1,50 +1,34 @@
 % !TEX root = main.tex
-The analysis is performed according to ISO14040, ISO14044 and ISO15804...
 
 \begin{itemize}
-	\item Impact category: GWP
-	\item Functional unit: ${\mathrm{m^2}}$ (shading) and ${\mathrm{kWh}}$ (PV)
-	\item Scope and system boundaries: embodied, operational, disposal
-	\item Cut-off method used
-	\item Recipe midpoint H allocation method
-\end{itemize}
-
-
-
-
+\item The analysis is performed according to ISO 14040, ISO 14044 and ISO 15804. 
+	\item The impact category, which will be evaluated, is the global warming potential (GWP). This is described as the emissions of ${\mathrm{CO_2eq}}$ in kilograms divided by the functional unit.
+	\item The functional unit used is twofold and based on the function of the adaptive building envelope. For the comparison with other shading systems facade area in ${\mathrm{m^2}}$ is used, while comparison with other photovoltaic systems is done using electricity produced in ${\mathrm{kWh}}$. According to the guidelines of the International Energy Agency (IEA), the calculation of kWh produced needs to be based for consistency on conversion efficiency ${\eta}$, performance ratio PR, irradiation I, lifetime LT and area A of the module. Equation \ref{eq:solar} gives the exact formulation:
+	
 \begin{equation}
 G=\frac{{\mathrm{GWP}}}{{\mathrm{I \cdot \eta  \cdot PR \cdot LT \cdot A}}}
 \label{eq:solar}
-\end{equation}
+\end{equation}	
 
-
+	\item The scope of the LCA comprises of the  embodied, operational and disposal global warming potential. Figure \ref{fig:BOS} shows the system boundaries of the process flows. The supporting structures are also included in the system boundaries. The reason for this is that technologies within the building envelope also change the design of the supporting structures. The supporting structure of solar panels is referred to as balance of systems (BOS).
 
 \begin{figure}[H]
 \begin{center}
 \includegraphics[width=5cm, trim= 0cm 0cm 0cm 0cm,clip]{BOS}
-\caption{Thin-film incl. BOS (e.g. supporting structures and systems) analysis}
+\caption{Thin-film incl. BOS system boundaries}
 \label{fig:BOS}
 \end{center}
-\end{figure}
-
-
+\end{figure}	
+	
+	\item The cut-off approach is used for recycling and landfill. This means that recycling does not generate any credit for the product and resulting benefits are not taken into account. Furthermore the use of recycled products do not bear the burden of processes higher up the chain.
+	\item The recipe midpoint-H allocation method allows for an accurate evaluation of the GWP based on human impact factors.
+\item The adaptive solar facade uses CIGS thin film panels with an aluminum backing. This allows for a  light weight panel, needed for the flexible control of the system using silicone soft-robotic actuators.
+\end{itemize}
 
 \begin{figure}[H]
 \begin{center}
 \includegraphics[width=8cm, trim= 0cm 0cm 0cm 0cm,clip]{schema}
-\caption{CIGS thin film structure MAKE OWN GRAPH, DO NOT USE THIS ONE FOR FINAL}
+\caption{CIGS thin film structure}
 \label{fig:schema}
 \end{center}
 \end{figure}
-
-% \begin{enumerate}
-% \item Solar irradiation Zurich, Switzerland: 1240 ${\mathrm{kWh/m^2/yr}}$
-% \item Module efficiency CIGS: 11.5\%
-% \item Performance ratio with optimal algorithm: 0.326\footnote{Based on full facade area of 8.96${\mathrm{m^2}}$; Actual PV film area only comprises of 5.76${\mathrm{m^2}}$}
-% \item Electricity production: 46.54 ${\mathrm{kWh/m^2}}$; 417 ${\mathrm{kWh}}$
-% \item Shading office room savings according to Table \ref{simulation} and \ref{netenergy}
-% \item Lifetime: 15 years
-% \item Maintenance every 5 years: 69.9 ${\mathrm{kg_{CO_2eq}}}$\footnote{Includes: baking and vacuuming actuator, actuator silicone, actuator mold and idling hoist for 8 hours}
-% \item Disposal processes according to Appendix \ref{}
-% \item Database source: Ecoinvent 3.1
-% \end{enumerate}
