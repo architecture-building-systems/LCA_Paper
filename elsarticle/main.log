@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.10.25)  17 SEP 2015 22:49
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.10.25)  17 SEP 2015 23:10
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -255,42 +255,47 @@ File: ./Images/embodied.pdf Graphic file (type pdf)
 Package pdftex.def Info: ./Images/embodied.pdf used on input line 9.
 (pdftex.def)             Requested size: 284.52756pt x 147.69264pt.
  [3 <./Images/BOS.pdf> <./Images/schema.pdf>]
-<./Images/buildingenergy.pdf, id=54, 1104.125pt x 573.14125pt>
+<./Images/buildingenergy.pdf, id=76, 1104.125pt x 573.14125pt>
 File: ./Images/buildingenergy.pdf Graphic file (type pdf)
 
 <use ./Images/buildingenergy.pdf>
 Package pdftex.def Info: ./Images/buildingenergy.pdf used on input line 18.
 (pdftex.def)             Requested size: 284.52756pt x 147.69264pt.
 
-<./Images/waterfall.pdf, id=56, 1107.13625pt x 656.4525pt>
+<./Images/waterfall.pdf, id=78, 1107.13625pt x 656.4525pt>
 File: ./Images/waterfall.pdf Graphic file (type pdf)
 
 <use ./Images/waterfall.pdf>
 Package pdftex.def Info: ./Images/waterfall.pdf used on input line 28.
 (pdftex.def)             Requested size: 284.52756pt x 168.70035pt.
  [4 <./Images/embodied.pdf> <./Images/buildingenergy.pdf>] <./Images/monte.pdf,
- id=83, 1104.125pt x 573.14125pt>
+ id=201, 1104.125pt x 573.14125pt>
 File: ./Images/monte.pdf Graphic file (type pdf)
 
 <use ./Images/monte.pdf>
 Package pdftex.def Info: ./Images/monte.pdf used on input line 39.
 (pdftex.def)             Requested size: 284.52756pt x 147.69264pt.
 ) (./comparison.tex
-<./Images/louvres.pdf, id=85, 1308.89pt x 806.01125pt>
+<./Images/louvres.pdf, id=203, 1308.89pt x 806.01125pt>
 File: ./Images/louvres.pdf Graphic file (type pdf)
 
 <use ./Images/louvres.pdf>
 Package pdftex.def Info: ./Images/louvres.pdf used on input line 7.
 (pdftex.def)             Requested size: 284.52756pt x 175.20764pt.
  [5 <./Images/waterfall.pdf> <./Images/monte.pdf>]
-<./Images/compPV.pdf, id=112, 1503.6175pt x 849.1725pt>
+<./Images/compPV.pdf, id=278, 1503.6175pt x 849.1725pt>
 File: ./Images/compPV.pdf Graphic file (type pdf)
 
 <use ./Images/compPV.pdf>
 Package pdftex.def Info: ./Images/compPV.pdf used on input line 16.
 (pdftex.def)             Requested size: 284.52756pt x 160.68362pt.
-) (./conclusion.tex) [6 <./Images/louvres.pdf> <./Images/compPV.pdf>] (./acknow
-ledgments.tex) [7] (./main.aux) ) 
+) (./conclusion.tex)
+Underfull \hbox (badness 10000) in paragraph at lines 3--69
+
+ []
+
+[6 <./Images/louvres.pdf> <./Images/compPV.pdf>] (./acknowledgments.tex)
+[7] (./main.aux) ) 
 Here is how much of TeX's memory you used:
  2545 strings out of 493117
  33957 string characters out of 6135432
@@ -299,25 +304,24 @@ Here is how much of TeX's memory you used:
  14097 words of font info for 54 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  38i,7n,30p,650b,347s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2014/texmf-dist/fonts/type
-1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1
-/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/
-public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/pu
-blic/amsfonts/cm/cmr12.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/publ
-ic/amsfonts/cm/cmr17.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public
-/amsfonts/cm/cmr8.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/am
-sfonts/cm/cmsy10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/ams
-fonts/cm/cmsy7.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfo
-nts/cm/cmsy8.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfont
-s/cm/cmti10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts
-/cm/cmti12.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/
-cm/cmti7.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm
-/cmtt10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/urw/zapfding/uzdr.p
-fb>
-Output written on main.pdf (7 pages, 599669 bytes).
+</usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmbx12.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmmi12.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmr10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmr12.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/
+cmr17.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+r8.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy1
+0.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.
+pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pf
+b></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb
+></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
+</usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmti7.pfb></
+usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></u
+sr/local/texlive/2014/texmf-dist/fonts/type1/urw/zapfding/uzdr.pfb>
+Output written on main.pdf (7 pages, 994635 bytes).
 PDF statistics:
- 189 PDF objects out of 1000 (max. 8388607)
- 124 compressed objects within 2 object streams
+ 510 PDF objects out of 1000 (max. 8388607)
+ 141 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  89 words of extra memory for PDF output out of 10000 (max. 10000000)
 
