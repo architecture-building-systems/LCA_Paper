@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.10.25)  4 SEP 2015 15:56
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.10.25)  17 SEP 2015 22:49
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -205,20 +205,29 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 48.
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 (./introduction.tex
-Underfull \hbox (badness 10000) in paragraph at lines 3--4
+Underfull \hbox (badness 10000) in paragraph at lines 5--8
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 5--6
+Underfull \hbox (badness 10000) in paragraph at lines 11--12
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 13--14
 
  []
 
 )
-Underfull \hbox (badness 10000) in paragraph at lines 7--53
+Underfull \hbox (badness 10000) in paragraph at lines 15--53
 
  []
 
+[1
+
+
+{/usr/local/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 (./methodology.tex
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 4.
  (/usr/local/texlive/2014/texmf-dist/tex/latex/base/omscmr.fd
@@ -226,49 +235,45 @@ File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 4.
- [1
-
-
-{/usr/local/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-<./Images/BOS.pdf, id=18, 442.65375pt x 545.03625pt>
+ <./Images/BOS.pdf, id=18, 442.65375pt x 545.03625pt>
 File: ./Images/BOS.pdf Graphic file (type pdf)
  <use ./Images/BOS.pdf>
-Package pdftex.def Info: ./Images/BOS.pdf used on input line 17.
+Package pdftex.def Info: ./Images/BOS.pdf used on input line 23.
 (pdftex.def)             Requested size: 142.26378pt x 175.17197pt.
 
 [2] <./Images/schema.pdf, id=25, 500.87125pt x 263.98625pt>
 File: ./Images/schema.pdf Graphic file (type pdf)
 
 <use ./Images/schema.pdf>
-Package pdftex.def Info: ./Images/schema.pdf used on input line 30.
+Package pdftex.def Info: ./Images/schema.pdf used on input line 41.
 (pdftex.def)             Requested size: 227.62204pt x 119.9689pt.
 ) (./profile.tex
-<./Images/waterfall.pdf, id=27, 1107.13625pt x 656.4525pt>
-File: ./Images/waterfall.pdf Graphic file (type pdf)
-
-<use ./Images/waterfall.pdf>
-Package pdftex.def Info: ./Images/waterfall.pdf used on input line 7.
-(pdftex.def)             Requested size: 284.52756pt x 168.70035pt.
- [3 <./Images/BOS.pdf> <./Images/schema.pdf>]
-<./Images/embodied.pdf, id=54, 1104.125pt x 573.14125pt>
+<./Images/embodied.pdf, id=27, 1104.125pt x 573.14125pt>
 File: ./Images/embodied.pdf Graphic file (type pdf)
 
 <use ./Images/embodied.pdf>
-Package pdftex.def Info: ./Images/embodied.pdf used on input line 17.
+Package pdftex.def Info: ./Images/embodied.pdf used on input line 9.
 (pdftex.def)             Requested size: 284.52756pt x 147.69264pt.
- [4 <./Images/waterfall.pdf> <./Images/embodied.pdf>] <./Images/monte.pdf, id=8
-1, 1104.125pt x 573.14125pt>
+ [3 <./Images/BOS.pdf> <./Images/schema.pdf>]
+<./Images/buildingenergy.pdf, id=54, 1104.125pt x 573.14125pt>
+File: ./Images/buildingenergy.pdf Graphic file (type pdf)
+
+<use ./Images/buildingenergy.pdf>
+Package pdftex.def Info: ./Images/buildingenergy.pdf used on input line 18.
+(pdftex.def)             Requested size: 284.52756pt x 147.69264pt.
+
+<./Images/waterfall.pdf, id=56, 1107.13625pt x 656.4525pt>
+File: ./Images/waterfall.pdf Graphic file (type pdf)
+
+<use ./Images/waterfall.pdf>
+Package pdftex.def Info: ./Images/waterfall.pdf used on input line 28.
+(pdftex.def)             Requested size: 284.52756pt x 168.70035pt.
+ [4 <./Images/embodied.pdf> <./Images/buildingenergy.pdf>] <./Images/monte.pdf,
+ id=83, 1104.125pt x 573.14125pt>
 File: ./Images/monte.pdf Graphic file (type pdf)
 
 <use ./Images/monte.pdf>
-Package pdftex.def Info: ./Images/monte.pdf used on input line 29.
-(pdftex.def)             Requested size: 284.52756pt x 147.69264pt.
-
-<./Images/sensitivity.pdf, id=83, 1104.125pt x 573.14125pt>
-File: ./Images/sensitivity.pdf Graphic file (type pdf)
-
-<use ./Images/sensitivity.pdf>
-Package pdftex.def Info: ./Images/sensitivity.pdf used on input line 39.
+Package pdftex.def Info: ./Images/monte.pdf used on input line 39.
 (pdftex.def)             Requested size: 284.52756pt x 147.69264pt.
 ) (./comparison.tex
 <./Images/louvres.pdf, id=85, 1308.89pt x 806.01125pt>
@@ -277,18 +282,18 @@ File: ./Images/louvres.pdf Graphic file (type pdf)
 <use ./Images/louvres.pdf>
 Package pdftex.def Info: ./Images/louvres.pdf used on input line 7.
 (pdftex.def)             Requested size: 284.52756pt x 175.20764pt.
- [5 <./Images/monte.pdf> <./Images/sensitivity.pdf>]
+ [5 <./Images/waterfall.pdf> <./Images/monte.pdf>]
 <./Images/compPV.pdf, id=112, 1503.6175pt x 849.1725pt>
 File: ./Images/compPV.pdf Graphic file (type pdf)
 
 <use ./Images/compPV.pdf>
-Package pdftex.def Info: ./Images/compPV.pdf used on input line 15.
+Package pdftex.def Info: ./Images/compPV.pdf used on input line 16.
 (pdftex.def)             Requested size: 284.52756pt x 160.68362pt.
-) (./conclusion.tex) (./acknowledgments.tex) [6 <./Images/louvres.pdf> <./Image
-s/compPV.pdf>] [7] (./main.aux) ) 
+) (./conclusion.tex) [6 <./Images/louvres.pdf> <./Images/compPV.pdf>] (./acknow
+ledgments.tex) [7] (./main.aux) ) 
 Here is how much of TeX's memory you used:
  2545 strings out of 493117
- 33942 string characters out of 6135432
+ 33957 string characters out of 6135432
  92704 words of memory out of 5000000
  5937 multiletter control sequences out of 15000+600000
  14097 words of font info for 54 fonts, out of 8000000 for 9000
@@ -309,7 +314,7 @@ s/cm/cmti10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts
 cm/cmti7.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm
 /cmtt10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/urw/zapfding/uzdr.p
 fb>
-Output written on main.pdf (7 pages, 598596 bytes).
+Output written on main.pdf (7 pages, 599669 bytes).
 PDF statistics:
  189 PDF objects out of 1000 (max. 8388607)
  124 compressed objects within 2 object streams
