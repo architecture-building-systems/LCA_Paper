@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1442524209 "main.tex" "main.pdf" "main" 1442524215
+["pdflatex"] 1442587939 "main.tex" "main.pdf" "main" 1442587940
   "/usr/local/texlive/2014/texmf-dist/tex/context/base/supp-pdf.mkii" 1337017135 71627 94eb9990bed73c364d7f53f960cc8c5b ""
   "/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/etexcmds.sty" 1335995445 7612 c47308d923ec19888707b0f1792b326a ""
   "/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/ifluatex.sty" 1303254447 7324 11d14f318d865f420e692d4e6c9c18c3 ""
@@ -43,14 +43,15 @@
   "acknowledgments.tex" 1441223338 3 2f43b42fd833d1e77420a8dae7419000 ""
   "comparison.tex" 1442522081 600 4fc274aa981a51f59018f14beae475f1 ""
   "conclusion.tex" 1442523347 421 a552d631800dbb6fb49b9cea18ce5ae0 ""
+  "discussion.tex" 1442587937 140 edb47b3b08c0a9eec74f453b23866e06 ""
   "introduction.tex" 1442521281 903 1328f253fbe5ff802e17607b937a8946 ""
-  "main.aux" 1442524210 2924 c9e593d5642f651087f4f16decb67f1e ""
-  "main.spl" 1442524209 0 d41d8cd98f00b204e9800998ecf8427e ""
-  "main.tex" 1442521168 1858 1f9caf941d31834f9916e5f10df6c2dd ""
+  "main.aux" 1442587940 3029 08ec9500c1410b31cff3930740fa189c ""
+  "main.spl" 1442587940 0 d41d8cd98f00b204e9800998ecf8427e ""
+  "main.tex" 1442587874 1921 d3a0b6e12fca3c18eedfd62858c397bb ""
   "methodology.tex" 1442521471 3093 91341089cc6942ab67f449a0c2edc6ff ""
   "profile.tex" 1442521994 2465 527e414b260ca33bb6dbf391c7eab871 ""
   (generated)
-  "main.log"
   "main.pdf"
-  "main.aux"
   "main.spl"
+  "main.log"
+  "main.aux"
