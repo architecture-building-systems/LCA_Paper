@@ -1,8 +1,9 @@
-\documentclass[preprint,12pt]{elsarticle}
+\documentclass[preprint,12pt]{elsarticle} %Change later to review, not preprint
 
 \usepackage{amssymb}
 \usepackage{graphics}
 \usepackage{float}
+
 
 \graphicspath{{./Images/}}
 
@@ -12,25 +13,26 @@
 
 \begin{frontmatter}
 
-\title{Life Cycle Analysis of a Adaptive Solar Facade\tnoteref{t1}} 
-\tnotetext[t1]{This document is a collaborative effort.} 
+\title{Life Cycle Analysis of an Adaptive Solar Facade} 
 
-\author[ita]{M. Jansen\corref{cor1}}
-    \ead{m.jansen@student.ethz.ch}
 
-\author[ita]{P. Jayathissa\corref{cor2}}
+\author[ita]{P. Jayathissa\corref{cor2} \tnoteref{t1}}
     \ead{jayathissa@arch.ethz.ch}
+
+\author[ita]{M. Jansen\tnoteref{t1}}
+    %\ead{m.jansen@student.ethz.ch}
 
 \author[baug]{N. Heeren}
     \ead{heeren@ifu.baug.ethz.ch}
 
 \author[baug]{S. Hellweg}
-	\ead{hellweg@ifu.baug.ethz.ch}
+	%∫\ead{hellweg@ifu.baug.ethz.ch}
 
-\author[ita]{A. Schlueter}
+\author[ita]{A. Schlueter \corref{cor1} }
     \ead{schlueter@arch.ethz.ch}
 
 
+\tnotetext[t1]{This document is a collaborative effort.} 
 \cortext[cor1]{Corresponding author} 
 \cortext[cor2]{Principal corresponding author}
 
@@ -81,8 +83,8 @@ Adaptive Solar Facade \sep Life Cycle Analysis \sep Multi Functional Envelope
 %% \label{}
 
 %% bibitems, please use
-%%  \bibliographystyle{elsarticle-num} 
-%%  \bibliography{<your bibdatabase>}
+  \bibliographystyle{elsarticle-num} 
+  \bibliography{references}
 
 \end{document}
 \endinput

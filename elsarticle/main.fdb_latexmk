@@ -1,5 +1,13 @@
 # Fdb version 3
-["pdflatex"] 1446544776 "main.tex" "main.pdf" "main" 1446544777
+["bibtex main"] 1446547588 "main.aux" "main.bbl" "main" 1446547590
+  "./elsarticle-num.bst" 1261046140 29353 cbd593ca59c003368735a9d8dbd22298 ""
+  "main.aux" 1446547589 3092 9ccffe8f57ef8222fd9ab09e9c21934b ""
+  "main.bcf" 0 -1 0 ""
+  "references.bib" 1441896677 8067 b2fe32f766a512ec3c28c3b8be93f64e ""
+  (generated)
+  "main.blg"
+  "main.bbl"
+["pdflatex"] 1446547589 "main.tex" "main.pdf" "main" 1446547590
   "/usr/local/texlive/2014/texmf-dist/tex/context/base/supp-pdf.mkii" 1337017135 71627 94eb9990bed73c364d7f53f960cc8c5b ""
   "/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/etexcmds.sty" 1335995445 7612 c47308d923ec19888707b0f1792b326a ""
   "/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/ifluatex.sty" 1303254447 7324 11d14f318d865f420e692d4e6c9c18c3 ""
@@ -15,8 +23,7 @@
   "/usr/local/texlive/2014/texmf-dist/tex/latex/amsfonts/umsb.fd" 1359763108 961 d02606146ba5601b5645f987c92e6193 ""
   "/usr/local/texlive/2014/texmf-dist/tex/latex/base/article.cls" 1399675188 20496 66dd832c447553f6776fbeac03bb0580 ""
   "/usr/local/texlive/2014/texmf-dist/tex/latex/base/omscmr.fd" 1399675188 2044 e100908319f12bdc42d217e63116726d ""
-  "/usr/local/texlive/2014/texmf-dist/tex/latex/base/size12.clo" 1399675188 8978 ae5f64dacfe4ff1b713dec8fd98fb590 ""
-  "/usr/local/texlive/2014/texmf-dist/tex/latex/elsarticle/elsarticle.cls" 1253317863 24964 58a46f1c511cb12d424674f91526c55c ""
+  "/usr/local/texlive/2014/texmf-dist/tex/latex/base/size10.clo" 1399675188 8967 546f1b177fd18efd7ad74d77a7bdac64 ""
   "/usr/local/texlive/2014/texmf-dist/tex/latex/float/float.sty" 1137110151 6749 16d2656a1984957e674b149555f1ea1d ""
   "/usr/local/texlive/2014/texmf-dist/tex/latex/graphics/graphics.sty" 1254151804 14183 42a8fc761b806986eef292369afc2988 ""
   "/usr/local/texlive/2014/texmf-dist/tex/latex/graphics/graphicx.sty" 1399675188 7911 bf0a64f89bfb668c239ddf6324bf4afb ""
@@ -32,7 +39,7 @@
   "/usr/local/texlive/2014/texmf-dist/tex/latex/psnfss/pifont.sty" 1156702453 2284 330328193b4aeb08dd45b0dd3e5ae732 ""
   "/usr/local/texlive/2014/texmf-dist/tex/latex/psnfss/upsy.fd" 1137110629 148 2da0acd77cba348f34823f44cabf0058 ""
   "/usr/local/texlive/2014/texmf-dist/tex/latex/psnfss/upzd.fd" 1137110629 148 b2a94082cb802f90d3daf6dd0c7188a0 ""
-  "1_introduction.tex" 1442521281 903 1328f253fbe5ff802e17607b937a8946 ""
+  "1_introduction.tex" 1446546376 1072 033e9dc542e6c653c0171a76165d2fc2 ""
   "2_methodology.tex" 1442521471 3093 91341089cc6942ab67f449a0c2edc6ff ""
   "3_profile.tex" 1446544774 2468 355d9b9590b9f46eda3b9d1ce5ea0c1e ""
   "4_comparison.tex" 1442522081 600 4fc274aa981a51f59018f14beae475f1 ""
@@ -47,11 +54,13 @@
   "Images/pieembodied.pdf" 1442596210 71286 90897adfc64cc84efdd38d9d744d07ad ""
   "Images/schema.pdf" 1441294437 106035 2f92aa39c5d09ee5e74454ea0a5c3f7d ""
   "Images/waterfall.pdf" 1442596210 59188 69c17a0bb9a2e67c1a31cb8d5e89fba5 ""
-  "main.aux" 1446544777 3029 08ec9500c1410b31cff3930740fa189c ""
-  "main.spl" 1446544776 0 d41d8cd98f00b204e9800998ecf8427e ""
-  "main.tex" 1446544646 1935 ed9f2954bfb6885b7ee75b3d92fdc88a ""
+  "elsarticle.cls" 1446547216 26906 9bbe96da66efcb6afca446895cda4faf ""
+  "main.aux" 1446547589 3092 9ccffe8f57ef8222fd9ab09e9c21934b ""
+  "main.bbl" 1446547589 406 8c9cc44e782ca683d32cbafd0caab51c "bibtex main"
+  "main.spl" 1446547589 0 d41d8cd98f00b204e9800998ecf8427e ""
+  "main.tex" 1446547587 1940 b932dc6e9a329795880832ea6199321e ""
   (generated)
+  "main.log"
+  "main.aux"
   "main.spl"
   "main.pdf"
-  "main.aux"
-  "main.log"
