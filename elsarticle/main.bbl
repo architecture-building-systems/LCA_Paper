@@ -1,4 +1,4 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
 \expandafter\ifx\csname url\endcsname\relax
   \def\url#1{\texttt{#1}}\fi
 \expandafter\ifx\csname urlprefix\endcsname\relax\def\urlprefix{URL }\fi
@@ -8,5 +8,62 @@
 \bibitem{IPCC}
 Fifth assessment report, mitigation of cliamte change, Intergovernmental Panel
   on Climate Change  674--738.
+
+\bibitem{Shoen1997}
+S.~T. et~al., 14th Euro Conf. Photovoltaic Solar Energy Conversion.
+
+\bibitem{raugei2009life}
+M.~Raugei, P.~Frankl, Life cycle impacts and costs of photovoltaic systems:
+  current state of the art and future outlooks, Energy 34~(3) (2009) 392--399.
+
+\bibitem{saga2010advances}
+T.~Saga, Advances in crystalline silicon solar cell technology for industrial
+  mass production, npg asia materials 2~(3) (2010) 96--102.
+
+\bibitem{Lueling2009ee}
+C.~Lueling, Energising Architecture, Jovis, 2009.
+
+\bibitem{NREL}
+G.~Wilson, {NREL} cell efficiency records, National Center for Photovoltaics.
+
+\bibitem{kushiya2014cis}
+K.~Kushiya, Cis-based thin-film pv technology in solar frontier kk, Solar
+  Energy Materials and Solar Cells 122 (2014) 309--313.
+
+\bibitem{kaelin2004low}
+M.~Kaelin, D.~Rudmann, A.~Tiwari, Low cost processing of cigs thin film solar
+  cells, Solar Energy 77~(6) (2004) 749--756.
+
+\bibitem{jelle2012building}
+B.~P. Jelle, C.~Breivik, H.~D. R{\o}kenes, Building integrated photovoltaic
+  products: A state-of-the-art review and future research opportunities, Solar
+  Energy Materials and Solar Cells 100 (2012) 69--96.
+
+\bibitem{rossi2012adaptive}
+D.~Rossi, Z.~Nagy, A.~Schlueter, Adaptive distributed robotics for
+  environmental performance, occupant comfort and architectural expression,
+  International Journal of Architectural Computing 10~(3) (2012) 341--360.
+
+\bibitem{loonen2013climate}
+R.~Loonen, M.~Tr{\v{c}}ka, D.~C{\'o}stola, J.~Hensen, Climate adaptive building
+  shells: State-of-the-art and future challenges, Renewable and Sustainable
+  Energy Reviews 25 (2013) 483--493.
+
+\bibitem{jayathissa2015abs}
+P.~Jayathissa, Z.~Nagy, N.~Offedu, A.~Schlueter, Numerical simulation of energy
+  performance and construction of the adaptive solar facade, Advanced Building
+  Skins, TU Graz 2.
+
+\bibitem{chirilua2011highly}
+A.~Chiril{\u{a}}, S.~Buecheler, F.~Pianezzi, P.~Bloesch, C.~Gretener, A.~R.
+  Uhl, C.~Fella, L.~Kranz, J.~Perrenoud, S.~Seyrling, et~al., Highly efficient
+  cu (in, ga) se2 solar cells grown on flexible polymer films, Nature materials
+  10~(11) (2011) 857--861.
+
+\bibitem{Svetozarevic2014a}
+B.~Svetozarevic, Z.~Nagy, D.~Rossi, A.~Schlueter, {Experimental
+  Characterization of a 2-DOF Soft Robotic Platform for Architectural
+  Applications}, Robotics: Science and Systems, Workshop on Advances on Soft
+  Robotics (2014) 2--6.
 
 \end{thebibliography}

@@ -1,5 +1,77 @@
 % !TEX root = main.tex
 
+\subsection{Embodied Energy Inventory and Assumptions}
+
+The main topic of the present analysis is the production, operation and disposal of an Adaptive Solar Facade (ASF). The ASF is composed of six sub-product systems described in Figure \ref{fig:subsystem}. This consists of a CIGS PV panels mounted on an actuator, supported by a cantilever that offsets it from a cable net supporting structure \ref{fig:explodedView}.
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[width=8cm, trim= 0cm 0cm 0cm 0cm,clip]{ASFSubsystems.png}
+\caption{Breakdown of the ASF into six sub-product systems (Note change Steel frame to Suporting Structure, and Assembling ASF to Assembly. Also redraw this chart so it matches the subsubsections below)}
+\label{fig:subsystem}
+\end{center}
+\end{figure}
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[width=8cm, trim= 0cm 0cm 0cm 0cm,clip]{explodedASFV2.png}
+\caption{Exploded view of an ASF module mounted on a cable net supporting structure}
+\label{fig:explodedView}
+\end{center}
+\end{figure}
+
+\subsubsection*{PV Panel}
+A CIGS PV panel was selected as the thin film panel of choice due to its high efficiency, low cost, and ability to be mounted on a polymer or aluminium substrate \cite{chirilua2011highly}.\\
+
+The nominal conversion efficiencies are XX\% for teh CIGS panels based off [reference required]\\
+
+[Also make a note about where the PV data comes from, maybe also analyse a-Si?]\\
+
+[Add Inventory Analysis of PV panels here]
+
+\subsubsection*{Actuator}
+Traditionally photovoltaic actuation is done through the use of servo motors. Servo motors however become a limiting factor for adaptive facades due to their high upfront costs, and instability to heavy winds. Soft robotic actuators on the other hand are cheaper and more resilient to environmental conditions\cite{Svetozarevic2014a}. For the purpose of this analysis we will analyse both servo motors and soft robotic actuators. \\
+
+[Add Inventory Analysis of actuators here, note I would move the air compressor to the actuator section ]
+
+\subsubsection*{Cantilever}
+The cantilever is a steel connection point between the PV panel and the supporting structure.\\
+
+[Add Inventory Analysis of cantilever here]
+
+\subsubsection*{Supporting Structure}
+The supporting structure is the connection point between the array of photovoltaic modules and the building itself. The design currently in use consists of a steel cable-net that spans a steel supporting frame. The steel frame is then attached to the building itself.\\
+
+[Add Inventory Analysis of supporting structure here]
+
+\subsubsection*{Controls and Electronic System}
+The control system is required for the actuation of panels and the regulation of photovoltaic electricity production.\\
+
+[Add Inventory Analysis of control system here]
+
+\subsubsection*{Assembly}
+
+[fill this in]
+
+
+\subsection{Operational Emissions and Assumptions}
+
+The potential savings are based off previously completed numerical simulation \cite{jayathissa2015abs}. The simulation was conducted on a south facing office room. The room xx meters in length, xx meters wide and xx meters high was modeled using Rhinoceros 3D CAD Package [cite rhino], shown in Figure XX. Grasshopper [cite grasshopper] was used to model the dynamic aspects of the ASF which consists of an array of 400mm CIGS solar panels. The geometrical input is imported to Energy Plus [cite EP] though the DIVA [cite] interface. A single zone thermal analysis was conducted for each possible geometrical configuration of the ASF for each hour of the year. The results were then post processed in Python [cite] with the numpy, scipy and pandas plugins. \\
+
+Based on the assumption of XX full openings and closings per day, we approximate the energy requirement to actuate the ASF to be YY kWh in its lifetime.\\
+
+[Table of simulation parameters, and render of Rhino model]
+
+
+\subsection{Analysis of Reference Cases}
+
+Reference cases used for comparison are...
+
+
+\subsection{LCA Methadology}
+
+
+
 \begin{itemize}
 \item The analysis is performed according to ISO 14040, ISO 14044 and ISO 15804. % 15804 to be discussed
 	\item The impact category, which will be evaluated, is the global warming potential (GWP). This is described as the emissions of ${\mathrm{CO_2-eq}}$ in kilograms divided by the functional unit.
@@ -32,17 +104,9 @@ G=\frac{{\mathrm{GWP}}}{{\mathrm{I \cdot \eta  \cdot PR \cdot LT \cdot A}}}
 	\item The recipe midpoint (H) allocation method allows for an accurate evaluation of the GWP based on human impact factors.
 	% I don't get it - sorry
 	% I am pretty sure ReciPe basically uses the IPCC method
-\item The adaptive solar facade uses CIGS thin film panels with an aluminum backing. This allows for a light-weight panel, needed for the flexible control of the system using silicone soft-robotic actuators.
-% move this point up the list
 \end{itemize}
 
-\begin{figure}[H]
-\begin{center}
-\includegraphics[width=8cm, trim= 0cm 0cm 0cm 0cm,clip]{schema}
-\caption{CIGS thin film structure}
-\label{fig:schema}
-\end{center}
-\end{figure}
+
 
 % what LCI DB (ecoinvent) is used? refer to Annex?
 % How was LCI data collected?

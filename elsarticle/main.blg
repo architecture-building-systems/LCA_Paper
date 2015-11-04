@@ -10,45 +10,46 @@ I was expecting a `,' or a `}'---line 9 of file references.bib
 I'm skipping whatever remains of this entry
 Warning--empty author in IPCC
 Warning--empty year in IPCC
-You've used 1 entry,
+Warning--empty title in Shoen1997
+You've used 14 entries,
             2937 wiz_defined-function locations,
-            673 strings with 5182 characters,
-and the built_in function-call counts, 262 in all, are:
-= -- 18
-> -- 1
+            756 strings with 7539 characters,
+and the built_in function-call counts, 3678 in all, are:
+= -- 337
+> -- 131
 < -- 0
-+ -- 1
-- -- 0
-* -- 18
-:= -- 47
-add.period$ -- 1
-call.type$ -- 1
-change.case$ -- 1
++ -- 53
+- -- 39
+* -- 252
+:= -- 534
+add.period$ -- 14
+call.type$ -- 14
+change.case$ -- 12
 chr.to.int$ -- 0
-cite$ -- 3
-duplicate$ -- 7
-empty$ -- 30
-format.name$ -- 0
-if$ -- 59
+cite$ -- 17
+duplicate$ -- 100
+empty$ -- 400
+format.name$ -- 47
+if$ -- 925
 int.to.chr$ -- 0
-int.to.str$ -- 1
-missing$ -- 1
-newline$ -- 11
-num.names$ -- 0
-pop$ -- 8
+int.to.str$ -- 14
+missing$ -- 15
+newline$ -- 50
+num.names$ -- 13
+pop$ -- 81
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 14
+skip$ -- 232
 stack$ -- 0
-substring$ -- 21
-swap$ -- 0
+substring$ -- 225
+swap$ -- 9
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 2
-while$ -- 1
-width$ -- 2
-write$ -- 13
+warning$ -- 3
+while$ -- 32
+width$ -- 16
+write$ -- 112
 (There was 1 error message)
