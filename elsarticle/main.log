@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.10.25)  3 NOV 2015 21:13
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.10.25)  4 NOV 2015 19:24
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -230,25 +230,25 @@ Underfull \hbox (badness 10000) in paragraph at lines 7--8
  []
 
 ) (./2_methodology.tex [2]
-<./Images/ASFSubsystems.png, id=21, 405.515pt x 274.02374pt>
-File: ./Images/ASFSubsystems.png Graphic file (type png)
+<./Images/ASFSubsystems.pdf, id=21, 586.9245pt x 451.11897pt>
+File: ./Images/ASFSubsystems.pdf Graphic file (type pdf)
 
-<use ./Images/ASFSubsystems.png>
-Package pdftex.def Info: ./Images/ASFSubsystems.png used on input line 9.
-(pdftex.def)             Requested size: 227.62204pt x 153.81601pt.
+<use ./Images/ASFSubsystems.pdf>
+Package pdftex.def Info: ./Images/ASFSubsystems.pdf used on input line 9.
+(pdftex.def)             Requested size: 227.62204pt x 174.95134pt.
 
-<./Images/explodedASFV2.png, id=24, 546.3612pt x 443.7378pt>
+<./Images/explodedASFV2.png, id=23, 546.3612pt x 443.7378pt>
 File: ./Images/explodedASFV2.png Graphic file (type png)
 
 <use ./Images/explodedASFV2.png>
 Package pdftex.def Info: ./Images/explodedASFV2.png used on input line 17.
 (pdftex.def)             Requested size: 227.62204pt x 184.86546pt.
-
+ [3 <./Images/ASFSubsystems.pdf>]
 Underfull \hbox (badness 10000) in paragraph at lines 24--25
 
  []
 
-[3 <./Images/ASFSubsystems.png> <./Images/explodedASFV2.png (PNG copy)>]
+
 Underfull \hbox (badness 10000) in paragraph at lines 26--27
 
  []
@@ -263,7 +263,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 33--34
 
  []
 
-
+[4 <./Images/explodedASFV2.png (PNG copy)>]
 Underfull \hbox (badness 10000) in paragraph at lines 38--39
 
  []
@@ -278,8 +278,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 48--49
 
  []
 
-[4]
-Underfull \hbox (badness 10000) in paragraph at lines 59--60
+
+Underfull \hbox (badness 10000) in paragraph at lines 54--55
 
  []
 
@@ -288,102 +288,136 @@ Underfull \hbox (badness 10000) in paragraph at lines 61--62
 
  []
 
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 76.
+[5]
+Underfull \hbox (badness 10000) in paragraph at lines 63--64
+
+ []
+
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 78.
 (/usr/local/texlive/2014/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 76.
- [5]
-<./Images/BOS.pdf, id=39, 442.65375pt x 545.03625pt>
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 78.
+ [6]
+<./Images/BOS.pdf, id=51, 442.65375pt x 545.03625pt>
 File: ./Images/BOS.pdf Graphic file (type pdf)
  <use ./Images/BOS.pdf>
-Package pdftex.def Info: ./Images/BOS.pdf used on input line 95.
+Package pdftex.def Info: ./Images/BOS.pdf used on input line 97.
 (pdftex.def)             Requested size: 142.26378pt x 175.17197pt.
-
-[6 <./Images/BOS.pdf>]) (./3_results.tex
-<./Images/pieembodied.pdf, id=78, 1077.02374pt x 666.49pt>
+)
+(./3_results.tex <./Images/pieembodied.pdf, id=53, 1077.02374pt x 666.49pt>
 File: ./Images/pieembodied.pdf Graphic file (type pdf)
 
 <use ./Images/pieembodied.pdf>
 Package pdftex.def Info: ./Images/pieembodied.pdf used on input line 9.
 (pdftex.def)             Requested size: 284.52756pt x 176.06984pt.
+ [7 <./Images/BOS.pdf>]
 Missing character: There is no Â in font cmr12!
 Missing character: There is no ° in font cmr12!
 Missing character: There is no Â in font cmr12!
 Missing character: There is no ° in font cmr12!
 
-<./Images/buildingenergy.pdf, id=80, 1104.125pt x 573.14125pt>
+<./Images/buildingenergy.pdf, id=92, 694.595pt x 392.46625pt>
 File: ./Images/buildingenergy.pdf Graphic file (type pdf)
 
 <use ./Images/buildingenergy.pdf>
 Package pdftex.def Info: ./Images/buildingenergy.pdf used on input line 23.
-(pdftex.def)             Requested size: 284.52756pt x 147.69264pt.
- [7 <./Images/pieembodied.pdf>]
+(pdftex.def)             Requested size: 284.52756pt x 160.76846pt.
+ [8 <./Images/pieembodied.pdf>]
 Underfull \hbox (badness 10000) in paragraph at lines 29--30
 
  []
 
-<./Images/waterfall.pdf, id=97, 1135.24126pt x 662.475pt>
+<./Images/waterfall.pdf, id=108, 521.95pt x 307.1475pt>
 File: ./Images/waterfall.pdf Graphic file (type pdf)
 
 <use ./Images/waterfall.pdf>
 Package pdftex.def Info: ./Images/waterfall.pdf used on input line 36.
-(pdftex.def)             Requested size: 284.52756pt x 166.03279pt.
- [8 <./Images/buildingenergy.pdf>])
-(./4_comparison.tex
+(pdftex.def)             Requested size: 284.52756pt x 167.43658pt.
+ [9 <./Images/buildingenergy.pdf>]
+<./Images/mapGWP.pdf, id=131, 1024.82875pt x 468.75125pt>
+File: ./Images/mapGWP.pdf Graphic file (type pdf)
+
+<use ./Images/mapGWP.pdf>
+Package pdftex.def Info: ./Images/mapGWP.pdf used on input line 47.
+(pdftex.def)             Requested size: 284.52756pt x 130.1408pt.
+ [10 <./Images/waterfall.pdf>]
+<./Images/mapacidification.pdf, id=155, 998.73125pt x 441.65pt>
+File: ./Images/mapacidification.pdf Graphic file (type pdf)
+
+<use ./Images/mapacidification.pdf>
+Package pdftex.def Info: ./Images/mapacidification.pdf used on input line 55.
+(pdftex.def)             Requested size: 284.52756pt x 125.81764pt.
+
+<./Images/sens.pdf, id=157, 1437.37pt x 748.7975pt>
+File: ./Images/sens.pdf Graphic file (type pdf)
+ <use ./Images/sens.pdf>
+Package pdftex.def Info: ./Images/sens.pdf used on input line 83.
+(pdftex.def)             Requested size: 284.52756pt x 148.2258pt.
+
+[11 <./Images/mapGWP.pdf> <./Images/mapacidification.pdf>]) (./4_comparison.tex
+
 Underfull \hbox (badness 10000) in paragraph at lines 6--7
 
  []
 
-[9 <./Images/waterfall.pdf>]
-<./Images/compPV.png, id=175, 1501.61pt x 850.17625pt>
-File: ./Images/compPV.png Graphic file (type png)
+<./Images/regionGridMix.pdf, id=184, 666.49pt x 339.2675pt>
+File: ./Images/regionGridMix.pdf Graphic file (type pdf)
 
-<use ./Images/compPV.png>
-Package pdftex.def Info: ./Images/compPV.png used on input line 18.
-(pdftex.def)             Requested size: 284.52756pt x 161.09409pt.
+<use ./Images/regionGridMix.pdf>
+Package pdftex.def Info: ./Images/regionGridMix.pdf used on input line 10.
+(pdftex.def)             Requested size: 284.52756pt x 144.83646pt.
+ [12 <./Images/sens.pdf>]
+<./Images/compPV.pdf, id=201, 694.595pt x 392.46625pt>
+File: ./Images/compPV.pdf Graphic file (type pdf)
 
-<./Images/louvres.pdf, id=177, 1337.99875pt x 852.18375pt>
+<use ./Images/compPV.pdf>
+Package pdftex.def Info: ./Images/compPV.pdf used on input line 25.
+(pdftex.def)             Requested size: 284.52756pt x 160.76846pt.
+ [13 <./Images/regionGridMix.pdf>]
+<./Images/louvres.pdf, id=225, 608.2725pt x 377.41pt>
 File: ./Images/louvres.pdf Graphic file (type pdf)
 
 <use ./Images/louvres.pdf>
-Package pdftex.def Info: ./Images/louvres.pdf used on input line 27.
-(pdftex.def)             Requested size: 284.52756pt x 181.21342pt.
- [10 <./Images/compPV.png>]) (./5_discussion.tex)
-(./6_conclusion.tex)
+Package pdftex.def Info: ./Images/louvres.pdf used on input line 36.
+(pdftex.def)             Requested size: 284.52756pt x 176.54193pt.
+) (./5_discussion.tex [14 <./Images/compPV.pdf> <./Images/louvres.pdf>]) (./6_c
+onclusion.tex)
 Underfull \hbox (badness 10000) in paragraph at lines 3--78
 
  []
 
-(./7_acknowledgments.tex) (./main.bbl [11 <./Images/louvres.pdf>] [12])
-[13] (./main.aux) ) 
+(./7_acknowledgments.tex) (./main.bbl [15] [16]) [17] (./main.aux) ) 
 Here is how much of TeX's memory you used:
- 2598 strings out of 493117
- 34927 string characters out of 6135432
- 93956 words of memory out of 5000000
- 5985 multiletter control sequences out of 15000+600000
- 13210 words of font info for 50 fonts, out of 8000000 for 9000
+ 2648 strings out of 493117
+ 35830 string characters out of 6135432
+ 94117 words of memory out of 5000000
+ 6030 multiletter control sequences out of 15000+600000
+ 13379 words of font info for 51 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  38i,7n,30p,1108b,345s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfo
-nts/cm/cmbx12.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfon
-ts/cm/cmmi12.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfont
-s/cm/cmr10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/
-cm/cmr12.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm
-/cmr17.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/c
-mr8.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy
-10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7
-.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.p
-fb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pf
-b></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb
-></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmti7.pfb><
-/usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></
-usr/local/texlive/2014/texmf-dist/fonts/type1/urw/zapfding/uzdr.pfb>
-Output written on main.pdf (13 pages, 880912 bytes).
+</usr/local
+/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/
+texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/t
+exlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/tex
+live/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texli
+ve/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive
+/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/20
+14/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2014/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2014/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2014/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2014/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2014/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2014/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmti7.pfb></usr/local/texlive/2014/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2014/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/texlive/2014/texmf-dist/
+fonts/type1/urw/zapfding/uzdr.pfb>
+Output written on main.pdf (17 pages, 1814818 bytes).
 PDF statistics:
- 251 PDF objects out of 1000 (max. 8388607)
- 124 compressed objects within 2 object streams
+ 328 PDF objects out of 1000 (max. 8388607)
+ 209 compressed objects within 3 object streams
  0 named destinations out of 1000 (max. 500000)
- 89 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 133 words of extra memory for PDF output out of 10000 (max. 10000000)
 

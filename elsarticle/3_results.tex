@@ -15,26 +15,26 @@ A breakdown of the embodied carbon emissions can be found in Figure  \ref{fig:em
 
 It is interesting to note that the choice of actuation system for an ASF can have a significant / minimal impact on the embodied emissions. [Elaborate further when results come in]
 
-The operational energy consumption of the office space behind the ASF was compared to a case with a static louvered based shading system at 45° and a case with no shading at all. We calculated a total energy saving of 25\% compared to louvers at 45° and 56\% compared to a case with no facade shading \cite{jayathissa2015abs}. These results are sumarised in Figure \ref{fig:operational}. Note that this figure does not include on sight electricity generation 
+The operational energy consumption of the office space behind the ASF was compared to a case with a static louvered based shading system at 45° and a case with no shading at all. We calculated a total energy saving of 25\% compared to louvers at 45° and 56\% compared to a case with no facade shading \cite{jayathissa2015abs}. These results are sumarised in Figure \ref{fig:operational}. Note that this figure does not include on sight electricity generation. 
 
 
 \begin{figure}[H]
 \begin{center}
-\includegraphics[width=10cm, trim= 0cm 0cm 0cm 0cm,clip]{buildingenergy}
-\caption{Breakdown of the opperational carbon emissions, we can see a added savings of xxx compared to a static louvered shading system}
+\includegraphics[width=10cm, trim= 0cm 0cm 0cm 0cm,clip]{buildingenergy.pdf}
+\caption{Breakdown of the opperational carbon emissions, we can see a added savings of 24\% compared to a static louvered shading system and 56\% compared to no shading system at all}
 \label{fig:operational}
 \end{center}
 \end{figure}
 
-The total GWP of the ASF can be built up using a waterfall chart, Figure \ref{fig:waterfall}. To find out the gCO2eq/kWh we subtract the total embodied energy by the savings through our shading algorithm. We then add the GWP values for maintenance and disposal to achieve a total GWP over the 20 year life time of the ASF. This total is then used to calculate the emission factor of electricity produced by the ASF (XXXCO2/kWh).\\
+The total GWP of the ASF can be built up using a waterfall chart, Figure \ref{fig:waterfall}. To calculate the emission factor (gCO$_2$eq/kWh) we subtract the total embodied energy by the savings through our shading algorithm. We then add the GWP values for maintenance and disposal to achieve a total GWP over the 20 year life time of the ASF. This total is then used to calculate the emission factor of electricity produced by the ASF (126.8gCO$_2$/kWh).\\
 
-It can be seen that a significant initial investment is required to build the ASF, however most of that initial investment is offset through the reduction of heating, cooling and lighting loads. Maintenance and disposal takes up roughly 10\% of all total carbon emissions.
+It can be seen that the embodied GWP of the ASF is greater than a classical PV installation, however most of that initial investment is offset through the reduction of heating, cooling and lighting loads. Maintenance and disposal takes up roughly 10\% of all total carbon emissions.
 
 
 \begin{figure}[H]
 \begin{center}
 \includegraphics[width=10cm, trim= 0cm 0cm 0cm 0cm,clip]{waterfall}
-\caption{Waterfall diagram of GWP of the ASF. The far left column details the embodied carbon emissions. The second bar details the emission reduction of the building through the smart shading algorithms of the ASF. The third column shows an increase of emissions through maintenance. The fourth column shows an increase in emissions in the disposal. This leaves us with a final emissions value. When we apply this value to Equation \ref{eq:solar} we obtain an emission factor per kwH of XXXgCO2/kWh.}
+\caption{Waterfall diagram of GWP of the ASF. The far left column details the embodied carbon emissions. The second bar details the emission reduction of the building through the smart shading algorithms of the ASF. The third column shows an increase of emissions through maintenance. The fourth column shows an increase in emissions in the disposal. This leaves us with a final emissions value. When we apply this value to Equation \ref{eq:solar} we obtain an emission factor per kwH of 126.8gCO$_2$/kWh.}
 \label{fig:waterfall}
 \end{center}
 \end{figure}
@@ -42,12 +42,50 @@ It can be seen that a significant initial investment is required to build the AS
 \subsection{Global Distribution of GWP and Terrestrial Acidification}
 
 The global distribution of embodied GWP emissions is focused in Europe, specifically Germany and Switzerland as most of the manufacturing is done in this region. It can be see however that emissions occur globally due the sourcing of primary materials from many locations around the world. Terrestrial acidification however is more interesting as it has a local impact compared to carbon emissions. It is interesting to note that China carries the greatest burden of terrestrial acidification from the ASF production. 
+\begin{figure}[H]
+\begin{center}
+\includegraphics[width=10cm, trim= 0cm 0cm 0cm 0cm,clip]{mapGWP.pdf}
+\caption{Global distribution of embodied GWP emissions}
+\label{fig:mapGWP}
+\end{center}
+\end{figure}
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[width=10cm, trim= 0cm 0cm 0cm 0cm,clip]{mapacidification.pdf}
+\caption{Global distribution of terrestrial acidification}
+\label{fig:mapAcid}
+\end{center}
+\end{figure}
+
+
 
 \subsection{Sensitivity Analysis}
 
-Changing the assumptions can have a significant impact on the LCA result. Three assumptions were evaluated in the sensitivity analysis: Operation location, efficiency of PV panels, and the room size. The results are sumarised in Figure XX. It can be seen that the operation location has a significant impact on the carbon saving potential. This is because the emission factor of the electricity gird is roughly five times higher in Germany compared to Switzerland [citation needed]. This is further discussed in Section \ref{ch:elecMix}.
+Changing the assumptions can have a significant impact on the LCA result. Three assumptions were evaluated in the sensitivity analysis: Operation location, efficiency of PV panels, and the room size. The inputs are summarised in Table \ref{tab:sens} with the results shown in Figure \ref{fig:sens}. It can be seen that the operation location has a significant impact on the carbon saving potential. This is because the emission factor of the electricity gird is roughly five times higher in Germany compared to Switzerland [citation needed]. This is further discussed in Section \ref{ch:elecMix}. 
 
-[insert figure of sensitivity]
+
+\begin{table}
+\centering
+\begin{tabular}{lll}
+                    & Min         & Max     \\
+\hline
+Operation Location  & Switzerland & Germany \\
+PV Panel Efficiency & 14\%        & 18\%    \\
+Room Size           & 10sqm       & 30sqm   \\
+\end{tabular}
+\caption{Inputs to the Sensitivity Analysis Conducted}
+\label{tab:sens}
+\end{table}
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[width=10cm, trim= 0cm 0cm 0cm 0cm,clip]{sens.pdf}
+\caption{Sensitivity analysis of the emission factor based on location of use, panel efficiency, and room size}
+\label{fig:sens}
+\end{center}
+\end{figure}
+
 
 
 

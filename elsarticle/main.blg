@@ -8,48 +8,62 @@ I was expecting a `,' or a `}'---line 9 of file references.bib
  : year="2014",
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
+Warning--entry type for "Rhino" isn't style-file defined
+--line 370 of file references.bib
+Warning--entry type for "grasshopper" isn't style-file defined
+--line 378 of file references.bib
+Warning--entry type for "energyplus" isn't style-file defined
+--line 386 of file references.bib
+Warning--entry type for "DIVA" isn't style-file defined
+--line 394 of file references.bib
+Warning--entry type for "python" isn't style-file defined
+--line 402 of file references.bib
+Warning--entry type for "numpy" isn't style-file defined
+--line 410 of file references.bib
+Warning--entry type for "pandas" isn't style-file defined
+--line 418 of file references.bib
 Warning--empty author in IPCC
 Warning--empty year in IPCC
 Warning--empty title in Shoen1997
-You've used 14 entries,
+You've used 21 entries,
             2937 wiz_defined-function locations,
-            756 strings with 7539 characters,
-and the built_in function-call counts, 3678 in all, are:
-= -- 337
-> -- 131
+            779 strings with 7910 characters,
+and the built_in function-call counts, 4846 in all, are:
+= -- 427
+> -- 141
 < -- 0
-+ -- 53
-- -- 39
-* -- 252
-:= -- 534
-add.period$ -- 14
-call.type$ -- 14
-change.case$ -- 12
++ -- 61
+- -- 40
+* -- 299
+:= -- 649
+add.period$ -- 21
+call.type$ -- 21
+change.case$ -- 19
 chr.to.int$ -- 0
-cite$ -- 17
-duplicate$ -- 100
-empty$ -- 400
-format.name$ -- 47
-if$ -- 925
+cite$ -- 24
+duplicate$ -- 156
+empty$ -- 599
+format.name$ -- 48
+if$ -- 1278
 int.to.chr$ -- 0
-int.to.str$ -- 14
+int.to.str$ -- 21
 missing$ -- 15
-newline$ -- 50
-num.names$ -- 13
-pop$ -- 81
+newline$ -- 78
+num.names$ -- 14
+pop$ -- 147
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 232
+skip$ -- 328
 stack$ -- 0
 substring$ -- 225
-swap$ -- 9
+swap$ -- 18
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 3
-while$ -- 32
-width$ -- 16
-write$ -- 112
+while$ -- 33
+width$ -- 23
+write$ -- 157
 (There was 1 error message)

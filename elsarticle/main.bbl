@@ -66,4 +66,34 @@ B.~Svetozarevic, Z.~Nagy, D.~Rossi, A.~Schlueter, {Experimental
   Applications}, Robotics: Science and Systems, Workshop on Advances on Soft
   Robotics (2014) 2--6.
 
+\bibitem{Rhino}
+\href{https://www.rhino3d.com/}{Rhinoceros v5} (2015).
+\newline\urlprefix\url{https://www.rhino3d.com/}
+
+\bibitem{grasshopper}
+\href{http://www.grasshopper3d.com/}{Grasshopper - algorithmic modeling for
+  rhino} (2015).
+\newline\urlprefix\url{http://www.grasshopper3d.com/}
+
+\bibitem{energyplus}
+B.~T. Office, \href{http://apps1.eere.energy.gov/buildings/energyplus/}{Energy
+  plus}.
+\newline\urlprefix\url{http://apps1.eere.energy.gov/buildings/energyplus/}
+
+\bibitem{DIVA}
+\href{http://diva4rhino.com/}{Diva for rhino}.
+\newline\urlprefix\url{http://diva4rhino.com/}
+
+\bibitem{python}
+\href{https://www.python.org/}{Python}.
+\newline\urlprefix\url{https://www.python.org/}
+
+\bibitem{numpy}
+\href{http://www.numpy.org/}{Numpy}.
+\newline\urlprefix\url{http://www.numpy.org/}
+
+\bibitem{pandas}
+\href{http://pandas.pydata.org/}{pandas}.
+\newline\urlprefix\url{http://pandas.pydata.org/}
+
 \end{thebibliography}
