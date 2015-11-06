@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.10.25)  4 NOV 2015 19:24
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.10.25)  6 NOV 2015 12:49
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -219,36 +219,35 @@ Underfull \hbox (badness 10000) in paragraph at lines 5--6
 
 
 {/usr/local/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-Overfull \hbox (1.99696pt too wide) in paragraph at lines 7--8
-[]\OT1/cmr/m/n/12 This de-vel-op-ment has brought new de-sign BIPV de-sign pos-
-si-bil-i-ties. Their
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 7--8
 
  []
 
-) (./2_methodology.tex [2]
+
+Underfull \hbox (badness 10000) in paragraph at lines 9--10
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 11--12
+
+ []
+
+[2]) (./2_methodology.tex
 <./Images/ASFSubsystems.pdf, id=21, 586.9245pt x 451.11897pt>
 File: ./Images/ASFSubsystems.pdf Graphic file (type pdf)
 
 <use ./Images/ASFSubsystems.pdf>
-Package pdftex.def Info: ./Images/ASFSubsystems.pdf used on input line 9.
+Package pdftex.def Info: ./Images/ASFSubsystems.pdf used on input line 11.
 (pdftex.def)             Requested size: 227.62204pt x 174.95134pt.
 
 <./Images/explodedASFV2.png, id=23, 546.3612pt x 443.7378pt>
 File: ./Images/explodedASFV2.png Graphic file (type png)
 
 <use ./Images/explodedASFV2.png>
-Package pdftex.def Info: ./Images/explodedASFV2.png used on input line 17.
+Package pdftex.def Info: ./Images/explodedASFV2.png used on input line 19.
 (pdftex.def)             Requested size: 227.62204pt x 184.86546pt.
  [3 <./Images/ASFSubsystems.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 24--25
-
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 26--27
 
  []
@@ -259,27 +258,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 28--29
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 33--34
+Underfull \hbox (badness 10000) in paragraph at lines 46--47
 
  []
 
 [4 <./Images/explodedASFV2.png (PNG copy)>]
-Underfull \hbox (badness 10000) in paragraph at lines 38--39
+Underfull \hbox (badness 10000) in paragraph at lines 51--52
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 43--44
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 48--49
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 54--55
+Underfull \hbox (badness 10000) in paragraph at lines 56--57
 
  []
 
@@ -288,33 +277,41 @@ Underfull \hbox (badness 10000) in paragraph at lines 61--62
 
  []
 
-[5]
-Underfull \hbox (badness 10000) in paragraph at lines 63--64
+
+Underfull \hbox (badness 10000) in paragraph at lines 67--68
 
  []
 
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 78.
+
+Underfull \hbox (badness 10000) in paragraph at lines 74--75
+
+ []
+
+[5]
+Underfull \hbox (badness 10000) in paragraph at lines 76--77
+
+ []
+
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 91.
 (/usr/local/texlive/2014/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 78.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 91.
  [6]
-<./Images/BOS.pdf, id=51, 442.65375pt x 545.03625pt>
+<./Images/BOS.pdf, id=50, 442.65375pt x 545.03625pt>
 File: ./Images/BOS.pdf Graphic file (type pdf)
  <use ./Images/BOS.pdf>
-Package pdftex.def Info: ./Images/BOS.pdf used on input line 97.
+Package pdftex.def Info: ./Images/BOS.pdf used on input line 110.
 (pdftex.def)             Requested size: 142.26378pt x 175.17197pt.
 )
-(./3_results.tex <./Images/pieembodied.pdf, id=53, 1077.02374pt x 666.49pt>
+(./3_results.tex [7 <./Images/BOS.pdf>]
+<./Images/pieembodied.pdf, id=90, 1077.02374pt x 666.49pt>
 File: ./Images/pieembodied.pdf Graphic file (type pdf)
 
 <use ./Images/pieembodied.pdf>
 Package pdftex.def Info: ./Images/pieembodied.pdf used on input line 9.
 (pdftex.def)             Requested size: 284.52756pt x 176.06984pt.
- [7 <./Images/BOS.pdf>]
-Missing character: There is no Â in font cmr12!
-Missing character: There is no ° in font cmr12!
 Missing character: There is no Â in font cmr12!
 Missing character: There is no ° in font cmr12!
 
@@ -390,13 +387,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 3--78
 
 (./7_acknowledgments.tex) (./main.bbl [15] [16]) [17] (./main.aux) ) 
 Here is how much of TeX's memory you used:
- 2648 strings out of 493117
- 35830 string characters out of 6135432
- 94117 words of memory out of 5000000
- 6030 multiletter control sequences out of 15000+600000
+ 2653 strings out of 493117
+ 35922 string characters out of 6135432
+ 95141 words of memory out of 5000000
+ 6035 multiletter control sequences out of 15000+600000
  13379 words of font info for 51 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 38i,7n,30p,1108b,345s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 38i,7n,30p,905b,345s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local
 /texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/
 texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/t
@@ -414,7 +411,7 @@ ist/fonts/type1/public/amsfonts/cm/cmti7.pfb></usr/local/texlive/2014/texmf-dis
 t/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2014/texmf-dist
 /fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/texlive/2014/texmf-dist/
 fonts/type1/urw/zapfding/uzdr.pfb>
-Output written on main.pdf (17 pages, 1814818 bytes).
+Output written on main.pdf (17 pages, 1817248 bytes).
 PDF statistics:
  328 PDF objects out of 1000 (max. 8388607)
  209 compressed objects within 3 object streams
