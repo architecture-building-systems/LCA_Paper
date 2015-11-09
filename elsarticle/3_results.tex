@@ -62,17 +62,19 @@ The global distribution of embodied GWP emissions is focused in Europe, specific
 
 \subsection{Sensitivity Analysis}
 
-Changing the assumptions can have a significant impact on the LCA result. Three assumptions were evaluated in the sensitivity analysis: Operation location, efficiency of PV panels, and the room size. The inputs are summarised in Table \ref{tab:sens} with the results shown in Figure \ref{fig:sens}. It can be seen that the operation location has a significant impact on the carbon saving potential. This is because the emission factor of the electricity gird is roughly five times higher in Germany compared to Switzerland [citation needed]. This is further discussed in Section \ref{ch:elecMix}. 
+Changing the assumptions can have a significant impact on the LCA result. Three assumptions were evaluated in the sensitivity analysis: Operation location, type of PV panels, and the type of actuation system. The inputs are summarised in Table \ref{tab:sens} with the results shown in Figure \ref{fig:sens}. \\
+
+It can be seen that the operation location has a significant impact on the carbon saving potential. In Switzerland, we see a 6\% reduction compared to the average electricity mix. This is because the Swiss electricity mix is dominated by hydro and nuclear which has a very low GWP potential [citation needed]. In Germany on the other hand, the ASF has a 81\% reduction in carbon emissions as the emission factor of the electricity grid is roughly five times higher compared to Switzerland [citation needed]. The actuators and Pv panel type had a ...
+
 
 
 \begin{table}
 \centering
 \begin{tabular}{lll}
-                    & Min         & Max     \\
 \hline
 Operation Location  & Switzerland & Germany \\
-PV Panel Efficiency & 14\%        & 18\%    \\
-Room Size           & 10sqm       & 30sqm   \\
+PV Panel type  & a-Si        & CIGS    \\
+Actuator Type           & Servo Motor       & Soft Robotic Actuator   \\
 \end{tabular}
 \caption{Inputs to the Sensitivity Analysis Conducted}
 \label{tab:sens}
@@ -81,12 +83,20 @@ Room Size           & 10sqm       & 30sqm   \\
 \begin{figure}[H]
 \begin{center}
 \includegraphics[width=10cm, trim= 0cm 0cm 0cm 0cm,clip]{sens.pdf}
-\caption{Sensitivity analysis of the emission factor based on location of use, panel efficiency, and room size}
+\caption{Sensitivity analysis of the emission factor based on location of use, panel type, and actuator type (Under Heavy Construction)}
 \label{fig:sens}
 \end{center}
 \end{figure}
 
 
+
+% \begin{figure}[H]
+% \begin{center}
+% \includegraphics[width=10cm, trim= 0cm 0cm 0cm 0cm,clip]{regionGridMix.pdf}
+% \caption{Comparison of the ASF when in operated in Switzerland when compared to other countries in the world that have similar climate conditions. Note that the data will have to change because we can't really compare (ASF in Switzerland) with Germany. We should be comparing the ASF in Germany with Germany}
+% \label{fig:compReg}
+% \end{center}
+% \end{figure}
 
 
 

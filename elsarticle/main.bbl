@@ -54,6 +54,11 @@ P.~Jayathissa, Z.~Nagy, N.~Offedu, A.~Schlueter, Numerical simulation of energy
   performance and construction of the adaptive solar facade, Advanced Building
   Skins, TU Graz 2.
 
+\bibitem{nagy2015frontiers}
+Z.~Nagy, S.~Bratislav, J.~Prageeth, B.~Moritz, H.~Johannes, L.~Gearoid,
+  W.~Anja, A.~Schlueter, The adaptive solar facade: From concept to prototypes,
+  under review.
+
 \bibitem{chirilua2011highly}
 A.~Chiril{\u{a}}, S.~Buecheler, F.~Pianezzi, P.~Bloesch, C.~Gretener, A.~R.
   Uhl, C.~Fella, L.~Kranz, J.~Perrenoud, S.~Seyrling, et~al., Highly efficient
@@ -65,11 +70,6 @@ B.~Svetozarevic, Z.~Nagy, D.~Rossi, A.~Schlueter, {Experimental
   Characterization of a 2-DOF Soft Robotic Platform for Architectural
   Applications}, Robotics: Science and Systems, Workshop on Advances on Soft
   Robotics (2014) 2--6.
-
-\bibitem{nagy2015frontiers}
-Z.~Nagy, S.~Bratislav, J.~Prageeth, B.~Moritz, H.~Johannes, L.~Gearoid,
-  W.~Anja, A.~Schlueter, The adaptive solar facade: From concept to prototypes,
-  under review.
 
 \bibitem{Rhino}
 \href{https://www.rhino3d.com/}{Rhinoceros v5} (2015).
