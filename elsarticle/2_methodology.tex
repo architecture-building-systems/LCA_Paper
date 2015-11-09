@@ -39,34 +39,100 @@ a-Si				 & YY g/m2        & YY\%    \\
 \label{tab:PV}
 \end{table}
 
+\begin{table}[H]
+\centering
+\begin{tabular}{ll}
+\hline
+CIGS         & xx g/m2 \\
+Junction Box &         \\
+Power Cables &         \\
+\hline
+\end{tabular}
+\caption{Inventory of main input flows to the PV manufacturing process [ref required]}
+\label{tab:PVinv}
+\end{table}
 
-[Add Inventory Analysis of other panel parts here]
 
 \subsubsection*{Actuator}
 Traditionally photovoltaic actuation is done through the use of servo motors. Servo motors however become a limiting factor for adaptive facades due to their high upfront costs, and instability in heavy winds. Soft robotic actuators on the other hand are cheaper and more resilient to harsh environmental conditions\cite{Svetozarevic2014a}. For the purpose of this analysis we will analyse both servo motors and soft robotic actuators. \\
 
-[Add Inventory Analysis of actuators here, note I would move the air compressor to the actuator section ]
+\begin{table}[H]
+\centering
+\begin{tabular}{ll}
+\hline
+Compressor & xxg/unit  \\
+Tubes      & xxgCO2/m  \\
+Silicone   & xxgCO2/yy \\
+\hline
+\end{tabular}
+\caption{Inventory of main input flows to the Actuator manufacturing process [ref required]}
+\label{tab:ActuatorInv}
+\end{table}
 
 \subsubsection*{Cantilever}
 The cantilever is a steel connection point between the PV panel and the supporting structure.\\
 
-[Add Inventory Analysis of cantilever here]
+\begin{table}[H]
+\centering
+\begin{tabular}{ll}
+\hline
+Steel & xxgCO2/yy \\
+xxxx  & xxgCO2/yy \\
+yyyyy & xxgCO2/yy \\
+\hline
+\end{tabular}
+\caption{Inventory of main input flows to the Cantilever manufacturing process [ref required]}
+\label{tab:CantileverInv}
+\end{table}
 
 \subsubsection*{Supporting Structure}
 The supporting structure is the connection point between the array of photovoltaic modules and the building itself. Many different designs are possible, however we will base our analysis of an adaptive solar facade that has already been constructed \cite{nagy2015frontiers}. This design consists of a steel cable-net that spans a steel supporting frame. The steel frame is then attached to the building itself.\\
 
-[Add Inventory Analysis of supporting structure here]
+\begin{table}[H]
+\centering
+\begin{tabular}{ll}
+\hline
+Steel & xxgCO2/yy \\
+xxxx  & xxgCO2/yy \\
+yyyyy & xxgCO2/yy \\
+\hline
+\end{tabular}
+\caption{Inventory of main input flows to the manufacturing process of the Supporting Structure[ref required]}
+\label{tab:StructureInv}
+\end{table}
 
 \subsubsection*{Controls and Electronic System}
 The control system is required for the actuation of panels and the regulation of photovoltaic electricity production.\\
 
-[Add Inventory Analysis of control system here]
+\begin{table}[H]
+\centering
+\begin{tabular}{ll}
+\hline
+Steel & xxgCO2/yy \\
+xxxx  & xxgCO2/yy \\
+yyyyy & xxgCO2/yy \\
+\hline
+\end{tabular}
+\caption{Inventory of main input flows to the manufacturing process of the Control System[ref required]}
+\label{tab:ControlInv}
+\end{table}
 
 \subsubsection*{Installation}
 
 The installation of the ASF to the building requires a hydraulic hoist which needs to be in operation for eight hours based off previous construction experience \cite{jayathissa2015abs}. \\
 
-[Add Inventory analysis of installation]
+\begin{table}[H]
+\centering
+\begin{tabular}{ll}
+\hline
+Steel & xxgCO2/yy \\
+xxxx  & xxgCO2/yy \\
+yyyyy & xxgCO2/yy \\
+\hline
+\end{tabular}
+\caption{Inventory of main input flows to the Assembly Process[ref required]}
+\label{tab:AssemblyInv}
+\end{table}
 
 
 \subsection{Operational Emissions and Assumptions}
@@ -75,15 +141,53 @@ The potential savings are based off previously completed numerical simulations \
 
 Based on the assumption of XX full openings and closings per day, we approximate the energy requirement to actuate the ASF to be YY kWh in its lifetime.\\
 
-[Table of simulation parameters, and render of Rhino model]
+\begin{table}[H]
+\centering
+\begin{tabular}{ll}
+
+\textbf{Building Settings}    &                                                \\
+\hline
+Office Envelope               & Roof: Adiabativ                                \\
+                              & Floor: Adiabatic                               \\
+                              & Walls: Adiabatic                               \\
+                              & Window: Double Glazed LoE (e=0.2) 3mm/13mm air \\
+                              & Floor Area: 21.7m2                             \\
+\hline                           
+Thermal Set Points            & Heating: 22 degrees Celcius                    \\
+                              & Cooling: 26 degrees Celcius                    \\
+\hline
+Lighting Control              & Lighting set point: 11.8W/m2                   \\
+                              & Lighting Control: 300 Lux Threshhold           \\
+\hline
+Occupancy                     & Office: Weekdays from 8:00-18:00               \\
+                              & People set point: 0.1 persons/m2               \\
+                              & Infiltration: 0.5 per hour                     \\
+                              &                                                \\
+
+\textbf{Location Assumptions} &                                                \\
+\hline
+Weather File                  & Geneva, Switzerland                            \\
+Electricity Mix               & UCTE                                           \\
+                              &                                                \\
+
+\textbf{Maintenance}          &                                                \\
+\hline
+xxxx                          & xxxx                                           \\
+                              &                                                \\
+
+\textbf{ASF Settings}         &                                                \\
+\hline
+Full open and closes per day  &   yy                                           \\
+\hline
+\end{tabular}
+\caption{Summary of main assumptions for the calculation of operational emissions [ref required]}
+\label{tab:AssumptionsOpp}
+\end{table}
 
 
-\subsection{Analysis of Reference Cases}
+% Maybe have a reference case here, see previous commits 
 
-There are two reference cases used for technological comparisons. Firstly the....
-
-
-\subsection{LCA Methodology}
+\subsection{Evaluation Method (Under heavy Construction)}
 
 
 
