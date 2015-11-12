@@ -25,45 +25,45 @@ Warning--entry type for "pandas" isn't style-file defined
 Warning--empty author in IPCC
 Warning--empty year in IPCC
 Warning--empty title in Shoen1997
-You've used 22 entries,
+You've used 23 entries,
             2937 wiz_defined-function locations,
-            783 strings with 8152 characters,
-and the built_in function-call counts, 5102 in all, are:
-= -- 442
-> -- 166
+            790 strings with 8350 characters,
+and the built_in function-call counts, 5425 in all, are:
+= -- 475
+> -- 176
 < -- 0
-+ -- 70
-- -- 48
-* -- 316
-:= -- 693
-add.period$ -- 22
-call.type$ -- 22
-change.case$ -- 20
++ -- 74
+- -- 51
+* -- 343
+:= -- 737
+add.period$ -- 23
+call.type$ -- 23
+change.case$ -- 21
 chr.to.int$ -- 0
-cite$ -- 25
-duplicate$ -- 162
-empty$ -- 619
-format.name$ -- 57
-if$ -- 1338
+cite$ -- 26
+duplicate$ -- 170
+empty$ -- 653
+format.name$ -- 61
+if$ -- 1418
 int.to.chr$ -- 0
-int.to.str$ -- 22
-missing$ -- 16
-newline$ -- 81
-num.names$ -- 15
-pop$ -- 154
+int.to.str$ -- 23
+missing$ -- 17
+newline$ -- 84
+num.names$ -- 16
+pop$ -- 159
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 345
+skip$ -- 362
 stack$ -- 0
-substring$ -- 225
-swap$ -- 18
+substring$ -- 256
+swap$ -- 19
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 3
-while$ -- 34
-width$ -- 24
-write$ -- 164
+while$ -- 37
+width$ -- 25
+write$ -- 172
 (There was 1 error message)
