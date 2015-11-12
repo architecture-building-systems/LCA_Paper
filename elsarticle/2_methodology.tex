@@ -4,15 +4,16 @@ The analysis looks at the embodied carbon in production, operation, and disposal
 
 \subsection{Embodied Energy Inventory and Assumptions}
 
-The ASF is composed of six sub-product systems described in Figure \ref{fig:subsystem}. This consists of CIGS PV panels mounted on an actuator, supported by a cantilever that offsets it from a cable net supporting structure. An exploded view of these components can be seen in Figure \ref{fig:explodedView}.
+The mechanical components of the ASF can be broken into four parts: a PV panel, actuator, cantilever, and a cable net supporting structure. The PV panel, actuator and cantilever combine to form a dynamic PV module, which is then mounted on a cable net supporting structure. An exploded view of these components can be seen in Figure \ref{fig:explodedView}. There also the additional electronics which exists off the facade in a seperate control box. Theses five components are the main product systems in the manufacture of the ASF as seen in Figure \ref{fig:BOS}.
 
-\begin{figure}[H]
-\begin{center}
-\includegraphics[width=8cm, trim= 0cm 0cm 0cm 0cm,clip]{ASFSubsystems.pdf}
-\caption{Breakdown of the ASF into six sub-product systems (Note change Steel frame to Suporting Structure, and Assembling ASF to Assembly. Also redraw this chart so it matches the subsubsections below)}
-\label{fig:subsystem}
-\end{center}
-\end{figure}
+
+% \begin{figure}[H]
+% \begin{center}
+% \includegraphics[width=8cm, trim= 0cm 0cm 0cm 0cm,clip]{ASFSubsystems.pdf}
+% \caption{Breakdown of the ASF into six sub-product systems (Note change Steel frame to Suporting Structure, and Assembling ASF to Assembly. Also redraw this chart so it matches the subsubsections below)}
+% \label{fig:subsystem}
+% \end{center}
+% \end{figure}
 
 \begin{figure}[H]
 \begin{center}
@@ -22,8 +23,16 @@ The ASF is composed of six sub-product systems described in Figure \ref{fig:subs
 \end{center}
 \end{figure}
 
+\begin{figure}[ht]
+\begin{center}
+\includegraphics[width=14cm, trim= 0cm 0cm 0cm 0cm,clip]{BOS.pdf}
+\caption{Breakdown of the ASF into five embodied product components and installation costs, operational costs, and disposal}
+\label{fig:BOS}
+\end{center}
+\end{figure}
+
 \subsubsection*{PV Panel}
-The PV panels that can be used are restricted by their weight. Therefore, any technology that requires glass encapsulation or a heavy substructure cannot be used. This limits us to CIGS and amorphous silicon panels [Check this fact again]\\
+Weight is the primary restriction when selecting a PV panel. Any technology that requires glass encapsulation or a heavy substructure can therefore not be used. This limits us to CIGS and amorphous silicon panels.\\
 
 CIGS PV panels was selected as the thin film panel of choice due to its high efficiency, low cost, and ability to be deposited on a polymer or aluminium substrate \cite{chirilua2011highly}. A less efficient thin film amorphous silicon panel could also be used and will also be discussed in this analysis.\\
 
@@ -200,13 +209,7 @@ G=\frac{{\mathrm{GWP}}}{{\mathrm{I \cdot \eta  \cdot PR \cdot LT \cdot A}}}
 
 The scope of the LCA comprises the embodied, operational and disposal global warming impact of the respective system. Figure \ref{fig:BOS} illustrates the system boundaries of the process flows. The supporting structures are also included in the system boundaries. The reason for this is that technologies within the building envelope also change the design of the supporting structures. The supporting structure of solar panels is referred to as balance of systems (BOS).
 
-\begin{figure}[H]
-\begin{center}
-\includegraphics[width=10cm, trim= 0cm 0cm 0cm 0cm,clip]{BOS}
-\caption{Thin-film incl. BOS system boundaries}
-\label{fig:BOS}
-\end{center}
-\end{figure}
+
 
 The inventory data was obtained through technical drawings, research papers describing the technology and personal conversations. The Ecoinvent v3.1 database is used as the main LCI database. To keep assumptions consistent, only data from this database is used. Furthermore, the cut-off approach is used for recycling and landfill. This means that recycling does not generate any credit for the product and resulting benefits are not taken into account. Furthermore the use of recycled products do not bear the burden of processes higher up the chain.\\
 
