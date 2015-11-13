@@ -1,8 +1,8 @@
 % !TEX root = main.tex
 
-The analysis looks \textcolor{magenta}{\sout{at the embodied carbon in} into the environmental impacts, due to the} production, operation, and disposal of the Adaptive Solar Facade (ASF).
+The assessment looks into the environmental impacts of production, operation, and disposal of an Adaptive Solar Facade (ASF).
 
-\subsection{\textcolor{magenta}{\sout{Embodied Energy} Life Cycle Inventory} and Assumptions}
+\subsection{Life Cycle Inventory and Assumptions}
 
 The mechanical components of the ASF can be broken into four parts: a PV panel, actuator, cantilever, and a cable net supporting structure. The PV panel, actuator and cantilever combine to form a dynamic PV module, which is then mounted on a cable net supporting structure. An exploded view of these components can be seen in Figure \ref{fig:explodedView}. There also the additional electronics which exists off the facade in a seperate control box. Theses five components are the main product systems in the manufacture of the ASF as seen in Figure \ref{fig:BOS}.
 
@@ -30,6 +30,8 @@ The mechanical components of the ASF can be broken into four parts: a PV panel, 
 \label{fig:BOS}
 \end{center}
 \end{figure}
+
+\textcolor{magenta}{\textit{@Zoltan: Should this be pushed to an Annex, or shall we leave it as is}
 
 \subsubsection*{PV Panel}
 \textcolor{magenta}{\textit{(It is nice to explain the inventory step by step, but this will take a lot of space... We might have to reconsider later.)}}
@@ -148,7 +150,7 @@ yyyyy & xxgCO2/yy \\
 
 \subsection{Operational Emissions and Assumptions}
 
-The potential savings are based off previously completed numerical simulations \cite{jayathissa2015abs}. The simulation was conducted on a south facing office room. The room xx meters in length, xx meters wide and xx meters high was modeled using Rhinoceros 3D CAD Package \cite{Rhino}, shown in Figure XX. Grasshopper \cite{grasshopper} was used to model the dynamic aspects of the ASF which consists of an array of 400mm CIGS solar panels. The geometrical input is imported to Energy Plus \cite{energyplus} though the DIVA \cite{DIVA} interface. A single zone thermal analysis was conducted for each possible geometrical configuration of the ASF for each hour of the year. The results were then post processed in Python \cite{python} with the NumPy \cite{numpy}, and pandas \cite{pandas} plug-ins. \textcolor{magenta}{\textit{(Darren's tool?)}}\\
+The potential savings are based off previously completed numerical simulations \cite{jayathissa2015abs}. The simulation was conducted on a south facing office room. The room xx meters in length, xx meters wide and xx meters high was modeled using Rhinoceros 3D CAD Package \cite{Rhino}, shown in Figure XX. Grasshopper \cite{grasshopper} was used to model the dynamic aspects of the ASF which consists of an array of 400mm CIGS solar panels. The geometrical input is imported to Energy Plus \cite{energyplus} though the DIVA \cite{DIVA} interface. A single zone thermal analysis was conducted for each possible geometrical configuration of the ASF for each hour of the year. The results were then post processed in Python \cite{python} with the NumPy \cite{numpy}, and pandas \cite{pandas} plug-ins.\\
 
 Based on the assumption of XX full openings and closings per day, we approximate the energy requirement to actuate the ASF to be YY kWh in its lifetime.\\
 
@@ -201,9 +203,9 @@ Full open and closes per day  &   yy                                           \
 \subsection{Evaluation Method}
 The life cycle analysis is performed according to the ISO 14040 and ISO 14044 guidelines. The analysis is therefore divided into goal and scope definition, inventory analysis, impact assessment and interpretation\\ % 15804 to be discussed
 
-The goal of this paper is assessing the carbon emission reduction potential, therefore the impact category used is the global warming potential (GWP\textcolor{magenta}{\textit{[IPCC 2013 reference - let me know if you need it]}}). This is described as the emissions of ${\mathrm{CO_2-eq}}$ in kilograms divided by the functional unit. The functional unit needs to be based on the primary function of the technology. For adaptive building integrated photovoltaics this function can be twofold. When the adaptive BIPV acts as a shading system in front of a glass facade area the functional unit of ${\mathrm{m^2}}$ is used, while a comparison with static facade mounted photovoltaic systems requires the functional unit of electricity produced in ${\mathrm{kWh}}$. \textcolor{magenta}{\textit{(We should discuss the functional unit again. It should be defined more precisely / comprehensively.)}}
+This paper assesses carbon emission reductions, therefore the impact category used is the global warming potential (GWP\textcolor{magenta}{\textit{[IPCC 2013 reference - let me know if you need it]}}). This is described as the emissions of ${\mathrm{CO_2-eq}}$ in kilograms divided by the functional unit. The functional unit needs to be based on the primary function of the technology. For adaptive building integrated photovoltaics this function can be twofold. When the adaptive BIPV acts as a shading system in front of a glass facade area the functional unit of ${\mathrm{m^2}}$ is used, while a comparison with static facade mounted photovoltaic systems requires the functional unit of electricity produced in ${\mathrm{kWh}}$. \textcolor{magenta}{\textit{(We should discuss the functional unit again. It should be defined more precisely / comprehensively.)}}
 
-According to the guidelines of the International Energy Agency (IEA), the calculation of kWh produced \textcolor{magenta}{\textit{G?}} needs to be based for consistency on the conversion efficiency ${\eta}$, performance ratio \textit{PR}, irradiation \textit{I}, lifetime (service life) \textit{LT} and area \textit{A} of the module. Equation \ref{eq:solar} gives the exact formulation:
+According to International Energy Agency (IEA) [REF REQUIRED], the calculation of energy (kWh) produced \textcolor{magenta}{\textit{G?}} needs to be based on the conversion efficiency ${\eta}$, performance ratio \textit{PR}, irradiation \textit{I}, lifetime (service life) \textit{LT} and area \textit{A} of the module. Equation \ref{eq:solar} gives the exact formulation:
 	
 \begin{equation}
 G=\frac{{\mathrm{GWP}}}{{\mathrm{I \cdot \eta  \cdot PR \cdot LT \cdot A}}}
@@ -211,11 +213,11 @@ G=\frac{{\mathrm{GWP}}}{{\mathrm{I \cdot \eta  \cdot PR \cdot LT \cdot A}}}
 \label{eq:solar}
 \end{equation}
 
-The scope of the LCA comprises the embodied, operational and disposal global warming impact of the respective system. Figure \ref{fig:BOS} illustrates the system boundaries of the process flows. The supporting structures are also included in the system boundaries. The reason for this is that technologies within the building envelope also change the design of the supporting structures. The supporting structure of solar panels is referred to as balance of systems (BOS).\\
+The scope of the LCA comprises of the embodied, operational, and disposal global warming impact of the respective system. Figure \ref{fig:BOS} illustrates the system boundaries of the process flows. The supporting structures are also included in the system boundaries. The reason for this is that technologies within the building envelope also change the design of the supporting structures. The supporting structure of solar panels is referred to as balance of systems (BOS).\\
 
-The inventory data was obtained through technical drawings, research papers describing the technology and \textcolor{magenta}{\sout{personal conversations} expert judgement}. The Ecoinvent v3.1 database is used as the main LCI database. To keep assumptions consistent, only data from this database is used. \textcolor{magenta}{\textit{(Is that so? Didn't we add a CIGS dataset?)}} Furthermore, the cut-off approach is used for \textcolor{magenta}{allocation of} recycling and landfill. This means that recycling does not generate any credit for the product and resulting benefits are not taken into account. Furthermore the use of recycled products do not bear the burden of processes higher up the chain.\textcolor{magenta}{\textit{(We don't do any system expansion?)}}\\
+The inventory data was obtained through technical drawings, research papers describing the technology and expert judgement. The Ecoinvent v3.1 database is used as the main LCI database \cite{frischknecht2005ecoinvent}. To keep assumptions consistent, only data from this database is used. \textcolor{magenta}{\textit{(Is that so? Didn't we add a CIGS dataset?)}} Furthermore, the cut-off approach is used for the allocation of recycling and landfill disposal. This means that recycling does not generate any credit for the product and resulting benefits are not taken into account. Furthermore the use of recycled products do not bear the burden of processes higher up the chain.\textcolor{magenta}{\textit{(We don't do any system expansion?)}}\\
 
-For the impact assessment the ReciPe midpoint (H) \textcolor{magenta}{\sout{allocation method} indicator} is used. \textcolor{magenta}{\textit{(This is a little inconsistent. We should consistently use the term environmental impact as opposed to carbon content, etc.)}} The impact assessment is performed using the OpenLCA impact assessment tool.\\
+For the impact assessment the ReciPe midpoint (H) indicator is used \cite{zelm2009recipe}. \textcolor{magenta}{\textit{(This is a little inconsistent. We should consistently use the term environmental impact as opposed to carbon content, etc.)}} The impact assessment is performed using the OpenLCA impact assessment tool \cite{ciroth2007ict}.\\
 	% we may need to discuss system expansion
 	% PV electricity production not included?
 

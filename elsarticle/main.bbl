@@ -106,4 +106,24 @@ B.~T. Office, \href{http://apps1.eere.energy.gov/buildings/energyplus/}{Energy
 \href{http://pandas.pydata.org/}{pandas}.
 \newline\urlprefix\url{http://pandas.pydata.org/}
 
+\bibitem{frischknecht2005ecoinvent}
+R.~Frischknecht, N.~Jungbluth, H.-J. Althaus, G.~Doka, R.~Dones, T.~Heck,
+  S.~Hellweg, R.~Hischier, T.~Nemecek, G.~Rebitzer, et~al., The ecoinvent
+  database: Overview and methodological framework (7 pp), The international
+  journal of life cycle assessment 10~(1) (2005) 3--9.
+
+\bibitem{zelm2009recipe}
+R.~Zelm, Recipe 2008, a life cycle impact assessment method which comprises
+  harmonised category indicators at the midpoint and the endpoint level, report
+  i: character-isation, Den Haag, The NetherlandsGuinee JB, Gorree M, Heijungs
+  R, Huppes G, Kleijn R, de Koning A, van Oers L, Sleeswijk AW, Suh S, Udo de
+  Haes HA, de Bruijn H, van Duin R, Huijbregts MAJ (2002) Life cycle assessment
+  an operational guide to the ISO standards, eco-efficiency in industry and
+  science 7 (2009) 445460.
+
+\bibitem{ciroth2007ict}
+A.~Ciroth, Ict for environment in life cycle applications openlca—a new open
+  source software for life cycle assessment, The International Journal of Life
+  Cycle Assessment 12~(4) (2007) 209--210.
+
 \end{thebibliography}
