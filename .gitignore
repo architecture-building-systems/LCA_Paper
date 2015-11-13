@@ -1,0 +1,15 @@
+#DS Store
+.DS_Store
+
+#Latex Crap
+*.aux
+*.bbl
+*.blg
+*.fbd_latexmk
+*.log
+*.spl
+*.synctex.gz
+
+
+#The latest pdf
+main.pdf
