@@ -13,20 +13,18 @@ A breakdown of the embodied carbon emissions can be found in Figure  \ref{fig:em
 \end{figure}
 
 
-It is interesting to note \textcolor{magenta}{\textit{(IMHO one shouldn't discuss the results at this point already. This section should rather be explanatory. Discussion comes afterwards ;))}} that the choice of actuation system for an ASF can have a significant / minimal impact on the embodied emissions. [Elaborate further when results come in]
-
-The operational energy consumption of the office space behind the ASF was compared to a case with a static louvered based shading system at 45$^\circ$ and a case with no shading at all. We calculated a total energy saving of 25\% compared to louvers at 45$^\circ$ and 56\% compared to a case with no facade shading \cite{jayathissa2015abs}.\textcolor{magenta}{\textit{(This should probably go into the methodology section.)}} These results are sumarised in Figure \ref{fig:operational}. Note that this figure does not include on site electricity generation. 
+The operational energy consumption of the office space was obtained through an energy plus simulation as explained in Section \ref{ch:method}. The office space behind the ASF was compared to a case with a static louvered based shading system at 45$^\circ$ and a case with no shading at all. We calculated a total energy saving of 25\% compared to louvers at 45$^\circ$ and 56\% compared to a case with no facade shading \cite{jayathissa2015abs}. These results are sumarised in Figure \ref{fig:operational}. Note that this figure does not include on site electricity generation. 
 
 
 \begin{figure}[H]
 \begin{center}
 \includegraphics[width=10cm, trim= 0cm 0cm 0cm 0cm,clip]{buildingenergy.pdf}
-\caption{Breakdown of the opperational carbon emissions, \textcolor{magenta}{\sout{we can see a added savings of 24\% compared to a static louvered shading system and 56\% compared to no shading system at all} for system a,b,c -- not taking on-site electricity production into account. \textit{(Check the caption: "eq." shouldn't be lower)}}}
+\caption{Breakdown of the opperational carbon emissions for system with a. no shading, b. with louvers at 45$^\circ$ and c. with an ASF -- not taking on-site electricity production into account. }
 \label{fig:operational}
 \end{center}
 \end{figure}
 
-The total GWP of the ASF can be built up using a waterfall chart, Figure \ref{fig:waterfall}. To calculate the emission factor (gCO$_2$-eq./kWh) we subtract the total embodied energy by the savings through our shading algorithm\textcolor{magenta}{\textit{(This guy was not introduced before... Also this should maybe be described in the methodology section or at the beginning of this chapter in more detail.)}}. We then add the GWP values for maintenance and disposal to achieve a total GWP over the 20 year life time of the ASF. This total is then used to calculate the emission factor of electricity produced by the ASF (126.8 g CO$_2$-eq./kWh).\textcolor{magenta}{\textit{(This seems high...?)}}\\
+The total GWP of the ASF can be built up using a waterfall chart, Figure \ref{fig:waterfall}. To calculate the emission factor (gCO$_2$-eq./kWh) we subtract the total embodied energy by the savings through adaptive shading. \textcolor{magenta}{\textit{Also this should maybe be described in the methodology section or at the beginning of this chapter in more detail.)}}. We then add the GWP values for maintenance and disposal to achieve a total GWP over the 20 year life time of the ASF. This total is then used to calculate the emission factor of electricity produced by the ASF (126.8 g CO$_2$-eq./kWh).\textcolor{magenta}{\textit{(This seems high...?)}}\\
 
 It can be seen that the embodied GWP of the ASF is greater than a classical PV installation, however most of that initial investment is offset through the reduction of heating, cooling and lighting loads. Maintenance and disposal takes up roughly 10\% of all total carbon emissions.
 
@@ -63,9 +61,11 @@ The global distribution of embodied GWP emissions is focused in Europe, specific
 
 \subsection{Sensitivity Analysis}
 
-Changing the assumptions can have a significant impact on the LCA result. \textcolor{magenta}{\sout{Three} Four key} assumptions were evaluated in the sensitivity analysis: \textcolor{magenta}{\sout{Operation location} electricity mix being substituted by on-site energy production, uncertainty in the ecoinvent background system (Monte Carlo analysis)}, type of PV panels, and the type of actuation system. The inputs are summarised in Table \ref{tab:sens} with the results shown in Figure \ref{fig:sens}. \textcolor{magenta}{\textit{(What about the material of solar cells?)}} \\
+Changing the assumptions can have a significant impact on the LCA result. Four key assumptions were evaluated in the sensitivity analysis: electricity mix being substituted by on-site energy production, uncertainty in the eco-invent background system (Monte Carlo analysis)}, type of PV material, and the type of actuation system. The inputs are summarised in Table \ref{tab:sens} with the results shown in Figure \ref{fig:sens}. 
 
-It can be seen that the \textcolor{magenta}{\sout{operation location} substituted electricity mix} has a significant impact on the \textcolor{magenta}{\sout{carbon saving potential} environmental impacts}. In Switzerland, we see a 6\% reduction compared to the average electricity mix. This is because the Swiss electricity mix is dominated by hydro and nuclear which has a very low GWP potential [citation needed\textcolor{magenta}{ \textit{ecoinvent?}}]. In Germany on the other hand, the ASF has a 81\% reduction in carbon emissions as the emission factor of the electricity grid is roughly five times higher compared to Switzerland [citation needed]\textcolor{magenta}{, due to the relatively high share in coal-fired power plants}. The actuators and Pv panel type had a ...
+It can be seen that the substituted electricity mix has a significant impact on the environmental impacts. In Switzerland, we see a 6\% reduction compared to the average electricity mix. This is because the Swiss electricity mix is dominated by hydro and nuclear which has a very low GWP potential [citation needed\textcolor{magenta}{ \textit{ecoinvent?}}]. In Germany on the other hand, the ASF has a 81\% reduction in carbon emissions as the emission factor of the electricity grid is roughly five times higher compared to Switzerland [citation needed] due to the relatively high share in coal-fired power plants.\\
+
+The actuators and Pv panel type had a ...
 
 
 
