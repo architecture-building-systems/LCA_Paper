@@ -68,7 +68,7 @@ Polyethylene for junction box & 0.036 ${\mathrm{kg/m^2_{facade}}}$\\
 Diode, glass for junction box & 0.011 ${\mathrm{kg/m^2_{facade}}}$\\
 \hline
 \end{tabular}
-\caption{Inventory of a selection of main input flows to the PV manufacturing process [ref required]}
+\caption{Inventory of a selection of top five input flows to the PV manufacturing process [ref required]}
 \label{tab:PVinv}
 \end{table}
 
@@ -87,7 +87,7 @@ Silicone chambers & 0.8887 ${\mathrm{kg/m^2_{facade}}}$\\
 Polyurethane tubes &0.0933 ${\mathrm{kg/m^2_{facade}}}$\\
 \hline
 \end{tabular}
-\caption{Inventory of a selection of main input flows to the Actuator manufacturing process [ref required]}
+\caption{Inventory of four main input flows to the Actuator manufacturing process [ref required]}
 \label{tab:ActuatorInv}
 \end{table}
 
@@ -121,7 +121,7 @@ Chromium steel swaged external thread  &0.2897 ${\mathrm{kg/m^2_{facade}}}$\\
 Chromium steel wire rope WC  & 0.1593 ${\mathrm{kg/m^2_{facade}}}$\\
 \hline
 \end{tabular}
-\caption{Inventory of a selection of main input flows to the manufacturing process of the Supporting Structure[ref required]}
+\caption{Inventory of the four main input flows to the manufacturing process of the Supporting Structure[ref required]}
 \label{tab:StructureInv}
 \end{table}
 
@@ -139,7 +139,7 @@ Electronics control\footnote{c-Rio,8-slot, integrated 667Mhz}& 0.0419 ${\mathrm{
 Electronics control\footnote{NI9476 32ch DO with cables and connectors}& 0.0097${\mathrm{kg/m^2_{facade}}}$\\
 \hline
 \end{tabular}
-\caption{Inventory of a selection of main input flows to the manufacturing process of the Control System[ref required]}
+\caption{Inventory of the four main input flows to the manufacturing process of the Control System[ref required]}
 \label{tab:ControlInv}
 \end{table}
 
@@ -162,14 +162,14 @@ Hoist, diesel  ${<}$18.64kW idling 8 hours & NA ${\mathrm{kg/m^2_{facade}}}$ \\
 
 \subsection{Operational Emissions and Assumptions}
 
-The potential savings are based off previously completed numerical simulations \cite{jayathissa2015abs}. The simulation was conducted on a south facing office room. The room xx meters in length, xx meters wide and xx meters high was modeled using Rhinoceros 3D CAD Package \cite{Rhino}, shown in Figure XX. Grasshopper \cite{grasshopper} was used to model the dynamic aspects of the ASF which consists of an array of 400mm CIGS solar panels. The geometrical input is imported to Energy Plus \cite{energyplus} though the DIVA \cite{DIVA} interface. A single zone thermal analysis was conducted for each possible geometrical configuration of the ASF for each hour of the year. The results were then post processed in Python \cite{python} with the NumPy \cite{numpy}, and pandas \cite{pandas} plug-ins.\\
+The potential savings are based off previously completed numerical simulations \cite{jayathissa2015abs}. The simulation was conducted on a south facing office room. The room 7m meters in length, 4.9 meters wide and 3.1 meters high was modeled using Rhinoceros 3D CAD Package \cite{Rhino}. Grasshopper \cite{grasshopper} was used to model the dynamic aspects of the ASF which consists of an array of 400mm CIGS solar panels. The geometrical input is imported to Energy Plus \cite{energyplus} though the DIVA \cite{DIVA} interface. A single zone thermal analysis was conducted for each possible geometrical configuration of the ASF for each hour of the year. The results were then post processed in Python \cite{python} with the NumPy \cite{numpy}, and pandas \cite{pandas} plug-ins.\\
 
-Based on the assumption of XX full openings and closings per day, we approximate the energy requirement to actuate the ASF to be YY kWh in its lifetime.\\
+Based on the assumption of four full openings and closings per day, we approximate the energy requirement to actuate the ASF to be 174 kWh in its lifetime.\\
 
 \begin{table}[H]
 \centering
 \begin{tabular}{ll}
-
+\hline
 \textbf{Building Settings}    &                                                \\
 Office Envelope               & Roof: Adiabativ                                \\
                               & Floor: Adiabatic                               \\
