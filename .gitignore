@@ -5,7 +5,7 @@
 *.aux
 *.bbl
 *.blg
-*.fbd_latexmk
+*.fdb_latexmk
 *.log
 *.spl
 *.synctex.gz
