@@ -1,10 +1,11 @@
 % !TEX root = main.tex
 
-The assessment looks into the environmental impacts of production, operation, and disposal of an Adaptive Solar Facade (ASF). We assume that the ASF has a life time of 15 years.
+In this section we detail the inventory, energy plus simulation methodology, important assumptions, and the LCA evaluation method. The assessment considers the environmental impacts of the production, operation, and disposal of an ASF. We assume a life time of 15 years \textcolor{cyan}{based on...}.
+\\
 
 \subsection{Life Cycle Inventory and Assumptions}
 
-The mechanical components of the ASF can be broken into four parts: a PV panel, actuator, cantilever, and a cable net supporting structure. The PV panel, actuator and cantilever combine to form a dynamic PV module, which is then mounted on a cable net supporting structure. An exploded view of these components can be seen in Figure \ref{fig:explodedView}. There also the additional electronics which exists off the facade in a seperate control box. Theses five components are the main product systems in the manufacture of the ASF as seen in Figure \ref{fig:BOS}. 
+The mechanical components of the ASF can be broken into four parts: a PV panel, actuator, cantilever, and a cable net supporting structure. The PV panel, actuator and cantilever combine to form a dynamic PV module, which is then mounted on a cable net supporting structure. An exploded view of these components can be seen in Figure \ref{fig:explodedView}. There are also additional electronics which exists off the facade in a separate control box. Theses five components along with the assembly, are the main product systems in the manufacture of the ASF as seen in Figure \ref{fig:BOS}. 
 
 
 % \begin{figure}[H]
@@ -144,19 +145,18 @@ Electronics control\footnote{NI9476 32ch DO with cables and connectors}& 0.0097$
 \label{tab:ControlInv}
 \end{table}
 
-\subsubsection*{Installation}
-
-The installation of the ASF to the building requires a hydraulic hoist which needs to be in operation for eight hours based off previous construction experience \cite{jayathissa2015abs}. \\
+\subsubsection*{Assembly}
+There are many assembly options available. From past experience, an installation of an equivalent ASF required a hydraulic hoist which was in operation for eight hours \cite{jayathissa2015abs}. \\
 
 \begin{table}[H]
 \centering
 \begin{tabular}{ll}
 \hline
 Material description & SMQ \\ \hline
-Hoist, diesel  ${<}$18.64kW idling 8 hours & NA ${\mathrm{kg/m^2_{facade}}}$ \\
+Hoist, diesel  ${<}$18.64kW idling 8 hours & \textcolor{red}{NA} ${\mathrm{kg/m^2_{facade}}}$ \\
 \hline
 \end{tabular}
-\caption{Inventory of main input flows to the Assembly Process[ref required]}
+\caption{Inventory of main input flows to the Assembly Process[ref required] \textcolor{cyan}{Note that the 8 hours was for the HoNR ASF. We can scale this to get a value per sqm}}
 \label{tab:AssemblyInv}
 \end{table}
 
@@ -165,7 +165,7 @@ Hoist, diesel  ${<}$18.64kW idling 8 hours & NA ${\mathrm{kg/m^2_{facade}}}$ \\
 
 The potential savings are based off previously completed numerical simulations \cite{jayathissa2015abs}. The simulation was conducted on a south facing office room. The room 7m meters in length, 4.9 meters wide and 3.1 meters high was modeled using Rhinoceros 3D CAD Package \cite{Rhino}. Grasshopper \cite{grasshopper} was used to model the dynamic aspects of the ASF which consists of an array of 400mm CIGS solar panels. The geometrical input is imported to Energy Plus \cite{energyplus} though the DIVA \cite{DIVA} interface. A single zone thermal analysis was conducted for each possible geometrical configuration of the ASF for each hour of the year. The results were then post processed in Python \cite{python} with the NumPy \cite{numpy}, and pandas \cite{pandas} plug-ins.\\
 
-Based on the assumption of four full openings and closings per day, we approximate the energy requirement to actuate the ASF to be 174 kWh in its lifetime.\\
+It takes 0.15Wh to fully open a single actuator. Based on the assumption of four full openings and closings per day, we approximate the energy requirement to be 174kWh in its lifetime. However as seen in Section \ref{ch:results}, this has a very small impact.\\
 
 \begin{table}[H]
 \centering
@@ -177,12 +177,12 @@ Office Envelope               & Roof: Adiabativ                                \
                               & Walls: Adiabatic                               \\
                               & Window: Double Glazed LoE (e=0.2) 3mm/13mm air \\
                               & Floor Area: 21.7m2                             \\
-Thermal Set Points            & Heating: 22 degrees Celcius                    \\
-                              & Cooling: 26 degrees Celcius                    \\
-Building System               & Hydronic Heating: COP 4                        \\
-                              & Hydronic Cooling: COP3                         \\
+Thermal Set Points            & Heating: 22$^{\circ}$ degrees Celcius                    \\
+                              & Cooling: 26$^{\circ}$ degrees Celcius                    \\
+Building System               & Hydronic Heating: COP=4                        \\
+                              & Hydronic Cooling: COP=3                         \\
 Lighting Control              & Lighting set point: 11.8W/m2                   \\
-                              & Lighting Control: 300 Lux Threshhold           \\
+                              & Lighting Control: 300lx Threshhold           \\
                               & LED Lighting                                   \\
 Occupancy                     & Office: Weekdays from 8:00-18:00               \\
                               & People set point: 0.1 persons/m2               \\
@@ -193,7 +193,7 @@ Weather File                  & Geneva, Switzerland (067000IWEC)              \\
 Electricity Mix               & ENTSO-E\cite{itten2012life}                                           \\
                               &                                                \\
 \textbf{Maintenance}          &                                                \\
-Actuator Changes              & Every 5 years                                  \\
+Actuator Replacements         & Every 5 years                                  \\
                               &                                                \\
 \textbf{ASF Settings}         &                                                \\
 Full open and closes per day  & 4 per day                                      \\
@@ -207,12 +207,13 @@ Full open and closes per day  & 4 per day                                      \
 % Maybe have a reference case here, see previous commits 
 
 \subsection{Evaluation Method}
-The life cycle analysis is performed according to the ISO 14040 and ISO 14044 guidelines. The analysis is therefore divided into goal and scope definition, inventory analysis, impact assessment and interpretation\\ % 15804 to be discussed
+The life cycle analysis is performed according to the ISO 14040 and ISO 14044 guidelines. The analysis is therefore divided into goal and scope definition, inventory analysis, impact assessment and interpretation.\\ % 15804 to be discussed
+\textcolor{cyan}{Keep the same wording and order that you use here. so first Goal, then inventory analysis, then impact assessment, then interpretation. - or change the order here.}
 
 This paper assesses carbon emission reductions, therefore the impact category used is the global warming potential (GWP\textcolor{magenta}{\textit{[IPCC 2013 reference - let me know if you need it]}}). This is described as the emissions of ${\mathrm{CO_2-eq}}$ in kilograms divided by the functional unit. The functional unit needs to be based on the primary function of the technology. For adaptive building integrated photovoltaics this function can be twofold. When the adaptive BIPV acts as a shading system in front of a glass facade area the functional unit of ${\mathrm{m^2}}$ is used, while a comparison with static facade mounted photovoltaic systems requires the functional unit of electricity produced in ${\mathrm{kWh}}$. \textcolor{magenta}{\textit{(We should discuss the functional unit again. It should be defined more precisely / comprehensively.)}}
 
-According to International Energy Agency (IEA) [REF REQUIRED], the calculation of energy (kWh) produced \textcolor{magenta}{\textit{G?}} needs to be based on the conversion efficiency ${\eta}$, performance ratio \textit{PR}, irradiation \textit{I}, lifetime (service life) \textit{LT} and area \textit{A} of the module. Equation \ref{eq:solar} gives the exact formulation:
-	
+The energy produced, G, in kWh is expressed as \ref{eq:solar} based off International Energy Agency standards [REF REQUIRED]. Where \textit{I} is the Irradiation \textcolor{red}{(unit)}, ${\eta}$ is the conversion efficiency, \textit{PR} is the performance ration, \textit{LT} is the service life \textcolor{red}{(unit)}, and \textit{A} is the module area \textcolor{red}{(unit)}.
+
 \begin{equation}
 G=\frac{{\mathrm{GWP}}}{{\mathrm{I \cdot \eta  \cdot PR \cdot LT \cdot A}}}
 % what is G
