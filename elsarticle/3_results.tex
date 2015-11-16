@@ -1,8 +1,10 @@
 % !TEX root = main.tex
 
+We present the results of the LCA analysis in relation to the 1) embodied emissions, 2) operational savings through our energy plus simulation, 3) a calculation of the emission factor, 4) global distribution of GWP, 5) regional effects of terrestrial acidification, 6) sensitivity of the LCA to design and location, and 6) a comparison to other PV technologies.
+
 \subsection{LCA of the Adaptive Solar Facade}
 
-A breakdown of the embodied carbon emissions can be found in Figure  \ref{fig:embodied}. It can be seen that the largest embodied global warming potential (GWP) contribution in the ASF comes from the solar panels, the electronics and the steel frame. 
+A breakdown of the embodied carbon emissions can be found in Figure  \ref{fig:embodied}. The largest embodied global warming potential (GWP) contribution in the ASF comes from the solar panels, the electronics and the supporting structure. \textcolor{red}{Change steel frame to supporting structure in figures}. 
 
 \begin{figure}[H]
 \begin{center}
@@ -12,22 +14,21 @@ A breakdown of the embodied carbon emissions can be found in Figure  \ref{fig:em
 \end{center}
 \end{figure}
 
+\subsection{Operational Savings through Adaptive Shading}
+\label{ch:oppResults}
 
-The operational energy consumption of the office space was obtained through an energy plus simulation as explained in Section \ref{ch:method}. The office space behind the ASF was compared to a case with a static louvered based shading system at 45$^\circ$ and a case with no shading at all. We calculated a total energy saving of 25\% compared to louvers at 45$^\circ$ and 56\% compared to a case with no facade shading \cite{jayathissa2015abs}. These results are sumarised in Figure \ref{fig:operational}. Note that this figure does not include on site electricity generation. 
+The operational energy savings through adaptive shading was simulated in Energy Plus as explained in Section \ref{ch:method}. We calculated a total energy saving of 25\% compared to louvers at 45$^\circ$ and 56\% compared to a case with no facade shading \cite{jayathissa2015abs}. These results are sumarised in Figure \ref{fig:operational}.
 
 
 \begin{figure}[H]
 \begin{center}
 \includegraphics[width=10cm, trim= 0cm 0cm 0cm 0cm,clip]{buildingenergy.pdf}
-\caption{Breakdown of the opperational carbon emissions for system with a. no shading, b. with louvers at 45$^\circ$ and c. with an ASF -- not taking on-site electricity production into account. }
+\caption{Breakdown of the opperational carbon emissions for system with a) no shading, b) with louvers at 45$^\circ$ and c) with an ASF -- not including onsite electricity production.}
 \label{fig:operational}
 \end{center}
 \end{figure}
 
-The total GWP of the ASF can be built up using a waterfall chart, Figure \ref{fig:waterfall}. To calculate the emission factor (gCO$_2$-eq./kWh) we subtract the total embodied energy by the savings through adaptive shading. \textcolor{magenta}{\textit{Also this should maybe be described in the methodology section or at the beginning of this chapter in more detail.)}}. We then add the GWP values for maintenance and disposal to achieve a total GWP over the 20 year life time of the ASF. This total is then used to calculate the emission factor of electricity produced by the ASF (126.8 g CO$_2$-eq./kWh).\textcolor{magenta}{\textit{(This seems high...?)}}\\
-
-It can be seen that the embodied GWP of the ASF is greater than a classical PV installation, however most of that initial investment is offset through the reduction of heating, cooling and lighting loads. Maintenance and disposal takes up roughly 10\% of all total carbon emissions.
-
+The total GWP of the ASF based off Equation \ref{eq:GWP}, can be built up using a waterfall chart, Figure \ref{fig:waterfall}. The total emission factor of electricity produced by the ASF comes to (-470.1 g CO$_2$-eq./kWh).\\
 
 \begin{figure}[H]
 \begin{center}
@@ -38,7 +39,6 @@ It can be seen that the embodied GWP of the ASF is greater than a classical PV i
 \end{figure}
 
 \subsection{Global Distribution of GWP and Terrestrial Acidification}
-\textcolor{magenta}{\textit{(This is nice, but may be a bit out of scope of this article. I think we have enough to explain and our readers will probably not so much care about the regionalised impacts...)}}
 
 The global distribution of embodied GWP emissions is focused in Europe, specifically Germany and Switzerland as most of the manufacturing is done in this region. It can be see however that emissions occur globally due the sourcing of primary materials from many locations around the world. Terrestrial acidification however is more interesting as it has a local impact compared to carbon emissions. It is interesting to note that China carries the greatest burden of terrestrial acidification from the ASF production. 
 \begin{figure}[H]
@@ -61,36 +61,45 @@ The global distribution of embodied GWP emissions is focused in Europe, specific
 
 \subsection{Sensitivity Analysis}
 
-Changing the assumptions can have a significant impact on the LCA result. Four key assumptions were evaluated in the sensitivity analysis: electricity mix being substituted by on-site energy production, uncertainty in the eco-invent background system (Monte Carlo analysis), type of PV material, and the type of actuation system. The inputs are summarised in Table \ref{tab:sens} with the results shown in Figure \ref{fig:sens}. 
+The results of the sensitivity analysis is shown in Figure \ref{fig:sens}. 
 
-It can be seen that the substituted electricity mix has a significant impact on the environmental impacts. In Switzerland, we see a 6\% reduction compared to the average electricity mix. This is because the Swiss electricity mix is dominated by hydro and nuclear which has a very low GWP potential [citation needed\textcolor{magenta}{ \textit{ecoinvent?}}]. In Germany on the other hand, the ASF has a 81\% reduction in carbon emissions as the emission factor of the electricity grid is roughly five times higher compared to Switzerland [citation needed] due to the relatively high share in coal-fired power plants.\\
+(Might Bring this to the discussion)\\
+The operational GWP savings is dependent on the electricity mix as explained in Section \ref{ch:Meth:Opp}. Changing our assumption from the European ENTSO-E mix to a country specific mix brings interesting results. In Switzerland, the mix is dominated by hydro and nuclear power which has a very low GWP potential [citation needed\textcolor{magenta}{ \textit{ecoinvent?}}]. This would then increase the emission factor to (100gCO2/kWh), which is only 6\% higher than the emission factor in Switzerland. The German mix on the other hand has a higher GWP mix than the ENTSO-E mix due to their high share in coal fire plants. This then reducing our emission factor futher [Double Check this].\\
 
-The actuators and Pv panel type had a ...
+The choice of actuator also has a large impact on the GWP of the embodied carbon. A single Soft Robotic Actuator, including the air compressor and tubing comes to \textcolor{red}{20kgCO2/sqm} per unit whereas a classical servo motor is four times greater at \textcolor{red}{80kgCO2/sqm}.\\
+
+The control system design should be carefully through out due to the high GWP of electronic components [REFERENCE REQUIRED]. The control system required for an ASF where each panel can be independently actuated emits \textcolor{red}{35 \%} more CO2 as a control system where only rows are independently actuated.\\
+
+The Monte Carlo Simulation did not yield any significant results / was significant. 
 
 
+% In Switzerland, we see a 6\% reduction compared to the average electricity mix. This is because the Swiss electricity mix is dominated by hydro and nuclear power which has a very low GWP potential [citation needed\textcolor{magenta}{ \textit{ecoinvent?}}]. In Germany on the other hand, the ASF has a 81\% reduction in carbon emissions as the emission factor of the electricity grid is roughly five times higher compared to Switzerland [citation needed] due to the relatively high share in coal-fired power plants.\\
 
-\begin{table}
-\centering
-\begin{tabular}{lll}
-Assumption & Case A & Case B \\
-\hline
-Operation Location  & Switzerland & Germany \\
-PV Panel type  & a-Si        & CIGS    \\
-Actuator Type           & Servo Motor       & Soft Robotic Actuator   \\
-\end{tabular}
-\caption{Inputs to the Sensitivity Analysis Conducted}
-\label{tab:sens}
-\end{table}
 
 \begin{figure}[H]
 \begin{center}
 \includegraphics[width=10cm, trim= 0cm 0cm 0cm 0cm,clip]{sens.pdf}
-\caption{Sensitivity analysis of the emission factor based on location of use, panel type, and actuator type (Wrong Figure)}
+\caption{Sensitivity analysis of the emission factor based on electricity mix, actuation system, control system, and Monte Carlo Analysis \textcolor{red}{Wrong Figure)}}
 \label{fig:sens}
 \end{center}
 \end{figure}
 
 
+
+\subsection{Comparison to existing PV technologies}
+
+(Might Bring this to the discussion)\\
+Comparison of the ASF to other PV technologies and the ENTSO-E electricity mix is highlighted in Figure \ref{fig:compPV}. Because the GWP savings through adaptive shading offsets the entire embodied GWP three fold, we have a system that has a negative emission factor. It is this multifucntional nature that makes it superior to other technological choices. However, if the benefits of adaptive shading are not present, i.e. it is mounted on an opaque building surface, then we see an under performance to other static PV technologies. 
+
+Figure \ref{fig:compPV} also highlights a case in Switzerland where the electricity mix has a low GWP. It is capable of out performing Silicone based technologies but is still inferior to simply mounted CIGS panels. Note that the just panels of the ASF, without the BOS, still has a higher emission factor than the CIGS installation. This is due to lower power production as a result of self shading \cite{hofer2015photovoltaics}, and situations where the panels are not optimally positioned.
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[width=10cm, trim= 0cm 0cm 0cm 0cm,clip]{compPV.pdf}
+\caption{Comparison of thin-film and BOS to other PV technologies. I would add some extra columns, one without shading, one with the ASF in Switzerland, one with the ASF in Europe}
+\label{fig:compPV}
+\end{center}
+\end{figure}
 
 % \begin{figure}[H]
 % \begin{center}

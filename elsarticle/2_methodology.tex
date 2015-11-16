@@ -162,12 +162,15 @@ Hoist, diesel  ${<}$18.64kW idling 8 hours & \textcolor{red}{NA} ${\mathrm{kg/m^
 
 
 \subsection{Operational Emissions and Assumptions}
+\label{ch:Meth:Opp}
 
 The potential savings are based off previously completed numerical simulations \cite{jayathissa2015abs}. The simulation was conducted on a south facing office room. The room 7m meters in length, 4.9 meters wide and 3.1 meters high was modeled using Rhinoceros 3D CAD Package \cite{Rhino}. Grasshopper \cite{grasshopper} was used to model the dynamic aspects of the ASF which consists of an array of 400mm CIGS solar panels. The geometrical input is imported to Energy Plus \cite{energyplus} though the DIVA \cite{DIVA} interface. A single zone thermal analysis was conducted for each possible geometrical configuration of the ASF for each hour of the year. The results were then post processed in Python \cite{python} with the NumPy \cite{numpy}, and pandas \cite{pandas} plug-ins.\\
 
 We conducted the simulation for three scenarios: 1) facade with no shading, 2) a facade with a static shading system angled at 45$^{\circ}$ to the horizontal axis, and 3) an adaptive solar facade. This analysis purely looks at the building energy performance through adaptive shading and doesn't include PV generation. \\
 
-It takes 0.15Wh to fully open a single actuator. Based on the assumption of four full openings and closings per day, we approximate the energy requirement to be 174kWh in its lifetime. However as seen in Section \ref{ch:results}, this has a very small impact.\\
+The building energy savings (kWh) are then converted to a GWP value based on the emission factor of the European Network of Transmission System Operators for Electricity (ENTSO-E) electricity mix (gCO2/kWh) \textcolor{red}{[Add value and reference]}. \\
+
+The energy required for actuation is also taken into account. It takes 0.15Wh to fully open a single actuator. Based on the assumption of four full openings and closings per day, we approximate the energy requirement to be 174kWh in its lifetime. However as seen in Section \ref{ch:results}, this has a very small impact.\\
 
 \begin{table}[H]
 \centering
@@ -212,7 +215,7 @@ Full open and closes per day  & 4 per day                                      \
 The life cycle analysis is performed according to the ISO 14040 and ISO 14044 and is performed in five stages 1) Goal, 2) scope definition, 3)inventory analysis, 4)impact assessment and 5) interpretation.\\ % 15804 to be discussed
 
 \begin{description}
-\item[Goal] This paper assesses carbon emission reductions, therefore the impact category used is the global warming potential (GWP\textcolor{magenta}{\textit{[IPCC 2013 reference - let me know if you need it]}}). This is described as the emissions of ${\mathrm{gCO_2-eq}}$ divided by the electricity produced in kWh. This is also known as the emission factor (gCO$_2$/kWh) which is expressed in Equation \ref{eq:EF} where ($G$) is the electricity production in (kWh).
+\item[Goal] This paper assesses carbon emission reductions, therefore the impact category used is the global warming potential (GWP\textcolor{magenta}{\textit{[IPCC 2013 reference - let me know if you need it]}}). This is described as the emissions of ${\mathrm{gCO_2-eq}}$ divided by the electricity produced in kWh. This is also known as the emission factor (gCO$_2$/kWh) which is expressed in Equation \ref{eq:EF} where ($G$) is the electricity production in (kWh). This analysis will also touch on the regional distributions of GWP and terrestrial acidification to give a complete picture.
 
 \begin{equation}
 EF=\frac{{\sum GWP}}{\mathrm{G}}
@@ -266,3 +269,28 @@ Things which should be addressed (in more detail):
 \item In case we do a comparative LCA, also the "conventional" system needs to be described.
 \item Do we give benefits / credits for injecting electricity into the grid? What is being substituted and how?
 \end{itemize}}
+
+\subsection{Sensitivity Analysis}
+
+In order to evaluate the impact of varying parameters on the LCA, we performed a sensitivity analysis on the following assumptions
+\begin{itemize}
+\item The GWP of the electricity mix
+\item The type of actuation system (servo motors compared to soft robotic actuators)
+\item The complexity of the control system
+\item The uncertainty in the eco-invent background system (Monte Carlo Analysis)
+\end{itemize}
+
+% The inputs are summarised in Table \ref{tab:sens}
+
+% \begin{table}
+% \centering
+% \begin{tabular}{lll}
+% Assumption & Case A & Case B \\
+% \hline
+% Electricity Mix  & Switzerland & Germany \\
+% Control System  & Controlling rows of panels        & Controlling individual panels    \\
+% Actuator Type           & Servo Motor       & Soft Robotic Actuator   \\
+% \end{tabular}
+% \caption{Inputs to the Sensitivity Analysis Conducted}
+% \label{tab:sens}
+% \end{table}
