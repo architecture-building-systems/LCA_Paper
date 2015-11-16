@@ -31,11 +31,10 @@ The mechanical components of the ASF can be broken into four parts: a PV panel, 
 \label{fig:BOS}
 \end{center}
 \end{figure}
+\textcolor{magenta}{\textit{(May Move the text to an Appendix and just keep the inventories)}}
+\begin{description}
 
-\textcolor{magenta}{\textit{@Zoltan: Should this be pushed to an Annex, or shall we leave it as is}}
-
-\subsubsection*{PV Panel}
-\textcolor{magenta}{\textit{(It is nice to explain the inventory step by step, but this will take a lot of space... We might have to reconsider later.)}}
+\item[PV Panel] \hfill\\
 Weight is the primary restriction when selecting a PV panel. Any technology that requires glass encapsulation or a heavy substructure can therefore not be used. This limits us to CIGS and amorphous silicon panels.\\
 
 CIGS PV panels was selected as the thin film panel of choice due to its high efficiency, low cost, and ability to be deposited on a polymer or aluminium substrate \cite{chirilua2011highly}. 
@@ -73,7 +72,7 @@ Diode, glass for junction box & 0.011 ${\mathrm{kg/m^2_{facade}}}$\\
 \label{tab:PVinv}
 \end{table}
 
-\subsubsection*{Actuator}
+\item[Actuator] \hfill \\
 Traditionally photovoltaic actuation is done through the use of servo motors. Servo motors however become a limiting factor for adaptive facades due to their high upfront costs, and instability in heavy winds. Soft robotic actuators on the other hand are cheaper and more resilient to harsh environmental conditions\cite{Svetozarevic2014a}. The soft robotic actuators however are still in development and have a life time of five years. They will therefore require two rounds of maintenance during the lifetime of the ASF.
 For the purpose of this analysis we will analyse both servo motors and soft robotic actuators. 
 
@@ -93,7 +92,7 @@ Air compressor, screw type, 0.75kW & NA ${\mathrm{kg/m^2_{facade}}}$\\
 \label{tab:ActuatorInv}
 \end{table}
 
-\subsubsection*{Cantilever}
+\item[Cantilever] \hfill \\
 The cantilever is a steel connection point between the PV panel and the supporting structure.\\
 
 \begin{table}[H]
@@ -109,7 +108,7 @@ Chromium steel fixing clamp  & 0.0284 ${\mathrm{kg/m^2_{facade}}}$\\
 \label{tab:CantileverInv}
 \end{table}
 
-\subsubsection*{Supporting Structure}
+\item[Supporting Structure] \hfill \\
 The supporting structure is the connection point between the array of photovoltaic modules and the building itself. Many different designs are possible, however we will base our analysis of an adaptive solar facade that has already been constructed \cite{nagy2015frontiers}. This design consists of a steel cable-net that spans a steel supporting frame. The steel frame is then attached to the building itself.\\
 
 \begin{table}[H]
@@ -123,11 +122,11 @@ Chromium steel swaged external thread  &0.2897 ${\mathrm{kg/m^2_{facade}}}$\\
 Chromium steel wire rope WC  & 0.1593 ${\mathrm{kg/m^2_{facade}}}$\\
 \hline
 \end{tabular}
-\caption{Inventory of the four main input flows to the manufacturing process of the Supporting Structure[ref required]}
+\caption{Inventory of the four main input flows to the manufacturing process of the Supporting Structure[ref required] \textcolor{cyan}{Could we change the L bar and U bar to Chromium Steel Frame? It is easier to understand}}
 \label{tab:StructureInv}
 \end{table}
 
-\subsubsection*{Controls and Electronic System}
+\item[Control System and Electronics] \hfill \\
 The control system is required for the actuation of panels and the regulation of photovoltaic electricity production.\\
 
 \begin{table}[H]
@@ -145,7 +144,7 @@ Electronics control\footnote{NI9476 32ch DO with cables and connectors}& 0.0097$
 \label{tab:ControlInv}
 \end{table}
 
-\subsubsection*{Assembly}
+\item[Assembly] \hfill \\
 There are many assembly options available. From past experience, an installation of an equivalent ASF required a hydraulic hoist which was in operation for eight hours \cite{jayathissa2015abs}. \\
 
 \begin{table}[H]
@@ -160,6 +159,7 @@ Hoist, diesel  ${<}$18.64kW idling 8 hours & \textcolor{red}{NA} ${\mathrm{kg/m^
 \label{tab:AssemblyInv}
 \end{table}
 
+\end{description}
 
 \subsection{Operational Emissions and Assumptions}
 \label{ch:Meth:Opp}
@@ -168,16 +168,16 @@ The potential savings are based off previously completed numerical simulations \
 
 We conducted the simulation for three scenarios: 1) facade with no shading, 2) a facade with a static shading system angled at 45$^{\circ}$ to the horizontal axis, and 3) an adaptive solar facade. This analysis purely looks at the building energy performance through adaptive shading and doesn't include PV generation. \\
 
-The building energy savings (kWh) are then converted to a GWP value based on the emission factor of the European Network of Transmission System Operators for Electricity (ENTSO-E) electricity mix (gCO2/kWh) \textcolor{red}{[Add value and reference]}. \\
+The building energy savings (kWh) are then converted to a GWP value based on the emission factor of the European Network of Transmission System Operators for Electricity (ENTSO-E) electricity mix (gCO2/kWh) \textcolor{blue}{[Add value and reference]}. \\
 
-The energy required for actuation is also taken into account. It takes 0.15Wh to fully open a single actuator. Based on the assumption of four full openings and closings per day, we approximate the energy requirement to be 174kWh in its lifetime. However as seen in Section \ref{ch:results}, this has a very small impact.\\
+The energy required for actuation is also taken into account. It takes \textcolor{red}{0.15Wh} to fully open a single actuator. Based on the assumption of four full openings and closings per day, we approximate the energy requirement to be 174kWh in its lifetime. However as seen in Section \ref{ch:results}, this has a very small impact.\\
 
 \begin{table}[H]
 \centering
 \begin{tabular}{ll}
 \hline
 \textbf{Building Settings}    &                                                \\
-Office Envelope               & Roof: Adiabativ                                \\
+Office Envelope               & Roof: Adiabatic                                \\
                               & Floor: Adiabatic                               \\
                               & Walls: Adiabatic                               \\
                               & Window: Double Glazed LoE (e=0.2) 3mm/13mm air \\
@@ -204,7 +204,7 @@ Actuator Replacements         & Every 5 years                                  \
 Full open and closes per day  & 4 per day                                      \\
 \hline
 \end{tabular}
-\caption{Summary of main assumptions for the calculation of operational emissions [ref required]\textcolor{magenta}{\textit{(Put me into Annex?)}}}
+\caption{Summary of main assumptions for the calculation of operational emissions}
 \label{tab:AssumptionsOpp}
 \end{table}
 
@@ -215,14 +215,14 @@ Full open and closes per day  & 4 per day                                      \
 The life cycle analysis is performed according to the ISO 14040 and ISO 14044 and is performed in five stages 1) Goal, 2) scope definition, 3)inventory analysis, 4)impact assessment and 5) interpretation.\\ % 15804 to be discussed
 
 \begin{description}
-\item[Goal] This paper assesses carbon emission reductions, therefore the impact category used is the global warming potential (GWP\textcolor{magenta}{\textit{[IPCC 2013 reference - let me know if you need it]}}). This is described as the emissions of ${\mathrm{gCO_2-eq}}$ divided by the electricity produced in kWh. This is also known as the emission factor (gCO$_2$/kWh) which is expressed in Equation \ref{eq:EF} where ($G$) is the electricity production in (kWh). This analysis will also touch on the regional distributions of GWP and terrestrial acidification to give a complete picture.
+\item[Goal:] This paper assesses carbon emission reductions, therefore the impact category used is the global warming potential (GWP\textcolor{magenta}{\textit{[IPCC 2013 reference - let me know if you need it]}}). This is described as the emissions of ${\mathrm{gCO_2-eq}}$ divided by the electricity produced in kWh. This is also known as the emission factor (gCO$_2$/kWh) which is expressed in Equation \ref{eq:EF} where ($G$) is the electricity production in (kWh). This analysis will also touch on the regional distributions of GWP and terrestrial acidification to give a complete picture.
 
 \begin{equation}
 EF=\frac{{\sum GWP}}{\mathrm{G}}
 \label{eq:EF}
 \end{equation}
 
-\item[Scope] The GWP scope consist of Embodied Energy ($GWP_{Em}$), Dynamic Actuation ($GWP_{Act}$), Maintenance ($GWP_{M}$), and Disposal ($GWP_{Disp}$). The GWP savings through adaptive shading ($GWP_{Opp}$) are subtracted to produce our final GWP. This scope is summarised in Figure \ref{fig:BOS}.
+\item[Scope:] The GWP scope consist of Embodied Energy ($GWP_{Em}$), Dynamic Actuation ($GWP_{Act}$), Maintenance ($GWP_{M}$), and Disposal ($GWP_{Disp}$). The GWP savings through adaptive shading ($GWP_{Opp}$) are subtracted to produce our final GWP. This scope is summarised in Figure \ref{fig:BOS}.
 
 \begin{equation}
 \sum GWP={\mathrm{GWP_{Em}  + GWP_{Act} + GWP_{M} + GWP_{Disp} - GWP_{Opp} }}
@@ -249,11 +249,11 @@ G=\frac{{\mathrm{GWP}}}{{\mathrm{I \cdot \eta  \cdot PR \cdot LT \cdot A}}}
 
 % The scope of the LCA comprises of the embodied, operational, and disposal global warming impact of the respective system. Figure \ref{fig:BOS} illustrates the system boundaries of the process flows. The supporting structures are also included in the system boundaries. The reason for this is that technologies within the building envelope also change the design of the supporting structures. The supporting structure of solar panels is referred to as balance of systems (BOS).\\
 
-\item[Inventory] The inventory data was obtained through technical drawings, research papers describing the technology and expert judgement. The Ecoinvent v3.1 database is used as the main LCI database \cite{frischknecht2005ecoinvent}. To keep assumptions consistent, only data from this database is used. \textcolor{magenta}{\textit{(Is that so? Didn't we add a CIGS dataset?)}} Furthermore, the cut-off approach is used for the allocation of recycling and landfill disposal. This means that recycling does not generate any credit for the product and resulting benefits are not taken into account. Furthermore the use of recycled products do not bear the burden of processes higher up the chain.\textcolor{magenta}{\textit{(We don't do any system expansion?)}}\\
+\item[Inventory:] The inventory data was obtained through technical drawings, research papers describing the technology and expert judgement. The Ecoinvent v3.1 database is used as the main LCI database \cite{frischknecht2005ecoinvent}. To keep assumptions consistent, only data from this database is used. \textcolor{magenta}{\textit{(Is that so? Didn't we add a CIGS dataset?)}} Furthermore, the cut-off approach is used for the allocation of recycling and landfill disposal. This means that recycling does not generate any credit for the product and resulting benefits are not taken into account. Furthermore the use of recycled products do not bear the burden of processes higher up the chain.\textcolor{magenta}{\textit{(We don't do any system expansion?)}}\\
 
 
 
-\item[Assessment] For the impact assessment the ReciPe midpoint (H) indicator is used \cite{zelm2009recipe}. \textcolor{magenta}{\textit{(This is a little inconsistent. We should consistently use the term environmental impact as opposed to carbon content, etc.)}} The impact assessment is performed using the OpenLCA impact assessment tool \cite{ciroth2007ict}.\\
+\item[Assessment:] For the impact assessment the ReciPe midpoint (H) indicator is used \cite{zelm2009recipe}. \textcolor{magenta}{\textit{(This is a little inconsistent. We should consistently use the term environmental impact as opposed to carbon content, etc.)}} \textcolor{blue}{@Niko, I don't understand what is inconsistent here? Could you suggest some text for this paragraphs?}The impact assessment is performed using the OpenLCA impact assessment tool \cite{ciroth2007ict}. The results of the assessment will be compared with the emission factor of other PV systems \cite{raugei2007life}\\
 	% we may need to discuss system expansion
 	% PV electricity production not included?
 
@@ -261,14 +261,6 @@ G=\frac{{\mathrm{GWP}}}{{\mathrm{I \cdot \eta  \cdot PR \cdot LT \cdot A}}}
 % see above. Explain what is included and excluded
 
 \end{description}
-
-\textcolor{magenta}{
-Things which should be addressed (in more detail):
-\begin{itemize}
-\item service life of components
-\item In case we do a comparative LCA, also the "conventional" system needs to be described.
-\item Do we give benefits / credits for injecting electricity into the grid? What is being substituted and how?
-\end{itemize}}
 
 \subsection{Sensitivity Analysis}
 
