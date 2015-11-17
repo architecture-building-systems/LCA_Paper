@@ -7,6 +7,8 @@ In this section we detail the inventory, energy plus simulation methodology, imp
 
 The mechanical components of the ASF can be broken into four parts: a PV panel, actuator, cantilever, and a cable net supporting structure. The PV panel, actuator and cantilever combine to form a dynamic PV module, which is then mounted on a cable net supporting structure. An exploded view of these components can be seen in Figure \ref{fig:explodedView}. There are also additional electronics which exists off the facade in a separate control box. Theses five components along with the assembly, are the main product systems in the manufacture of the ASF as seen in Figure \ref{fig:BOS}. 
 
+\textcolor{magenta}{\textit{\\It is absolutely necessary that we describe the system boundary (what is included and what not (e.g. transport) and why) and also the functional unit! Were all life phases properly described? What happens in the maintenance, disposal phase? Will we have an annex? If so, we should give the ecoinvent inventories there.}}
+
 
 % \begin{figure}[H]
 % \begin{center}
@@ -28,6 +30,7 @@ The mechanical components of the ASF can be broken into four parts: a PV panel, 
 \begin{center}
 \includegraphics[width=14cm, trim= 0cm 0cm 0cm 0cm,clip]{BOS.pdf}
 \caption{Breakdown of the ASF into five embodied product components and installation costs, operational costs, and disposal}
+
 \label{fig:BOS}
 \end{center}
 \end{figure}
@@ -164,13 +167,13 @@ Hoist, diesel  ${<}$18.64kW idling 8 hours & \textcolor{red}{NA} ${\mathrm{kg/m^
 \subsection{Operational Emissions and Assumptions}
 \label{ch:Meth:Opp}
 
-The potential savings are based off previously completed numerical simulations \cite{jayathissa2015abs}. The simulation was conducted on a south facing office room. The room 7m meters in length, 4.9 meters wide and 3.1 meters high was modeled using Rhinoceros 3D CAD Package \cite{Rhino}. Grasshopper \cite{grasshopper} was used to model the dynamic aspects of the ASF which consists of an array of 400mm CIGS solar panels. The geometrical input is imported to Energy Plus \cite{energyplus} though the DIVA \cite{DIVA} interface. A single zone thermal analysis was conducted for each possible geometrical configuration of the ASF for each hour of the year. The results were then post processed in Python \cite{python} with the NumPy \cite{numpy}, and pandas \cite{pandas} plug-ins.\\
+The potential savings are based off previously completed numerical simulations \cite{jayathissa2015abs}. The simulation was conducted on a south facing office room. The room 7.0 meters in length, 4.9 meters wide and 3.1 meters high was modeled using Rhinoceros 3D CAD Package \cite{Rhino}. Grasshopper \cite{grasshopper} was used to model the dynamic aspects \textcolor{magenta}{\textit{(What aspects? Module orientation, inclination?)}} of the ASF which consists of an array of 400mm CIGS solar panels. The geometrical input is imported to Energy Plus \cite{energyplus} though the DIVA \cite{DIVA} interface. A single zone thermal analysis was conducted for each possible geometrical configuration of the ASF for each hour of the year. \textcolor{magenta}{(\textit{I don't get it. You couldn't simulate one hour only - that would contradict dynamic modelling ;D})} The results were then post processed in Python \cite{python} with the NumPy \cite{numpy}, and Pandas \cite{pandas} \textcolor{magenta}{\sout{plug-ins} packages}.\\
 
-We conducted the simulation for three scenarios: 1) facade with no shading, 2) a facade with a static shading system angled at 45$^{\circ}$ to the horizontal axis, and 3) an adaptive solar facade. This analysis purely looks at the building energy performance through adaptive shading and doesn't include PV generation. \\
+We conducted the simulation for three scenarios: 1) facade with no shading, 2) a facade with a static shading system angled at 45$^{\circ}$ to the horizontal axis, and 3) an adaptive solar facade \textcolor{magenta}{\textit{(The algorithm controlling the panels is explained in the paper cited earlier? Consider referencing it again here.)}}. This analysis purely looks at the building energy performance through adaptive shading and doesn't include \textcolor{magenta}{\sout{PV  generation} electricity production from the photovoltaic panels.} \\
 
-The building energy savings (kWh) are then converted to a GWP value based on the emission factor of the European Network of Transmission System Operators for Electricity (ENTSO-E) electricity mix (gCO2/kWh) \textcolor{blue}{[Add value and reference]}. \\
+The \textcolor{magenta}{\sout{building energy savings (kWh)} energy savings (in kWh), due to reduced cooling load \textit{(also lighting?)} -- You need to explain that some more: e.g. energy savings, when compared to the reference / no shading scenario.} are then converted to a GWP value based on the emission factor of the European Network of Transmission System Operators for Electricity (ENTSO-E) electricity mix (gCO2/kWh) \textcolor{blue}{[Add value and reference]}.\textcolor{magenta}{\textit{(Not sure what MJ used, but we could use the 0.4594 kg CO2-eq / kWh, I calculated for my paper http://dx.doi.org/10.1021/acs.est.5b01735)}} \\
 
-The energy required for actuation is also taken into account. It takes \textcolor{red}{0.15Wh} to fully open a single actuator. Based on the assumption of four full openings and closings per day, we approximate the energy requirement to be 174kWh in its lifetime. However as seen in Section \ref{ch:results}, this has a very small impact.\\
+The energy required for actuation is also taken into account. It takes \textcolor{red}{0.15Wh} to fully open a single actuator. Based on the assumption of four full openings and closings per day, we approximate the energy requirement to be 174kWh in its lifetime. However as seen in Section \ref{ch:results}, this has a \textcolor{magenta}{\sout{very} relatively} small impact.\\
 
 \begin{table}[H]
 \centering
@@ -204,7 +207,7 @@ Actuator Replacements         & Every 5 years                                  \
 Full open and closes per day  & 4 per day                                      \\
 \hline
 \end{tabular}
-\caption{Summary of main assumptions for the calculation of operational emissions}
+\caption{Summary of main assumptions for the calculation of operational emissions \textcolor{magenta}{\textit{What thermal resistance? Maybe give surface areas}}}
 \label{tab:AssumptionsOpp}
 \end{table}
 
@@ -215,8 +218,8 @@ Full open and closes per day  & 4 per day                                      \
 The life cycle analysis is performed according to the ISO 14040 and ISO 14044 and is performed in five stages 1) goal, 2) scope definition, 3) inventory analysis, 4) impact assessment and 5) interpretation. We discuss these stages in the following. % 15804 to be discussed
 
 \begin{description}
-\item[1. Goal] This paper assesses carbon emission reductions, therefore the impact category used is the global warming potential (GWP\textcolor{magenta}{\textit{[IPCC 2013 reference - let me know if you need it]}}). This is defined as the emissions of ${\mathrm{gCO_2-eq}}$ divided by the electricity produced in kWh. This is also known as the emission factor (gCO$_2$/kWh) which is expressed in Equation \ref{eq:EF} where ($G$) is the electricity production in (kWh). This analysis will also touch on the regional distributions of GWP and terrestrial acidification to give a complete picture.
-\textcolor{red}{\textit{This paragraph does not make sense, either the impact category is GWP, or EF, but not both.}}
+\item[1. Goal] This paper assesses carbon emission reductions, therefore the impact category used is the global warming potential (GWP\textcolor{magenta}{\textit{[IPCC 2013 reference - let me know if you need it]}}). This is defined as the emissions of ${\mathrm{g CO_2-eq}}$ divided by the electricity produced in kWh. This is also known as the emission factor (gCO$_2$/kWh) which is expressed in Equation \ref{eq:EF} where ($G$) is the electricity production in (kWh). This analysis will also touch on the regional distributions of GWP and terrestrial acidification to give a complete picture.
+\textcolor{red}{\textit{This paragraph does not make sense, either the impact category is GWP, or EF, but not both.}} \textcolor{magenta}{\textit{Agreed - also it seems unnecessarily complicated. Only give GWP.}}
 \begin{equation}
 EF=\frac{{\sum GWP}}{\mathrm{G}}
 \label{eq:EF}
@@ -227,7 +230,7 @@ EF=\frac{{\sum GWP}}{\mathrm{G}}
 \sum GWP={\mathrm{GWP_{Em}  + GWP_{Act} + GWP_{M} + GWP_{Disp} - GWP_{Opp} }},
 \label{eq:GWP}
 \end{equation}
-where $GWP_{Em}$ is the Embodied Energy, $GWP_{Act}$ is the Dynamic Actuation, $GWP_{M}$ is Maintenance, and $GWP_{Disp}$ is Disposal. The GWP savings through adaptive shading $GWP_{Opp}$ are subtracted to produce our final GWP. This scope is summarised in Figure \ref{fig:BOS}.
+where $GWP_{Em}$ is the Embodied Energy, $GWP_{Act}$ is the Dynamic Actuation, $GWP_{M}$ is Maintenance, and $GWP_{Disp}$ is Disposal. The GWP savings through adaptive shading $GWP_{Opp}$ are subtracted to produce our final GWP. This scope is summarised in Figure \ref{fig:BOS}. \textcolor{magenta}{\textit{This is a little confusing. The reader doesn't know yet how to get from a piece of metal to CO2.}}
 \textcolor{red}{\textit{What does the sum sign refer to? This does not make sense to me. It should be GWP = ... // Also, why are those terms in uppercase?}}
 
 % The functional unit needs to be based on the primary function of the technology. For adaptive building integrated photovoltaics this function can be twofold. When the adaptive BIPV acts as a shading system in front of a glass facade area the functional unit of ${\mathrm{m^2}}$ is used, while a comparison with static facade mounted photovoltaic systems requires the functional unit of electricity produced in ${\mathrm{kWh}}$. \textcolor{magenta}{\textit{(We should discuss the functional unit again. It should be defined more precisely / comprehensively.)}}
@@ -252,11 +255,11 @@ Also why is G even used in this paragraph?}}
 
 % The scope of the LCA comprises of the embodied, operational, and disposal global warming impact of the respective system. Figure \ref{fig:BOS} illustrates the system boundaries of the process flows. The supporting structures are also included in the system boundaries. The reason for this is that technologies within the building envelope also change the design of the supporting structures. The supporting structure of solar panels is referred to as balance of systems (BOS).\\
 
-\item[3. Inventory] The inventory data was obtained through technical drawings, research papers describing the technology and expert judgement. The Ecoinvent v3.1 database is used as the main LCI database \cite{frischknecht2005ecoinvent}. To keep assumptions consistent, only data from this database is used. \textcolor{magenta}{\textit{(Is that so? Didn't we add a CIGS dataset?)}} Furthermore, the cut-off approach is used for the allocation of recycling and landfill disposal. This means that recycling does not generate any credit for the product and resulting benefits are not taken into account. Furthermore the use of recycled products do not bear the burden of processes higher up the chain.\textcolor{magenta}{\textit{(We don't do any system expansion?)}}\\
+\item[3. Inventory] The inventory data was obtained \textcolor{magenta}{\sout{through} from} technical drawings, research papers describing the technology and expert judgement. The Ecoinvent v3.1 database is used as the main LCI database \cite{frischknecht2005ecoinvent}. To keep assumptions consistent, only data from this database is used. \textcolor{magenta}{\textit{(Is that so? Didn't we add a CIGS dataset?)}} Furthermore, the cut-off approach is used for the allocation of recycling and landfill disposal. This means that recycling does not generate any credit for the product and resulting benefits are not taken into account. Furthermore the use of recycled products do not bear the burden of processes higher up the chain.\textcolor{magenta}{\textit{(We don't do any system expansion??)}}\\
 
 
 
-\item[4. Impact Assessment] For the impact assessment the ReciPe midpoint (H) indicator is used \cite{zelm2009recipe}. \textcolor{magenta}{\textit{(This is a little inconsistent. We should consistently use the term environmental impact as opposed to carbon content, etc.)}} \textcolor{blue}{@Niko, I don't understand what is inconsistent here? Could you suggest some text for this paragraphs?}The impact assessment is performed using the OpenLCA impact assessment tool \cite{ciroth2007ict}. The results of the assessment will be compared with the emission factor of other PV systems \cite{raugei2007life}\\
+\item[4. Impact Assessment] For the impact assessment the ReciPe midpoint (H) indicator is used \cite{zelm2009recipe}. \textcolor{blue}{@Niko, I don't understand what is inconsistent here? Could you suggest some text for this paragraphs?} \textcolor{magenta}{\textit{I think it was mostly in the introduction where you used carbon content synonymously to environmental impact. Just try to be consistent. Now that I read through it: We are not giving any Recipe result?????}} The impact assessment is performed using the OpenLCA impact assessment tool \cite{ciroth2007ict}. The results of the assessment will be compared with the emission factor of other PV systems \cite{raugei2007life}\\
 	% we may need to discuss system expansion
 	% PV electricity production not included?
 
