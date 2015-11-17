@@ -212,22 +212,23 @@ Full open and closes per day  & 4 per day                                      \
 % Maybe have a reference case here, see previous commits 
 
 \subsection{Evaluation Method}
-The life cycle analysis is performed according to the ISO 14040 and ISO 14044 and is performed in five stages 1) goal, 2) scope definition, 3) inventory analysis, 4) impact assessment and 5) interpretation.\\ % 15804 to be discussed
+The life cycle analysis is performed according to the ISO 14040 and ISO 14044 and is performed in five stages 1) goal, 2) scope definition, 3) inventory analysis, 4) impact assessment and 5) interpretation. We discuss these stages in the following. % 15804 to be discussed
 
 \begin{description}
-\item[Goal:] This paper assesses carbon emission reductions, therefore the impact category used is the global warming potential (GWP\textcolor{magenta}{\textit{[IPCC 2013 reference - let me know if you need it]}}). This is described as the emissions of ${\mathrm{gCO_2-eq}}$ divided by the electricity produced in kWh. This is also known as the emission factor (gCO$_2$/kWh) which is expressed in Equation \ref{eq:EF} where ($G$) is the electricity production in (kWh). This analysis will also touch on the regional distributions of GWP and terrestrial acidification to give a complete picture.
-
+\item[1. Goal] This paper assesses carbon emission reductions, therefore the impact category used is the global warming potential (GWP\textcolor{magenta}{\textit{[IPCC 2013 reference - let me know if you need it]}}). This is defined as the emissions of ${\mathrm{gCO_2-eq}}$ divided by the electricity produced in kWh. This is also known as the emission factor (gCO$_2$/kWh) which is expressed in Equation \ref{eq:EF} where ($G$) is the electricity production in (kWh). This analysis will also touch on the regional distributions of GWP and terrestrial acidification to give a complete picture.
+\textcolor{red}{\textit{This paragraph does not make sense, either the impact category is GWP, or EF, but not both.}}
 \begin{equation}
 EF=\frac{{\sum GWP}}{\mathrm{G}}
 \label{eq:EF}
 \end{equation}
 
-\item[Scope:] The GWP scope consist of Embodied Energy ($GWP_{Em}$), Dynamic Actuation ($GWP_{Act}$), Maintenance ($GWP_{M}$), and Disposal ($GWP_{Disp}$). The GWP savings through adaptive shading ($GWP_{Opp}$) are subtracted to produce our final GWP. This scope is summarised in Figure \ref{fig:BOS}.
-
+\item[2. Scope] The GWP is computed as
 \begin{equation}
-\sum GWP={\mathrm{GWP_{Em}  + GWP_{Act} + GWP_{M} + GWP_{Disp} - GWP_{Opp} }}
+\sum GWP={\mathrm{GWP_{Em}  + GWP_{Act} + GWP_{M} + GWP_{Disp} - GWP_{Opp} }},
 \label{eq:GWP}
 \end{equation}
+where $GWP_{Em}$ is the Embodied Energy, $GWP_{Act}$ is the Dynamic Actuation, $GWP_{M}$ is Maintenance, and $GWP_{Disp}$ is Disposal. The GWP savings through adaptive shading $GWP_{Opp}$ are subtracted to produce our final GWP. This scope is summarised in Figure \ref{fig:BOS}.
+\textcolor{red}{\textit{What does the sum sign refer to? This does not make sense to me. It should be GWP = ... // Also, why are those terms in uppercase?}}
 
 % The functional unit needs to be based on the primary function of the technology. For adaptive building integrated photovoltaics this function can be twofold. When the adaptive BIPV acts as a shading system in front of a glass facade area the functional unit of ${\mathrm{m^2}}$ is used, while a comparison with static facade mounted photovoltaic systems requires the functional unit of electricity produced in ${\mathrm{kWh}}$. \textcolor{magenta}{\textit{(We should discuss the functional unit again. It should be defined more precisely / comprehensively.)}}
 
@@ -238,27 +239,31 @@ EF=\frac{{\sum GWP}}{\mathrm{G}}
 
 
 
-The electricity produced, G, in kWh is expressed in Equation \ref{eq:solar} based off International Energy Agency standards [REF REQUIRED]. \textit{I} is the Irradiation \textcolor{red}{(unit)}, ${\eta}$ is the conversion efficiency, \textit{PR} is the performance ratio, \textit{LT} is the service life \textcolor{red}{(unit)}, and \textit{A} is the module area \textcolor{red}{(unit)}.
-
+The electricity produced, G, in kWh is expressed as
 \begin{equation}
 G=\frac{{\mathrm{GWP}}}{{\mathrm{I \cdot \eta  \cdot PR \cdot LT \cdot A}}}
 % what is G
 \label{eq:solar}
 \end{equation}
+based on [REF REQUIRED]. In~(\ref{eq:solar}) \textit{I} is the Irradiation \textcolor{red}{(unit)}, ${\eta}$ is the conversion efficiency, \textit{PR} is the performance ratio, \textit{LT} is the service life \textcolor{red}{(unit)}, and \textit{A} is the module area \textcolor{red}{(unit)}.
+\textcolor{red}{\textit{I rewrote this a little bit. You should try to a) make the equations part of the text, and b) the way you use the variables in the text should be the same as in the equations. Now you have I in italics in the text but as textrm in the actual equation. If you add the amsmath package you can use $\backslash$eqref to reference equations directly.\\
+Also why is G even used in this paragraph?}}
 
 
 % The scope of the LCA comprises of the embodied, operational, and disposal global warming impact of the respective system. Figure \ref{fig:BOS} illustrates the system boundaries of the process flows. The supporting structures are also included in the system boundaries. The reason for this is that technologies within the building envelope also change the design of the supporting structures. The supporting structure of solar panels is referred to as balance of systems (BOS).\\
 
-\item[Inventory:] The inventory data was obtained through technical drawings, research papers describing the technology and expert judgement. The Ecoinvent v3.1 database is used as the main LCI database \cite{frischknecht2005ecoinvent}. To keep assumptions consistent, only data from this database is used. \textcolor{magenta}{\textit{(Is that so? Didn't we add a CIGS dataset?)}} Furthermore, the cut-off approach is used for the allocation of recycling and landfill disposal. This means that recycling does not generate any credit for the product and resulting benefits are not taken into account. Furthermore the use of recycled products do not bear the burden of processes higher up the chain.\textcolor{magenta}{\textit{(We don't do any system expansion?)}}\\
+\item[3. Inventory] The inventory data was obtained through technical drawings, research papers describing the technology and expert judgement. The Ecoinvent v3.1 database is used as the main LCI database \cite{frischknecht2005ecoinvent}. To keep assumptions consistent, only data from this database is used. \textcolor{magenta}{\textit{(Is that so? Didn't we add a CIGS dataset?)}} Furthermore, the cut-off approach is used for the allocation of recycling and landfill disposal. This means that recycling does not generate any credit for the product and resulting benefits are not taken into account. Furthermore the use of recycled products do not bear the burden of processes higher up the chain.\textcolor{magenta}{\textit{(We don't do any system expansion?)}}\\
 
 
 
-\item[Assessment:] For the impact assessment the ReciPe midpoint (H) indicator is used \cite{zelm2009recipe}. \textcolor{magenta}{\textit{(This is a little inconsistent. We should consistently use the term environmental impact as opposed to carbon content, etc.)}} \textcolor{blue}{@Niko, I don't understand what is inconsistent here? Could you suggest some text for this paragraphs?}The impact assessment is performed using the OpenLCA impact assessment tool \cite{ciroth2007ict}. The results of the assessment will be compared with the emission factor of other PV systems \cite{raugei2007life}\\
+\item[4. Impact Assessment] For the impact assessment the ReciPe midpoint (H) indicator is used \cite{zelm2009recipe}. \textcolor{magenta}{\textit{(This is a little inconsistent. We should consistently use the term environmental impact as opposed to carbon content, etc.)}} \textcolor{blue}{@Niko, I don't understand what is inconsistent here? Could you suggest some text for this paragraphs?}The impact assessment is performed using the OpenLCA impact assessment tool \cite{ciroth2007ict}. The results of the assessment will be compared with the emission factor of other PV systems \cite{raugei2007life}\\
 	% we may need to discuss system expansion
 	% PV electricity production not included?
 
 % what LCI DB (ecoinvent) is used? refer to Annex?
 % see above. Explain what is included and excluded
+
+\item[5. Interpretation] \textcolor{red}{\textit{What happened to 5?}}
 
 \end{description}
 
