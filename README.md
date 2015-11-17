@@ -1,6 +1,8 @@
 # LCA_Paper
 Solar Energy Materials and Solar Cells Paper
 
+##Git the simple guide - no deep shit
+http://rogerdudler.github.io/git-guide/
 
 ##Git Setup
 
@@ -31,7 +33,7 @@ Then commit the changes
 At this point it is good to run a `git pull` incase someone was working on the same file at the same time
 
 Then push the changes
-`git push origin master`
+`git push origin master
 
 
 ## Git Howto
