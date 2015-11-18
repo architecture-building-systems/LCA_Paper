@@ -30,11 +30,14 @@ or
 Then commit the changes
 `git commit -m "commit message"`
 
-At this point it is good to run a `git pull` incase someone was working on the same file at the same time
+At this point it is good to run a `git pull` in case someone was working on the same file at the same time
 
 Then push the changes
 `git push origin master`
 
+## Review
+
+Check out [git-latexdiff](https://gitlab.com/git-latexdiff/git-latexdiff)
 
 ## Git Howto
 

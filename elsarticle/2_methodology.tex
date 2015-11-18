@@ -166,12 +166,13 @@ Hoist, diesel  ${<}$18.64kW, idling & 0.5267 ${\mathrm{h/m^2_{facade}}}$ \\
 \subsection{Operational Emissions and Assumptions}
 \label{ch:Meth:Opp}
 
-The operational emissions are catergorised as 1) GWP reductions in the building system through adaptive shading, 2) dynamic actuation, and 3) maintenance.
+The operational emissions are categorised as 1) GWP reductions in the building system through adaptive shading, 2) dynamic actuation, and 3) maintenance.
 
 \begin{description}
 
 
-\item[Savings: ] An adaptive shading system reduce the electrical consumption of a building through reductions in heating, cooling and lighting \cite{jayathissa2015abs}. These electrical savings can be translated into GWP savings based on the emission factor of the European Network of Transmission System Operators for Electricity (ENTSO-E) electricity mix (462.1gCO2/kWh)\cite{itten2012life}.\\
+\item[Savings: ] An adaptive shading system reduce the electrical consumption of a building through reductions in heating, cooling and lighting \cite{jayathissa2015abs}. \textcolor{magenta}{\textit{I'd be more verbose. How does it affect energy demand? A "saving" is always relative - so it should probably refer to a base case.}}
+These electrical savings can be translated into GWP savings based on the emission factor of the European Network of Transmission System Operators for Electricity (ENTSO-E) electricity mix (462.1gCO2/kWh)\cite{itten2012life}.\\
 
 Building energy savings through adaptive shading are based off previously completed numerical simulations \cite{jayathissa2015abs}. The simulation was conducted on a south facing office room. The room 7.0 meters in length, 4.9 meters wide and 3.1 meters high was modeled using Rhinoceros 3D CAD Package \cite{Rhino}. Grasshopper \cite{grasshopper} was used to model the orientation of each photovoltaic panel. The geometrical input is imported to Energy Plus \cite{energyplus} though the DIVA \cite{DIVA} interface. A single zone thermal analysis was conducted for each possible geometrical configuration of the ASF for each hour of the year. The results were then post processed in Python \cite{python} with the NumPy \cite{numpy}, and Pandas \cite{pandas} packages.\\
 
@@ -236,8 +237,11 @@ EF=\frac{GWP}{\mathrm{G}}
 
 where ($G$) is the electricity production in (kWh).
 
+\textcolor{magenta}{\textit{Normally a functional unit describes the service or a product being analysed. Now it is defined as an assessment result, which feels like a circular reference :)}}
 
 \item[2. Scope] The scope of the assessment is sumarised in Figure \ref{fig:BOS}. We analyse the GWP of manufacture, dynamic actuation, maintenance, disposal and the GWP savings through adaptive shading. Therefore the scope comprises of a cradle-to-grave approach, where transport to and from site is taken into account. For the database the cut-off approach is used, this means that benefits from recycling are out of the scope of this paper.
+
+\textcolor{magenta}{\textit{At this point I would not talk about GWP. This is about your inventory, which is all kilograms, surfaces, kilowatts, etc. and especially how you determined it. So it should also address building energy consumption. Only after that one can refer to the savings.}}
 
 % The GWP is computed as
 % \begin{equation}
@@ -245,7 +249,7 @@ where ($G$) is the electricity production in (kWh).
 % \label{eq:GWP}
 % \end{equation}
 % where $GWP_{Em}$ is the Embodied Energy, $GWP_{Act}$ is the Dynamic Actuation, $GWP_{M}$ is Maintenance, and $GWP_{Disp}$ is Disposal. The GWP savings through adaptive shading $GWP_{Opp}$ are subtracted to produce our final GWP. This scope is summarised in Figure \ref{fig:BOS}. 
-\textcolor{magenta}{\textit{This is a little confusing. The reader doesn't know yet how to get from a piece of metal to CO2.}}
+
 %\textcolor{red}{\textit{What does the sum sign refer to? This does not make sense to me. It should be GWP = ... // Also, why are those terms in uppercase?}}
 
 % The functional unit needs to be based on the primary function of the technology. For adaptive building integrated photovoltaics this function can be twofold. When the adaptive BIPV acts as a shading system in front of a glass facade area the functional unit of ${\mathrm{m^2}}$ is used, while a comparison with static facade mounted photovoltaic systems requires the functional unit of electricity produced in ${\mathrm{kWh}}$. \textcolor{magenta}{\textit{(We should discuss the functional unit again. It should be defined more precisely / comprehensively.)}}
@@ -265,7 +269,7 @@ where ($G$) is the electricity production in (kWh).
 
 % The scope of the LCA comprises of the embodied, operational, and disposal global warming impact of the respective system. Figure \ref{fig:BOS} illustrates the system boundaries of the process flows. The supporting structures are also included in the system boundaries. The reason for this is that technologies within the building envelope also change the design of the supporting structures. The supporting structure of solar panels is referred to as balance of systems (BOS).\\
 
-\item[3. Inventory] The inventory data was obtained from technical drawings, research papers describing the technology, and expert judgement. The Ecoinvent v3.1 database is used as the main LCI database \cite{frischknecht2005ecoinvent}. To keep assumptions consistent, only data from this database is used. \textcolor{magenta}{\textit{(Is that so? Didn't we add a CIGS dataset?)}} Furthermore, the cut-off approach is used for the allocation of recycling and landfill disposal. This means that recycling does not generate any credit for the product and resulting benefits are not taken into account. Furthermore the use of recycled products do not bear the burden of processes higher up the chain.\textcolor{magenta}{\textit{(We don't do any system expansion??)}}\\
+\item[3. Inventory] The inventory data was obtained from technical drawings, research papers describing the technology, and expert judgement. The Ecoinvent v3.1 database is used as the main LCI database \cite{frischknecht2005ecoinvent}. To keep assumptions consistent, only data from this database is used. \textcolor{magenta}{\textit{(Is that so? Didn't we add a CIGS dataset?)}} Furthermore, the cut-off approach is used for the allocation of recycling and landfill disposal. This means that recycling does not generate any credit for the product and resulting benefits are not taken into account. Furthermore the use of recycled products do not bear the burden of processes higher up the chain.\textcolor{magenta}{\textit{(We do system expansion once we give credits for electricity production.)}}\\
 
 
 
