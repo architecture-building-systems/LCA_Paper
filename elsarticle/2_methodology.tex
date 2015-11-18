@@ -3,8 +3,6 @@
 In this section we detail the inventory, energy plus simulation methodology, important assumptions, and the LCA evaluation method. The assessment considers the environmental impacts of the production, operation, and disposal of an ASF. We assume a life time of 20 years based on the product warranty of the PV panels.
 \\
 
-
-
 \subsection{Life Cycle Inventory and Assumption}
 
 The mechanical components of the ASF can be broken into four parts: a PV panel, actuator, cantilever, and a cable net supporting structure. The PV panel, actuator and cantilever combine to form a dynamic PV module, which is then mounted on a cable net supporting structure. An exploded view of these components can be seen in Figure \ref{fig:explodedView}. There are also additional electronics which exists off the facade in a separate control box. Theses five components along with the assembly, are the main product systems in the manufacture of the ASF as seen in Figure \ref{fig:BOS}. 
@@ -90,7 +88,7 @@ Chromium steel rings	 & 1.0665 ${\mathrm{kg/m^2_{facade}}}$ \\
 Electronics, for control, 2-2way valves  & 0.0130  ${\mathrm{kg/m^2_{facade}}}$\\
 Silicone chambers & 0.8887 ${\mathrm{kg/m^2_{facade}}}$\\
 Polyurethane tubes &0.0933 ${\mathrm{kg/m^2_{facade}}}$\\
-Air compressor, screw type, 0.75kW & \textcolor{red}{NA} ${\mathrm{kg/m^2_{facade}}}$\\
+Air compressor, screw type, 0.75kW & 1.7281 ${\mathrm{kg/m^2_{facade}}}$\\
 \hline
 \end{tabular}
 \caption{Inventory of four main input flows to the actuator manufacturing process [ref required]}
@@ -138,7 +136,7 @@ The control system is required for the actuation of panels and the regulation of
 \begin{tabular}{ll}
 \hline
 Material description & SMQ \\ \hline
-Inverter 1.25kW	 & NA ${\mathrm{kg/m^2_{facade}}}$ \\
+Inverter 1.25kW	 & 0.6090 ${\mathrm{kg/m^2_{facade}}}$ \\
 PV cable  & 3.1995 ${\mathrm{kg/m^2_{facade}}}$\\
 Electronics control\footnote{c-Rio,8-slot, integrated 667Mhz}& 0.0419 ${\mathrm{kg/m^2_{facade}}}$\\
 Electronics control\footnote{NI9476 32ch DO with cables and connectors}& 0.0097${\mathrm{kg/m^2_{facade}}}$\\
@@ -173,14 +171,14 @@ The operational emissions are catergorised as 1) GWP reductions in the building 
 \begin{description}
 
 
-\item[Savings: ] An adaptive shading system reduce the electrical consumption of a building through reductions in heating, cooling and lighting \cite{jayathissa2015abs}. These electrical savings can be translated into GWP savings based on the emission factor of the European Network of Transmission System Operators for Electricity (ENTSO-E) electricity mix \textcolor{red}{(xxgCO2/kWh)}\cite{itten2012life}.\\
+\item[Savings: ] An adaptive shading system reduce the electrical consumption of a building through reductions in heating, cooling and lighting \cite{jayathissa2015abs}. These electrical savings can be translated into GWP savings based on the emission factor of the European Network of Transmission System Operators for Electricity (ENTSO-E) electricity mix (462.1gCO2/kWh)\cite{itten2012life}.\\
 
 Building energy savings through adaptive shading are based off previously completed numerical simulations \cite{jayathissa2015abs}. The simulation was conducted on a south facing office room. The room 7.0 meters in length, 4.9 meters wide and 3.1 meters high was modeled using Rhinoceros 3D CAD Package \cite{Rhino}. Grasshopper \cite{grasshopper} was used to model the orientation of each photovoltaic panel. The geometrical input is imported to Energy Plus \cite{energyplus} though the DIVA \cite{DIVA} interface. A single zone thermal analysis was conducted for each possible geometrical configuration of the ASF for each hour of the year. The results were then post processed in Python \cite{python} with the NumPy \cite{numpy}, and Pandas \cite{pandas} packages.\\
 
 The simulation was conducted for three scenarios: 1) facade with no shading, 2) a facade with a static shading system angled at 45$^{\circ}$ to the horizontal axis, and 3) an adaptive solar facade \cite{jayathissa2015abs}. This analysis purely looks at the building energy performance through adaptive shading and doesn't include electricity production from the photovoltaic panels.\\
 
 
-\item[Dynamic Actuation: ] The energy required for actuation is also taken into account. It takes \textcolor{red}{1.45Wh} to fully open a single actuator. Based on the assumption of four full openings and closings per day per actuator, we approximate the combined energy requirement to be 2286kWh in its 20 year lifetime. 
+\item[Dynamic Actuation: ] The energy required for actuation is also taken into account. It takes 1.45Wh to fully open a single actuator. Based on the assumption of four full openings and closings per day per actuator, we approximate the combined energy requirement to be 2286kWh in its 20 year lifetime. 
 %However as seen in Section \ref{ch:results}, this has a \textcolor{magenta}{\sout{very} relatively} small impact.\\
 
 \item[Maintenance: ] Soft robotic actuators currently have a life time of five years, and therefore will need to be replaced three times during the 20 year life time of an ASF.
@@ -239,10 +237,7 @@ EF=\frac{GWP}{\mathrm{G}}
 where ($G$) is the electricity production in (kWh).
 
 
-\item[2. Scope] The scope of the assessment is sumarised in Figure \ref{fig:BOS}. We analyse the GWP of manufacture, dynamic actuation, maintenance, disposal and the GWP savings through adaptive shading. \\
-
-\textcolor{red}{The system boundary includes...(transport etc)}
-
+\item[2. Scope] The scope of the assessment is sumarised in Figure \ref{fig:BOS}. We analyse the GWP of manufacture, dynamic actuation, maintenance, disposal and the GWP savings through adaptive shading. Therefore the scope comprises of a cradle-to-grave approach, where transport to and from site is taken into account. For the database the cut-off approach is used, this means that benefits from recycling are out of the scope of this paper.
 
 % The GWP is computed as
 % \begin{equation}
@@ -255,12 +250,7 @@ where ($G$) is the electricity production in (kWh).
 
 % The functional unit needs to be based on the primary function of the technology. For adaptive building integrated photovoltaics this function can be twofold. When the adaptive BIPV acts as a shading system in front of a glass facade area the functional unit of ${\mathrm{m^2}}$ is used, while a comparison with static facade mounted photovoltaic systems requires the functional unit of electricity produced in ${\mathrm{kWh}}$. \textcolor{magenta}{\textit{(We should discuss the functional unit again. It should be defined more precisely / comprehensively.)}}
 
-
-
 % In our assessment, we want to obtain the emission factor (gCO$_2$/kWh) of an ASF as expressed in Equation \ref{eq:EF}. 
-
-
-
 
 % The electricity production, G, in kWh is expressed as
 % \begin{equation}
