@@ -42,7 +42,7 @@ The mechanical components of the ASF can be broken into four parts: a PV panel, 
 \item[PV Panel] \hfill\\
 Weight is the primary restriction when selecting a PV panel. Any technology that requires glass encapsulation or a heavy substructure can therefore not be used. This limits us to CIGS and amorphous silicon panels.\\
 
-CIGS PV panels was selected as the thin film panel of choice due to its high efficiency, low cost, and ability to be deposited on a polymer or aluminium substrate \cite{chirilua2011highly}. 
+CIGS PV panels were selected as the thin film panel of choice due to its high efficiency, low cost, and ability to be deposited on a polymer or aluminium substrate \cite{chirilua2011highly}. 
 
 %A less efficient thin film amorphous silicon panel could also be used and will also be discussed in this analysis.\\
 
@@ -73,12 +73,12 @@ Polyethylene for junction box & 0.036 ${\mathrm{kg/m^2_{facade}}}$\\
 Diode, glass for junction box & 0.011 ${\mathrm{kg/m^2_{facade}}}$\\
 \hline
 \end{tabular}
-\caption{Inventory of a selection of top five input flows to the PV manufacturing process [ref required]}
+\caption{Inventory of the top five input flows to the PV manufacturing process [ref required]}
 \label{tab:PVinv}
 \end{table}
 
 \item[Actuator] \hfill \\
-Traditionally photovoltaic actuation is done through the use of servo motors. Servo motors however become a limiting factor for adaptive facades due to their high upfront costs, and instability in heavy winds. Soft robotic actuators on the other hand are cheaper and more resilient to harsh environmental conditions\cite{Svetozarevic2014a}. The soft robotic actuators however are still in development and have a life time of five years. They will therefore require two rounds of maintenance during the lifetime of the ASF.
+Traditionally photovoltaic actuation is done through the use of servo motors. Servo motors however become a limiting factor for adaptive facades due to their high upfront costs, and instability in heavy winds. Soft robotic actuators on the other hand are cheaper and more resilient to harsh environmental conditions\cite{Svetozarevic2014a}. The soft robotic actuators however are still in development and have a life time of five years. They will therefore require three rounds of maintenance during the lifetime of the ASF.
 For the purpose of this analysis we will analyse both servo motors and soft robotic actuators. 
 
 \begin{table}[H]
@@ -90,10 +90,10 @@ Chromium steel rings	 & 1.0665 ${\mathrm{kg/m^2_{facade}}}$ \\
 Electronics, for control, 2-2way valves  & 0.0130  ${\mathrm{kg/m^2_{facade}}}$\\
 Silicone chambers & 0.8887 ${\mathrm{kg/m^2_{facade}}}$\\
 Polyurethane tubes &0.0933 ${\mathrm{kg/m^2_{facade}}}$\\
-Air compressor, screw type, 0.75kW & NA ${\mathrm{kg/m^2_{facade}}}$\\
+Air compressor, screw type, 0.75kW & \textcolor{red}{NA} ${\mathrm{kg/m^2_{facade}}}$\\
 \hline
 \end{tabular}
-\caption{Inventory of four main input flows to the Actuator manufacturing process [ref required]}
+\caption{Inventory of four main input flows to the actuator manufacturing process [ref required]}
 \label{tab:ActuatorInv}
 \end{table}
 
@@ -114,7 +114,7 @@ Chromium steel fixing clamp  & 0.0284 ${\mathrm{kg/m^2_{facade}}}$\\
 \end{table}
 
 \item[Supporting Structure] \hfill \\
-The supporting structure is the connection point between the array of photovoltaic modules and the building itself. Many different designs are possible, however we will base our analysis of an adaptive solar facade that has already been constructed \cite{nagy2015frontiers}. This design consists of a steel cable-net that spans a steel supporting frame. The steel frame is then attached to the building itself.\\
+The supporting structure is the connection point between the array of photovoltaic modules and the building itself. Many different designs are possible, however we will base our analysis of an adaptive solar facade that has already been constructed \cite{nagy2015frontiers}. This design consists of a steel cable-net that spans a steel supporting frame. The steel frame is then mounted on the building facade.\\
 
 \begin{table}[H]
 \centering
@@ -168,12 +168,12 @@ Hoist, diesel  ${<}$18.64kW, idling & 0.5267 ${\mathrm{h/m^2_{facade}}}$ \\
 \subsection{Operational Emissions and Assumptions}
 \label{ch:Meth:Opp}
 
-The operational emissions are catergorised as 1) GWP reductions in the building system through adaptive shading, 2) dynamic actuation, and 3) maintenance
+The operational emissions are catergorised as 1) GWP reductions in the building system through adaptive shading, 2) dynamic actuation, and 3) maintenance.
 
 \begin{description}
 
 
-\item[Savings: ] A dynamic shading system reduce the electrical consumption of a building through reductions in heating, cooling and lighting \cite{jayathissa2015abs}. These electrical savings can be translated into GWP savings based on the emission factor of the European Network of Transmission System Operators for Electricity (ENTSO-E) electricity mix \textcolor{red}{(xxgCO2/kWh)}\cite{itten2012life}.\\
+\item[Savings: ] An adaptive shading system reduce the electrical consumption of a building through reductions in heating, cooling and lighting \cite{jayathissa2015abs}. These electrical savings can be translated into GWP savings based on the emission factor of the European Network of Transmission System Operators for Electricity (ENTSO-E) electricity mix \textcolor{red}{(xxgCO2/kWh)}\cite{itten2012life}.\\
 
 Building energy savings through adaptive shading are based off previously completed numerical simulations \cite{jayathissa2015abs}. The simulation was conducted on a south facing office room. The room 7.0 meters in length, 4.9 meters wide and 3.1 meters high was modeled using Rhinoceros 3D CAD Package \cite{Rhino}. Grasshopper \cite{grasshopper} was used to model the orientation of each photovoltaic panel. The geometrical input is imported to Energy Plus \cite{energyplus} though the DIVA \cite{DIVA} interface. A single zone thermal analysis was conducted for each possible geometrical configuration of the ASF for each hour of the year. The results were then post processed in Python \cite{python} with the NumPy \cite{numpy}, and Pandas \cite{pandas} packages.\\
 
@@ -183,7 +183,7 @@ The simulation was conducted for three scenarios: 1) facade with no shading, 2) 
 \item[Dynamic Actuation: ] The energy required for actuation is also taken into account. It takes \textcolor{red}{1.45Wh} to fully open a single actuator. Based on the assumption of four full openings and closings per day per actuator, we approximate the combined energy requirement to be 2286kWh in its 20 year lifetime. 
 %However as seen in Section \ref{ch:results}, this has a \textcolor{magenta}{\sout{very} relatively} small impact.\\
 
-\item[Maintenance: ] Soft robotic actuators currently have a life time of five years, and therefore will need to be replaced three times during the life time of an ASF.
+\item[Maintenance: ] Soft robotic actuators currently have a life time of five years, and therefore will need to be replaced three times during the 20 year life time of an ASF.
 
 \begin{table}[H]
 \centering
@@ -224,10 +224,10 @@ Full open and closes per day  & 4 per day                                      \
 \end{description}
 
 \subsection{Evaluation Method}
-The life cycle analysis is performed according to the ISO 14040 and ISO 14044 and is performed in five stages 1) goal, 2) scope definition, 3) inventory analysis, 4) impact assessment and 5) interpretation. We discuss these stages in the following. % 15804 to be discussed
+The life cycle analysis is performed according to the ISO 14040 and ISO 14044 and is performed in five stages 1) goal, 2) scope definition, 3) inventory analysis, and 4) impact assessment.
 
 \begin{description}
-\item[1. Goal] This paper assesses carbon emission reductions, therefore the impact category used is the global warming potential (GWP\textcolor{magenta}{\textit{[IPCC 2013 reference - let me know if you need it]}}). This analysis will also touch on the regional distributions of GWP and terrestrial acidification to give a complete picture.\\
+\item[1. Goal] This paper assesses carbon emission reductions. The global warming potential (GWP) impact category is therefore used \textcolor{magenta}{\textit{[IPCC 2013 reference - let me know if you need it]}}). This analysis will also touch on the regional distributions of GWP and terrestrial acidification to give a complete picture.\\
 
 The functional unit is the emission factor (EF) in (gCO$_{2eq}$/kWh). The emission factor is expressed as 
 
@@ -239,9 +239,9 @@ EF=\frac{GWP}{\mathrm{G}}
 where ($G$) is the electricity production in (kWh).
 
 
-\item[2. Scope] The scope of the assessment is sumarised in Figure \ref{fig:BOS}. We analyse the GWP of embodied carbon, dynamic actuation, maintenance, disposal and the GWP savings through adaptive shading. \\
+\item[2. Scope] The scope of the assessment is sumarised in Figure \ref{fig:BOS}. We analyse the GWP of manufacture, dynamic actuation, maintenance, disposal and the GWP savings through adaptive shading. \\
 
-\textcolor{red}{The system boundary includes...}
+\textcolor{red}{The system boundary includes...(transport etc)}
 
 
 % The GWP is computed as
@@ -275,7 +275,7 @@ where ($G$) is the electricity production in (kWh).
 
 % The scope of the LCA comprises of the embodied, operational, and disposal global warming impact of the respective system. Figure \ref{fig:BOS} illustrates the system boundaries of the process flows. The supporting structures are also included in the system boundaries. The reason for this is that technologies within the building envelope also change the design of the supporting structures. The supporting structure of solar panels is referred to as balance of systems (BOS).\\
 
-\item[3. Inventory] The inventory data was obtained from technical drawings, research papers describing the technology and expert judgement. The Ecoinvent v3.1 database is used as the main LCI database \cite{frischknecht2005ecoinvent}. To keep assumptions consistent, only data from this database is used. \textcolor{magenta}{\textit{(Is that so? Didn't we add a CIGS dataset?)}} Furthermore, the cut-off approach is used for the allocation of recycling and landfill disposal. This means that recycling does not generate any credit for the product and resulting benefits are not taken into account. Furthermore the use of recycled products do not bear the burden of processes higher up the chain.\textcolor{magenta}{\textit{(We don't do any system expansion??)}}\\
+\item[3. Inventory] The inventory data was obtained from technical drawings, research papers describing the technology, and expert judgement. The Ecoinvent v3.1 database is used as the main LCI database \cite{frischknecht2005ecoinvent}. To keep assumptions consistent, only data from this database is used. \textcolor{magenta}{\textit{(Is that so? Didn't we add a CIGS dataset?)}} Furthermore, the cut-off approach is used for the allocation of recycling and landfill disposal. This means that recycling does not generate any credit for the product and resulting benefits are not taken into account. Furthermore the use of recycled products do not bear the burden of processes higher up the chain.\textcolor{magenta}{\textit{(We don't do any system expansion??)}}\\
 
 
 
@@ -295,7 +295,7 @@ In order to evaluate the impact of varying parameters on the LCA, we performed a
 \item The GWP of the electricity mix
 \item The type of actuation system (servo motors compared to soft robotic actuators)
 \item The complexity of the control system
-\item The uncertainty in the eco-invent background system (Monte Carlo Analysis)
+%\item The uncertainty in the eco-invent background system (Monte Carlo Analysis)
 \end{itemize}
 
 % The inputs are summarised in Table \ref{tab:sens}
