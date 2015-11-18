@@ -44,7 +44,8 @@ The combined GWP of the ASF can be built up using a waterfall chart as shown in 
 \subsection{Global Distribution of GWP and Terrestrial Acidification}
 \textcolor{magenta}{\textit{I still think this is adding noise rather than useful information for a reader interested in BIPV. Plus I question the correctness of these figures. I would \textbf{only} keep this section if you draw meaningful conclusions from it. If you need references on regionalized LCIA (e.g. for the discussion), let me know... This is the only time you talk about acidification. You would need to justify that too.}}
 
-The global distribution of embodied GWP emissions is focused in Europe, specifically Germany and Switzerland as most of the manufacturing is done in this region. It can be see however that emissions occur globally due the sourcing of primary materials from many locations around the world. Terrestrial acidification however is more interesting as it has a local impact compared to carbon emissions. It is interesting to note that China carries the greatest burden of terrestrial acidification from the ASF production. 
+The global distribution of embodied GWP emissions is focused in Europe, specifically Germany and Switzerland as most of the manufacturing is done in this region. It can be see however that emissions occur globally due the sourcing of primary materials from many locations around the world. Terrestrial acidification however is more interesting as it has a local impact compared to carbon emissions. It is interesting to note that China carries the greatest burden of terrestrial acidification from the ASF production.
+ 
 \begin{figure}[H]
 \begin{center}
 \includegraphics[width=10cm, trim= 0cm 0cm 0cm 0cm,clip]{mapGWP.pdf}
@@ -61,10 +62,9 @@ The global distribution of embodied GWP emissions is focused in Europe, specific
 \end{center}
 \end{figure}
 
-
 \subsection{Sensitivity Analysis}
 
-The results of the sensitivity analysis is shown in Figure \ref{fig:sens}. The GWP savings from adaptive shading is dependent on the electricity mix as explained in Section \ref{ch:Meth:Opp}. Changing our assumption from the European ENTSO-E mix to a country specific mix brings interesting results. In Switzerland, the mix is dominated by hydro and nuclear power which has a very low GWP potential [citation needed \textcolor{magenta}{ \textit{ecoinvent?}}]. This would then increase the emission factor to (100 g CO2/kWh\textcolor{magenta}{\textit{(give numbers for other mixes as well)}}), which is only \textcolor{red}{6\%} higher than the emission factor in Switzerland. The German mix on the other hand has a higher GWP mix than the ENTSO-E mix due to their high share in coal fire plants. This then reduces our emission factor further to... \textcolor{red}{-500 g CO2/kWh} \textcolor{red}{[Double Check this]}.\\
+The results of the sensitivity analysis is shown in Figure \ref{fig:sens}. The GWP savings from adaptive shading is dependent on the electricity mix as explained in Section \ref{ch:Meth:Opp}. Changing our assumption from the European ENTSO-E mix to a country specific mix brings interesting results. In Switzerland, the mix is dominated by hydro and nuclear power which has a very low GWP potential\cite{itten2012life}. This would then increase the emission factor of the ASF to (100 gCO${_2}$/kWh\textcolor{magenta}{\textit{(give numbers for other mixes as well)}}), which is only \textcolor{red}{6\%} higher than the emission factor in Switzerland. The German mix on the other hand has a higher GWP mix than the ENTSO-E mix due to their high share in coal fire plants. This then reduces our emission factor further to... \textcolor{red}{-500 g CO2/kWh} \textcolor{red}{[Double Check this]}.\\
 
 The choice of actuator also has a large impact on the GWP of the embodied carbon. A single Soft Robotic Actuator, including the air compressor, tubing, and maintenance comes to \textcolor{red}{20kgCO2/sqm} per unit. A classical servo motor is four times greater at \textcolor{red}{80kgCO2/sqm} \textcolor{magenta}{\textit{(Is this figure cited or was it also calculated? Do we provide the inventory?)}}.\\
 
@@ -83,8 +83,6 @@ The control system design should be carefully thought out due to the high GWP of
 \label{fig:sens}
 \end{center}
 \end{figure}
-
-
 
 \subsection{Comparison to existing PV technologies}
 
