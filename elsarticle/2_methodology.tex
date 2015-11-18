@@ -119,13 +119,12 @@ The supporting structure is the connection point between the array of photovolta
 \begin{tabular}{ll}
 \hline
 Material description & SMQ \\ \hline
-Chromium steel L bar	 & 4.2581 ${\mathrm{kg/m^2_{facade}}}$ \\
-Chromium steel U bar  & 2.7347 ${\mathrm{kg/m^2_{facade}}}$\\
+Chromium steel frame & 6.9928 ${\mathrm{kg/m^2_{facade}}}$ \\
 Chromium steel swaged external thread  &0.2897 ${\mathrm{kg/m^2_{facade}}}$\\
 Chromium steel wire rope WC  & 0.1593 ${\mathrm{kg/m^2_{facade}}}$\\
 \hline
 \end{tabular}
-\caption{Inventory of the four main input flows to the manufacturing process of the Supporting Structure[ref required] \textcolor{cyan}{Could we change the L bar and U bar to Chromium Steel Frame? It is easier to understand}}
+\caption{Inventory of the four main input flows to the manufacturing process of the Supporting Structure[ref required]}
 \label{tab:StructureInv}
 \end{table}
 
@@ -155,10 +154,10 @@ There are many assembly options available. From past experience, an installation
 \begin{tabular}{ll}
 \hline
 Material description & SMQ \\ \hline
-Hoist, diesel  ${<}$18.64kW idling 8 hours & \textcolor{red}{NA} ${\mathrm{kg/m^2_{facade}}}$ \\
+Hoist, diesel  ${<}$18.64kW, idling & 0.5267 ${\mathrm{h/m^2_{facade}}}$ \\
 \hline
 \end{tabular}
-\caption{Inventory of main input flows to the Assembly Process[ref required] \textcolor{cyan}{Note that the 8 hours was for the HoNR ASF. We can scale this to get a value per sqm}}
+\caption{Inventory of main input flows to the Assembly Process[ref required]}
 \label{tab:AssemblyInv}
 \end{table}
 
@@ -171,7 +170,7 @@ The potential savings are based off previously completed numerical simulations \
 
 We conducted the simulation for three scenarios: 1) facade with no shading, 2) a facade with a static shading system angled at 45$^{\circ}$ to the horizontal axis, and 3) an adaptive solar facade \cite{jayathissa2015abs}. This analysis purely looks at the building energy performance through adaptive shading and doesn't include electricity production from the photovoltaic panels.\\
 
-The energy consumption (in kWh), due to reduced cooling load, heating, and lighting is compared to a base case with no external shading. This difference is converted to a GWP value based on the emission factor of the European Network of Transmission System Operators for Electricity (ENTSO-E) electricity mix (gCO2/kWh) \textcolor{blue}{[Add value and reference]}.\textcolor{magenta}{\textit{(Not sure what MJ used, but we could use the 0.4594 kg CO2-eq / kWh, I calculated for my paper http://dx.doi.org/10.1021/acs.est.5b01735)}} \\
+The energy consumption (in kWh), due to reduced cooling load, heating, and lighting is compared to a base case with no external shading. This difference is converted to a GWP value based on the emission factor of the European Network of Transmission System Operators for Electricity (ENTSO-E) electricity mix (gCO2/kWh)\cite{itten2012life}.\\
 
 The energy required for actuation is also taken into account. It takes \textcolor{red}{1.45Wh} to fully open a single actuator. Based on the assumption of four full openings and closings per day, we approximate the energy requirement to be 2286kWh in its 20 year lifetime. 
 %However as seen in Section \ref{ch:results}, this has a \textcolor{magenta}{\sout{very} relatively} small impact.\\
