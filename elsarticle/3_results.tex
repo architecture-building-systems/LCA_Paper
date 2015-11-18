@@ -1,48 +1,47 @@
 % !TEX root = main.tex
 
-We present the results of the LCA analysis in relation to the 1) operational savings through our energy plus simulation, 2) Embodied GWP, 3) a calculation of the emission factor, 4) global distribution of GWP, 5) regional effects of terrestrial acidification, 6) sensitivity of the LCA to design and location, and 7) a comparison to other PV technologies.
+We present the results of the LCA analysis in relation to the 1) embodied emissions, 2) operational savings through our energy plus simulation, 3) a calculation of the emission factor \textcolor{magenta}{\textit{Couldn't find that??}}, 4) global distribution of GWP, 5) regional effects of terrestrial acidification, 6) sensitivity of the LCA to design and location, and 7) a comparison to other PV technologies\textcolor{magenta}{\textit{Also a sensitivity?}}.
 
-\subsection{Operational Savings through Adaptive Shading}
-\label{ch:oppResults}
+\textcolor{magenta}{\textit{\\We should start by giving the result of the energy simulation, because it is part of the inventory. Now you start with the GWP pie chart, which is a LCIA result.}}
 
-The building energy load in terms of heating, cooling and lighting were simulated in Energy Plus as detailed in Section \ref{ch:method}. We calculated a total energy saving of 25\% compared to louvers at 45$^\circ$ and 56\% compared to a case with no facade shading \cite{jayathissa2015abs}. These results are sumarised in Figure \ref{fig:operational}. 
-
-
-\textcolor{magenta}{This is entirely(?) due to the reduced cooling load, because the interior receives less solar loads, compared to the other two variants.}\textcolor{blue}{Not really. The ASF compared to static shading performs better in terms of heating and lighting}
-
-
-
-\begin{figure}[H]
-\begin{center}
-\includegraphics[width=10cm, trim= 0cm 0cm 0cm 0cm,clip]{buildingenergy.pdf}
-\caption{Breakdown of operational energy consumption for a system with a) no shading, b) with louvers at 45$^\circ$ and c) with an ASF -- not including onsite electricity production.}
-\label{fig:operational}
-\end{center}
-\end{figure}
-
-\subsection{LCA of the Adaptive Solar Facade Manufacture}
+\subsection{LCA of the Adaptive Solar Facade}
 
 A breakdown of the embodied carbon emissions can be found in Figure  \ref{fig:embodied}. The largest embodied global warming potential (GWP) contribution in the ASF comes from the solar panels, the electronics and the supporting structure.
 
 \begin{figure}[H]
 \begin{center}
 \includegraphics[width=10cm, trim= 0cm 0cm 0cm 0cm,clip]{pieembodied}
-\caption{Breakdown of greenhouse gas emissions due to material production \textcolor{magenta}{The total is GWP is 2676 kg CO2-eq.}}
+\caption{Breakdown of the \textcolor{magenta}{\sout{embodied carbon} greenhouse gas emissions due to material production ?and disposal?. The total is  ???kg CO2-eq.}}
 \label{fig:embodied}
 \end{center}
 \end{figure}
 
-\subsection{Calculation of Emission Factor}
-The combined GWP of the ASF can be built up using a waterfall chart as shown in  Figure \ref{fig:waterfall}. This gives us a total GWP of -4090kg CO$_{2eq}$. We calculate a total electricity production of 580kWh per year, resulting in an emission factor of \textcolor{red}{-352gCO2/kWh}.
+\subsection{Operational Savings through Adaptive Shading}
+\label{ch:oppResults}
+
+The operational energy savings \textcolor{magenta}{\textit{due to reduced cooling load...}} through adaptive shading was simulated in Energy Plus as explained in Section \ref{ch:method}. We calculated a total energy saving of 25\% compared to louvers at 45$^\circ$ and 56\% compared to a case with no facade shading \cite{jayathissa2015abs}. These results are sumarised in Figure \ref{fig:operational}. \textcolor{magenta}{This is entirely(?) due to the reduced cooling load, because the interior receives less solar loads, compared to the other two variants.}
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[width=10cm, trim= 0cm 0cm 0cm 0cm,clip]{buildingenergy.pdf}
+\caption{Breakdown of the operational carbon emissions for system with a) no shading, b) with louvers at 45$^\circ$ and c) with an ASF -- not including onsite electricity production.\textcolor{magenta}{\textit{emissions? the scale says kWh}}}
+\label{fig:operational}
+\end{center}
+\end{figure}
+
+\textcolor{magenta}{\textit{We lost a headline it seems...}}
+
+The total GWP of the ASF based off Equation \ref{eq:GWP}, can be built up using a waterfall chart, Figure \ref{fig:waterfall}. The total emission factor \textcolor{magenta}{\textit{(I am not sure if I like this term. How about, e.g. combined GHG emissions?)}} of electricity produced by the ASF comes to (-470.1 g CO$_2$-eq./kWh).\\
 
 \begin{figure}[H]
 \begin{center}
 \includegraphics[width=12cm, trim= 0cm 0cm 0cm 0cm,clip]{waterfall}
-\caption{Waterfall diagram of GWP of the ASF. The far left bar details the embodied carbon emissions. The second bar details the emission reduction of the building through the smart shading algorithms of the ASF. The third, fourth and fifth bar shows the effect of dynamic actuation, maintenance, and disposal respectively. This leaves us with a final emissions value (grey bar). When we apply this value to Equation \ref{eq:EF}, we obtain an emission factor per kWh of -470.1 g CO$_2$-eq./kWh.\textcolor{magenta}{\textit{The figure total has numbers}}}
-
+\caption{Waterfall diagram of GWP of the ASF. The far left column details the embodied carbon emissions. The second bar details the emission reduction of the building through the smart shading algorithms of the ASF. The third column shows an increase of emissions through maintenance. The fourth column shows an increase in emissions in the disposal. This leaves us with a final emissions value \textcolor{magenta}{(grey bar)}. When we apply this value to Equation \ref{eq:solar}, we obtain an emission factor per kWh of -470.1 g CO$_2$-eq./kWh.\textcolor{magenta}{\textit{The figure total has numbers}}}
 \label{fig:waterfall}
 \end{center}
 \end{figure}
+
+\textcolor{magenta}{\textit{Did you double check the number? It seems actually pretty high... If I take 450 g CO2-eq/kWh for ENTSOE, how can I have an almost equal negative yield? You should be very clear that this is a imaginary figure, assuming you can actually replace a power plant somewhere...}}
 
 \subsection{Global Distribution of GWP and Terrestrial Acidification}
 \textcolor{magenta}{\textit{I still think this is adding noise rather than useful information for a reader interested in BIPV. Plus I question the correctness of these figures. I would \textbf{only} keep this section if you draw meaningful conclusions from it. If you need references on regionalized LCIA (e.g. for the discussion), let me know... This is the only time you talk about acidification. You would need to justify that too.}}
@@ -63,7 +62,6 @@ The global distribution of embodied GWP emissions is focused in Europe, specific
 \label{fig:mapAcid}
 \end{center}
 \end{figure}
-
 
 \subsection{Sensitivity Analysis}
 
