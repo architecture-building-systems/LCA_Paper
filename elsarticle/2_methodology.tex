@@ -3,7 +3,9 @@
 In this section we detail the inventory, energy plus simulation methodology, important assumptions, and the LCA evaluation method. The assessment considers the environmental impacts of the production, operation, and disposal of an ASF. We assume a life time of 20 years based on the product warranty of the PV panels.
 \\
 
-\subsection{Life Cycle Inventory and Assumptions}
+
+
+\subsection{Life Cycle Inventory and Assumption}
 
 The mechanical components of the ASF can be broken into four parts: a PV panel, actuator, cantilever, and a cable net supporting structure. The PV panel, actuator and cantilever combine to form a dynamic PV module, which is then mounted on a cable net supporting structure. An exploded view of these components can be seen in Figure \ref{fig:explodedView}. There are also additional electronics which exists off the facade in a separate control box. Theses five components along with the assembly, are the main product systems in the manufacture of the ASF as seen in Figure \ref{fig:BOS}. 
 
@@ -166,14 +168,22 @@ Hoist, diesel  ${<}$18.64kW, idling & 0.5267 ${\mathrm{h/m^2_{facade}}}$ \\
 \subsection{Operational Emissions and Assumptions}
 \label{ch:Meth:Opp}
 
-The potential savings are based off previously completed numerical simulations \cite{jayathissa2015abs}. The simulation was conducted on a south facing office room. The room 7.0 meters in length, 4.9 meters wide and 3.1 meters high was modeled using Rhinoceros 3D CAD Package \cite{Rhino}. Grasshopper \cite{grasshopper} was used to model the orientation of each photovoltaic panel. The geometrical input is imported to Energy Plus \cite{energyplus} though the DIVA \cite{DIVA} interface. A single zone thermal analysis was conducted for each possible geometrical configuration of the ASF for each hour of the year. \textcolor{magenta}{(\textit{I don't get it. You couldn't simulate one hour only - that would contradict dynamic modelling ;D})} The results were then post processed in Python \cite{python} with the NumPy \cite{numpy}, and Pandas \cite{pandas} packages.\\
+The operational emissions are catergorised as 1) GWP reductions in the building system through adaptive shading, 2) dynamic actuation, and 3) maintenance
 
-We conducted the simulation for three scenarios: 1) facade with no shading, 2) a facade with a static shading system angled at 45$^{\circ}$ to the horizontal axis, and 3) an adaptive solar facade \cite{jayathissa2015abs}. This analysis purely looks at the building energy performance through adaptive shading and doesn't include electricity production from the photovoltaic panels.\\
+\begin{description}
 
-The energy consumption (in kWh), due to reduced cooling load, heating, and lighting is compared to a base case with no external shading. This difference is converted to a GWP value based on the emission factor of the European Network of Transmission System Operators for Electricity (ENTSO-E) electricity mix (gCO2/kWh)\cite{itten2012life}.\\
 
-The energy required for actuation is also taken into account. It takes \textcolor{red}{1.45Wh} to fully open a single actuator. Based on the assumption of four full openings and closings per day, we approximate the energy requirement to be 2286kWh in its 20 year lifetime. 
+\item[Savings: ] A dynamic shading system reduce the electrical consumption of a building through reductions in heating, cooling and lighting \cite{jayathissa2015abs}. These electrical savings can be translated into GWP savings based on the emission factor of the European Network of Transmission System Operators for Electricity (ENTSO-E) electricity mix \textcolor{red}{(xxgCO2/kWh)}\cite{itten2012life}.\\
+
+Building energy savings through adaptive shading are based off previously completed numerical simulations \cite{jayathissa2015abs}. The simulation was conducted on a south facing office room. The room 7.0 meters in length, 4.9 meters wide and 3.1 meters high was modeled using Rhinoceros 3D CAD Package \cite{Rhino}. Grasshopper \cite{grasshopper} was used to model the orientation of each photovoltaic panel. The geometrical input is imported to Energy Plus \cite{energyplus} though the DIVA \cite{DIVA} interface. A single zone thermal analysis was conducted for each possible geometrical configuration of the ASF for each hour of the year. The results were then post processed in Python \cite{python} with the NumPy \cite{numpy}, and Pandas \cite{pandas} packages.\\
+
+The simulation was conducted for three scenarios: 1) facade with no shading, 2) a facade with a static shading system angled at 45$^{\circ}$ to the horizontal axis, and 3) an adaptive solar facade \cite{jayathissa2015abs}. This analysis purely looks at the building energy performance through adaptive shading and doesn't include electricity production from the photovoltaic panels.\\
+
+
+\item[Dynamic Actuation: ] The energy required for actuation is also taken into account. It takes \textcolor{red}{1.45Wh} to fully open a single actuator. Based on the assumption of four full openings and closings per day per actuator, we approximate the combined energy requirement to be 2286kWh in its 20 year lifetime. 
 %However as seen in Section \ref{ch:results}, this has a \textcolor{magenta}{\sout{very} relatively} small impact.\\
+
+\item[Maintenance: ] Soft robotic actuators currently have a life time of five years, and therefore will need to be replaced three times during the life time of an ASF.
 
 \begin{table}[H]
 \centering
@@ -211,16 +221,27 @@ Full open and closes per day  & 4 per day                                      \
 \end{table}
 
 
-% Maybe have a reference case here, see previous commits 
+\end{description}
 
 \subsection{Evaluation Method}
 The life cycle analysis is performed according to the ISO 14040 and ISO 14044 and is performed in five stages 1) goal, 2) scope definition, 3) inventory analysis, 4) impact assessment and 5) interpretation. We discuss these stages in the following. % 15804 to be discussed
 
 \begin{description}
-\item[1. Goal] This paper assesses carbon emission reductions, therefore the impact category used is the global warming potential (GWP\textcolor{magenta}{\textit{[IPCC 2013 reference - let me know if you need it]}}). This analysis will also touch on the regional distributions of GWP and terrestrial acidification to give a complete picture.
+\item[1. Goal] This paper assesses carbon emission reductions, therefore the impact category used is the global warming potential (GWP\textcolor{magenta}{\textit{[IPCC 2013 reference - let me know if you need it]}}). This analysis will also touch on the regional distributions of GWP and terrestrial acidification to give a complete picture.\\
+
+The functional unit is the emission factor (EF) in (gCO$_{2eq}$/kWh). The emission factor is expressed as 
+
+\begin{equation}
+EF=\frac{GWP}{\mathrm{G}}
+\label{eq:EF}
+\end{equation}
+
+where ($G$) is the electricity production in (kWh).
 
 
-\item[2. Scope] The scope of the assessment is sumarised in Figure \ref{fig:BOS}. We analyse the GWP of embodied carbon, dynamic actuation, maintenance, disposal and the GWP savings through adaptive shading. 
+\item[2. Scope] The scope of the assessment is sumarised in Figure \ref{fig:BOS}. We analyse the GWP of embodied carbon, dynamic actuation, maintenance, disposal and the GWP savings through adaptive shading. \\
+
+\textcolor{red}{The system boundary includes...}
 
 
 % The GWP is computed as
@@ -264,15 +285,6 @@ The life cycle analysis is performed according to the ISO 14040 and ISO 14044 an
 
 % what LCI DB (ecoinvent) is used? refer to Annex?
 % see above. Explain what is included and excluded
-
-\item[5. Interpretation] In order to compare the GWP of an ASF to classical PV systems we use the emission factor (EF). The emission factor is expressed as 
-
-\begin{equation}
-EF=\frac{{\sum GWP}}{\mathrm{G}}
-\label{eq:EF}
-\end{equation}
-
-where ($G$) is the electricity production in (kWh).
 
 \end{description}
 
