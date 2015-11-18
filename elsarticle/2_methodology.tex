@@ -173,7 +173,7 @@ We conducted the simulation for three scenarios: 1) facade with no shading, 2) a
 
 The energy consumption (in kWh), due to reduced cooling load, heating, and lighting is compared to a base case with no external shading. This difference is converted to a GWP value based on the emission factor of the European Network of Transmission System Operators for Electricity (ENTSO-E) electricity mix (gCO2/kWh) \textcolor{blue}{[Add value and reference]}.\textcolor{magenta}{\textit{(Not sure what MJ used, but we could use the 0.4594 kg CO2-eq / kWh, I calculated for my paper http://dx.doi.org/10.1021/acs.est.5b01735)}} \\
 
-The energy required for actuation is also taken into account. It takes \textcolor{red}{1.45Wh} to fully open a single actuator. Based on the assumption of four full openings and closings per day, we approximate the energy requirement to be 2286kWh in its lifetime. 
+The energy required for actuation is also taken into account. It takes \textcolor{red}{1.45Wh} to fully open a single actuator. Based on the assumption of four full openings and closings per day, we approximate the energy requirement to be 2286kWh in its 20 year lifetime. 
 %However as seen in Section \ref{ch:results}, this has a \textcolor{magenta}{\sout{very} relatively} small impact.\\
 
 \begin{table}[H]
@@ -185,24 +185,23 @@ Office Envelope               & Roof: Adiabatic                                \
                               & Floor: Adiabatic                               \\
                               & Walls: Adiabatic                               \\
                               & Window: Double Glazed LoE (e=0.2) 3mm/13mm air \\
-                              & Floor Area: 21.7m2                             \\
-Thermal Set Points            & Heating: 22$^{\circ}$ degrees Celcius                    \\
-                              & Cooling: 26$^{\circ}$ degrees Celcius                    \\
+Thermal Set Points            & Heating: 22$^{\circ}$ degrees Celcius          \\
+                              & Cooling: 26$^{\circ}$ degrees Celcius          \\
 Building System               & Hydronic Heating: COP=4                        \\
-                              & Hydronic Cooling: COP=3                         \\
+                              & Hydronic Cooling: COP=3                        \\
 Lighting Control              & Lighting set point: 11.8W/m2                   \\
-                              & Lighting Control: 300lx Threshhold           \\
+                              & Lighting Control: 300 lx Threshhold            \\
                               & LED Lighting                                   \\
 Occupancy                     & Office: Weekdays from 8:00-18:00               \\
                               & People set point: 0.1 persons/m2               \\
                               & Infiltration: 0.5 per hour                     \\
                               &                                                \\
 \textbf{Location Assumptions} &                                                \\
-Weather File                  & Geneva, Switzerland (067000IWEC)              \\
-Electricity Mix               & ENTSO-E\cite{itten2012life}                                           \\
+Weather File                  & Geneva, Switzerland (067000IWEC)               \\
+Electricity Mix               & ENTSO-E \cite{itten2012life}                   \\
                               &                                                \\
 \textbf{Maintenance}          &                                                \\
-Actuator Replacements         & Every 5 years                                  \\
+Actuator Changes              & Every 5 years                                  \\
                               &                                                \\
 \textbf{ASF Settings}         &                                                \\
 Full open and closes per day  & 4 per day                                      \\
@@ -219,20 +218,20 @@ Full open and closes per day  & 4 per day                                      \
 The life cycle analysis is performed according to the ISO 14040 and ISO 14044 and is performed in five stages 1) goal, 2) scope definition, 3) inventory analysis, 4) impact assessment and 5) interpretation. We discuss these stages in the following. % 15804 to be discussed
 
 \begin{description}
-\item[1. Goal] This paper assesses carbon emission reductions, therefore the impact category used is the global warming potential (GWP\textcolor{magenta}{\textit{[IPCC 2013 reference - let me know if you need it]}}). This is defined as the emissions of ${\mathrm{g CO_2-eq}}$ divided by the electricity produced in kWh. This is also known as the emission factor (gCO$_2$/kWh) which is expressed in Equation \ref{eq:EF} where ($G$) is the electricity production in (kWh). This analysis will also touch on the regional distributions of GWP and terrestrial acidification to give a complete picture.
-\textcolor{red}{\textit{This paragraph does not make sense, either the impact category is GWP, or EF, but not both.}} \textcolor{magenta}{\textit{Agreed - also it seems unnecessarily complicated. Only give GWP.}}
-\begin{equation}
-EF=\frac{{\sum GWP}}{\mathrm{G}}
-\label{eq:EF}
-\end{equation}
+\item[1. Goal] This paper assesses carbon emission reductions, therefore the impact category used is the global warming potential (GWP\textcolor{magenta}{\textit{[IPCC 2013 reference - let me know if you need it]}}). This analysis will also touch on the regional distributions of GWP and terrestrial acidification to give a complete picture.
 
-\item[2. Scope] The GWP is computed as
-\begin{equation}
-\sum GWP={\mathrm{GWP_{Em}  + GWP_{Act} + GWP_{M} + GWP_{Disp} - GWP_{Opp} }},
-\label{eq:GWP}
-\end{equation}
-where $GWP_{Em}$ is the Embodied Energy, $GWP_{Act}$ is the Dynamic Actuation, $GWP_{M}$ is Maintenance, and $GWP_{Disp}$ is Disposal. The GWP savings through adaptive shading $GWP_{Opp}$ are subtracted to produce our final GWP. This scope is summarised in Figure \ref{fig:BOS}. \textcolor{magenta}{\textit{This is a little confusing. The reader doesn't know yet how to get from a piece of metal to CO2.}}
-\textcolor{red}{\textit{What does the sum sign refer to? This does not make sense to me. It should be GWP = ... // Also, why are those terms in uppercase?}}
+
+\item[2. Scope] The scope of the assessment is sumarised in Figure \ref{fig:BOS}. We analyse the GWP of embodied carbon, dynamic actuation, maintenance, disposal and the GWP savings through adaptive shading. 
+
+
+% The GWP is computed as
+% \begin{equation}
+% \sum GWP={\mathrm{GWP_{Em}  + GWP_{Act} + GWP_{M} + GWP_{Disp} - GWP_{Opp} }},
+% \label{eq:GWP}
+% \end{equation}
+% where $GWP_{Em}$ is the Embodied Energy, $GWP_{Act}$ is the Dynamic Actuation, $GWP_{M}$ is Maintenance, and $GWP_{Disp}$ is Disposal. The GWP savings through adaptive shading $GWP_{Opp}$ are subtracted to produce our final GWP. This scope is summarised in Figure \ref{fig:BOS}. 
+\textcolor{magenta}{\textit{This is a little confusing. The reader doesn't know yet how to get from a piece of metal to CO2.}}
+%\textcolor{red}{\textit{What does the sum sign refer to? This does not make sense to me. It should be GWP = ... // Also, why are those terms in uppercase?}}
 
 % The functional unit needs to be based on the primary function of the technology. For adaptive building integrated photovoltaics this function can be twofold. When the adaptive BIPV acts as a shading system in front of a glass facade area the functional unit of ${\mathrm{m^2}}$ is used, while a comparison with static facade mounted photovoltaic systems requires the functional unit of electricity produced in ${\mathrm{kWh}}$. \textcolor{magenta}{\textit{(We should discuss the functional unit again. It should be defined more precisely / comprehensively.)}}
 
@@ -243,31 +242,38 @@ where $GWP_{Em}$ is the Embodied Energy, $GWP_{Act}$ is the Dynamic Actuation, $
 
 
 
-The electricity produced, G, in kWh is expressed as
-\begin{equation}
-G=\frac{{\mathrm{GWP}}}{{\mathrm{I \cdot \eta  \cdot PR \cdot LT \cdot A}}}
-% what is G
-\label{eq:solar}
-\end{equation}
-based on [REF REQUIRED]. In~(\ref{eq:solar}) \textit{I} is the Irradiation \textcolor{red}{(unit)}, ${\eta}$ is the conversion efficiency, \textit{PR} is the performance ratio, \textit{LT} is the service life \textcolor{red}{(unit)}, and \textit{A} is the module area \textcolor{red}{(unit)}.
-\textcolor{red}{\textit{I rewrote this a little bit. You should try to a) make the equations part of the text, and b) the way you use the variables in the text should be the same as in the equations. Now you have I in italics in the text but as textrm in the actual equation. If you add the amsmath package you can use $\backslash$eqref to reference equations directly.\\
-Also why is G even used in this paragraph?}}
+% The electricity production, G, in kWh is expressed as
+% \begin{equation}
+% G=\frac{{\mathrm{GWP}}}{{\mathrm{I \cdot \eta  \cdot PR \cdot LT \cdot A}}}
+% % what is G
+% \label{eq:solar}
+% \end{equation}
+% based on [REF REQUIRED]. In~(\ref{eq:solar}) \textit{I} is the Irradiation \textcolor{red}{(unit)}, ${\eta}$ is the conversion efficiency, \textit{PR} is the performance ratio, \textit{LT} is the service life \textcolor{red}{(unit)}, and \textit{A} is the module area \textcolor{red}{(unit)}.
+% \textcolor{red}{\textit{I rewrote this a little bit. You should try to a) make the equations part of the text, and b) the way you use the variables in the text should be the same as in the equations. Now you have I in italics in the text but as textrm in the actual equation. If you add the amsmath package you can use $\backslash$eqref to reference equations directly.\\
+% Also why is G even used in this paragraph?}}
 
 
 % The scope of the LCA comprises of the embodied, operational, and disposal global warming impact of the respective system. Figure \ref{fig:BOS} illustrates the system boundaries of the process flows. The supporting structures are also included in the system boundaries. The reason for this is that technologies within the building envelope also change the design of the supporting structures. The supporting structure of solar panels is referred to as balance of systems (BOS).\\
 
-\item[3. Inventory] The inventory data was obtained \textcolor{magenta}{\sout{through} from} technical drawings, research papers describing the technology and expert judgement. The Ecoinvent v3.1 database is used as the main LCI database \cite{frischknecht2005ecoinvent}. To keep assumptions consistent, only data from this database is used. \textcolor{magenta}{\textit{(Is that so? Didn't we add a CIGS dataset?)}} Furthermore, the cut-off approach is used for the allocation of recycling and landfill disposal. This means that recycling does not generate any credit for the product and resulting benefits are not taken into account. Furthermore the use of recycled products do not bear the burden of processes higher up the chain.\textcolor{magenta}{\textit{(We don't do any system expansion??)}}\\
+\item[3. Inventory] The inventory data was obtained from technical drawings, research papers describing the technology and expert judgement. The Ecoinvent v3.1 database is used as the main LCI database \cite{frischknecht2005ecoinvent}. To keep assumptions consistent, only data from this database is used. \textcolor{magenta}{\textit{(Is that so? Didn't we add a CIGS dataset?)}} Furthermore, the cut-off approach is used for the allocation of recycling and landfill disposal. This means that recycling does not generate any credit for the product and resulting benefits are not taken into account. Furthermore the use of recycled products do not bear the burden of processes higher up the chain.\textcolor{magenta}{\textit{(We don't do any system expansion??)}}\\
 
 
 
-\item[4. Impact Assessment] For the impact assessment the ReciPe midpoint (H) indicator is used \cite{zelm2009recipe}. \textcolor{blue}{@Niko, I don't understand what is inconsistent here? Could you suggest some text for this paragraphs?} \textcolor{magenta}{\textit{I think it was mostly in the introduction where you used carbon content synonymously to environmental impact. Just try to be consistent. Now that I read through it: We are not giving any Recipe result?????}} The impact assessment is performed using the OpenLCA impact assessment tool \cite{ciroth2007ict}. The results of the assessment will be compared with the emission factor of other PV systems \cite{raugei2007life}\\
+\item[4. GWP Assessment] For the assessment the ReciPe midpoint (H) indicator is used \cite{zelm2009recipe}. \textcolor{magenta}{\textit{Now that I read through it: We are not giving any Recipe result?????}} The GWP assessment is performed using the OpenLCA impact assessment tool \cite{ciroth2007ict}. The results of the assessment will be compared with the emission factor of other PV systems \cite{raugei2007life}\\
 	% we may need to discuss system expansion
 	% PV electricity production not included?
 
 % what LCI DB (ecoinvent) is used? refer to Annex?
 % see above. Explain what is included and excluded
 
-\item[5. Interpretation] \textcolor{red}{\textit{What happened to 5?}}
+\item[5. Interpretation] In order to compare the GWP of an ASF to classical PV systems we use the emission factor (EF). The emission factor is expressed as 
+
+\begin{equation}
+EF=\frac{{\sum GWP}}{\mathrm{G}}
+\label{eq:EF}
+\end{equation}
+
+where ($G$) is the electricity production in (kWh).
 
 \end{description}
 
