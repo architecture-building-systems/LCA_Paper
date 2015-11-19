@@ -1,13 +1,13 @@
 # Fdb version 3
-["bibtex main"] 1447953721 "main.aux" "main.bbl" "main" 1447953723
+["bibtex main"] 1447953721 "main.aux" "main.bbl" "main" 1447954647
   "./elsarticle-num.bst" 1261046140 29353 cbd593ca59c003368735a9d8dbd22298 ""
-  "main.aux" 1447953723 8427 2ae242cdd598490d15d6f1b0fe8105c2 ""
+  "main.aux" 1447954646 8427 2ae242cdd598490d15d6f1b0fe8105c2 ""
   "main.bcf" 0 -1 0 ""
   "references.bib" 1447701158 13031 066fa67aa320e830e41d44c927cd01ff ""
   (generated)
   "main.bbl"
   "main.blg"
-["pdflatex"] 1447953722 "main.tex" "main.pdf" "main" 1447953723
+["pdflatex"] 1447954645 "main.tex" "main.pdf" "main" 1447954647
   "/usr/local/texlive/2014/texmf-dist/tex/context/base/supp-pdf.mkii" 1337017135 71627 94eb9990bed73c364d7f53f960cc8c5b ""
   "/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/etexcmds.sty" 1335995445 7612 c47308d923ec19888707b0f1792b326a ""
   "/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/ifluatex.sty" 1303254447 7324 11d14f318d865f420e692d4e6c9c18c3 ""
@@ -44,14 +44,14 @@
   "/usr/local/texlive/2014/texmf-dist/tex/latex/psnfss/upzd.fd" 1137110629 148 b2a94082cb802f90d3daf6dd0c7188a0 ""
   "1_introduction.tex" 1447947848 7540 64cd23bbf1fcb1d2531f15966bb0b775 ""
   "2_methodology.tex" 1447953163 20737 d8e30611bb64a9ccc86a9d51f58cab86 ""
-  "3_results.tex" 1447953719 9455 6d12820b4296ed3ffad92494b56692ec ""
-  "5_discussion.tex" 1447885115 5229 3a409d7d11cc563b62e9e37d4bc4f1dd ""
+  "3_results.tex" 1447954327 9217 1e3db9bfe0030ae4913230aea9222a0f ""
+  "5_discussion.tex" 1447954622 5560 70688ff3996992431279197b794c3276 ""
   "6_conclusion.tex" 1447885115 2726 1070ae54f0470fff2e79fa2025d1120b ""
   "7_acknowledgments.tex" 1447847294 756 ed7ba1b519d5074c199d4efc60ed22aa ""
   "8_appendix.tex" 1447715871 26 7765e8fcab55a44a6bd49c210b0d40fc ""
   "Images/BOS.pdf" 1447872527 131916 464bc5cd8924f22a781edc4c5a37cbad ""
   "Images/buildingenergy.pdf" 1447755092 22263 b32a4b71488b17f0c9f8060ef85558c3 ""
-  "Images/compPV.pdf" 1447871257 104519 af10df371eaebb94c819a2f280d8d75e ""
+  "Images/compPV.pdf" 1447954634 104800 d0c1fa6a1157a7bf968f52019a26ede0 ""
   "Images/explodedASFV2.png" 1446568804 180726 2d365a74406bb6606ad98b95ccae3d34 ""
   "Images/facadeFunctions.pdf" 1447090681 423290 ad32e7652300f44f0fda54ee654973cc ""
   "Images/honr.jpg" 1432914218 5833788 e2d8fdb39fc7e8998c6cc7b3e44d65c4 ""
@@ -61,12 +61,12 @@
   "Images/sens.pdf" 1445796992 78865 e3ab933ead17cf0dbb60bfe0b5dc798b ""
   "Images/waterfall.pdf" 1447871257 95567 099903656fbccf1fd8b1fee417fb6885 ""
   "elsarticle.cls" 1446547216 26906 9bbe96da66efcb6afca446895cda4faf ""
-  "main.aux" 1447953723 8427 2ae242cdd598490d15d6f1b0fe8105c2 ""
+  "main.aux" 1447954646 8427 2ae242cdd598490d15d6f1b0fe8105c2 ""
   "main.bbl" 1447953722 4932 d8189ab3732c0651b66235390822e4f7 "bibtex main"
-  "main.spl" 1447953722 0 d41d8cd98f00b204e9800998ecf8427e ""
+  "main.spl" 1447954646 0 d41d8cd98f00b204e9800998ecf8427e ""
   "main.tex" 1447885115 2091 5449ba08e894dcbb6fbe6d58d9e4e2c4 ""
   (generated)
-  "main.aux"
+  "main.log"
   "main.pdf"
   "main.spl"
-  "main.log"
+  "main.aux"
