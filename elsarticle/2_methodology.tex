@@ -1,13 +1,14 @@
 % !TEX root = main.tex
 
-In this section we detail the inventory, energy plus simulation methodology, important assumptions, and the LCA evaluation method. The assessment considers the environmental impacts of the production, operation, and disposal of an ASF. We assume a life time of 20 years based on the product warranty of the PV panels.
-\\
+In this section we detail the inventory, energy plus simulation methodology, important assumptions, and the LCA evaluation method. The assessment considers the environmental impacts of the production, operation, and disposal of an ASF. We assume a life time of 20 years based on the product warranty of the PV panels. \textcolor{cyan}{The Impact assessment is performed according to the ISO 14040 and ISO 14044, and is based off the IPCC methodology.}\\
 
-\subsection{Life Cycle Inventory and Assumption}
+\subsection{Embodied Life Cycle Inventory}
+
+The inventory data was obtained from technical drawings, research papers describing the technology, and expert judggement. The Ecoinvent v3.1 database is used as the main LCA database \cite{frischknecht2005ecoinvent}. The cut-off approach is used for the allocation of recycling and landfill disposal. This means that recycling does not generate any credit for the product and resulting benefits are not taken into account. Furthermore the use of recycled products do not bear the burden of processes higher up the chain.\\
 
 The mechanical components of the ASF can be broken into four parts: a PV panel, actuator, cantilever, and a cable net supporting structure. The PV panel, actuator and cantilever combine to form a dynamic PV module, which is then mounted on a cable net supporting structure. An exploded view of these components can be seen in Figure \ref{fig:explodedView}. There are also additional electronics which exists off the facade in a separate control box. Theses five components along with the assembly, are the main product systems in the manufacture of the ASF as seen in Figure \ref{fig:BOS}. 
 
-\textcolor{magenta}{\textit{\\It is absolutely necessary that we describe the system boundary (what is included and what not (e.g. transport) and why) and also the functional unit! Were all life phases properly described? What happens in the maintenance, disposal phase? Will we have an annex? If so, we should give the ecoinvent inventories there.}}
+%\textcolor{magenta}{\textit{\\It is absolutely necessary that we describe the system boundary (what is included and what not (e.g. transport) and why) and also the functional unit! Were all life phases properly described? What happens in the maintenance, disposal phase? Will we have an annex? If so, we should give the ecoinvent inventories there.}}
 
 
 % \begin{figure}[H]
@@ -163,26 +164,40 @@ Hoist, diesel  ${<}$18.64kW, idling & 0.5267 ${\mathrm{h/m^2_{facade}}}$ \\
 
 \end{description}
 
-\subsection{Operational Emissions and Assumptions}
+\subsection{Operational Life Cycle Inventory}
 \label{ch:Meth:Opp}
 
-The operational emissions are categorised as 1) GWP reductions in the building system through adaptive shading, 2) dynamic actuation, and 3) maintenance.
+The operational inventory are categorised as 1) energy consumption of an office room 2) electricity consumption through dynamic actuation, and 3) maintenance.
 
 \begin{description}
 
 
-\item[Savings: ] An adaptive shading system reduce the electrical consumption of a building through reductions in heating, cooling and lighting \cite{jayathissa2015abs}. \textcolor{magenta}{\textit{I'd be more verbose. How does it affect energy demand? A "saving" is always relative - so it should probably refer to a base case.}}
-These electrical savings can be translated into GWP savings based on the emission factor of the European Network of Transmission System Operators for Electricity (ENTSO-E) electricity mix (462.1gCO2/kWh)\cite{itten2012life}.\\
+\item[Building Energy Consumption: ] \hfill\\
+An adaptive shading system, when mounted over a glazed facade, has an impact on the energy consumption of the building as described in Section \ref{ch:introduction}. More specifically, it has an impact on the heating cooling and lighting loads. Previously conducted simulations compared three scenarios: 1) facade with no shading, 2) a facade with a static shading system angled at 45$^{\circ}$ to the horizontal axis, and 3) an adaptive solar facade \cite{jayathissa2015abs}.\\
 
-Building energy savings through adaptive shading are based off previously completed numerical simulations \cite{jayathissa2015abs}. The simulation was conducted on a south facing office room. The room 7.0 meters in length, 4.9 meters wide and 3.1 meters high was modeled using Rhinoceros 3D CAD Package \cite{Rhino}. Grasshopper \cite{grasshopper} was used to model the orientation of each photovoltaic panel. The geometrical input is imported to Energy Plus \cite{energyplus} though the DIVA \cite{DIVA} interface. A single zone thermal analysis was conducted for each possible geometrical configuration of the ASF for each hour of the year. The results were then post processed in Python \cite{python} with the NumPy \cite{numpy}, and Pandas \cite{pandas} packages.\\
+The simulation was conducted on a south facing office room. The room 7.0 meters in length, 4.9 meters wide and 3.1 meters high was modeled using Rhinoceros 3D CAD Package \cite{Rhino}. Grasshopper \cite{grasshopper} was used to model the orientation of each photovoltaic panel. The geometrical input is imported to Energy Plus \cite{energyplus} though the DIVA \cite{DIVA} interface. A single zone thermal analysis was conducted for each possible geometrical configuration of the ASF for each hour of the year. The results were then post processed in MATLAB.\\
 
-The simulation was conducted for three scenarios: 1) facade with no shading, 2) a facade with a static shading system angled at 45$^{\circ}$ to the horizontal axis, and 3) an adaptive solar facade \cite{jayathissa2015abs}. This analysis purely looks at the building energy performance through adaptive shading and doesn't include electricity production from the photovoltaic panels.\\
+The simulations show a total energy saving of 25\% compared to louvers at 45$^\circ$ and 56\% compared to a case with no facade shading \cite{jayathissa2015abs}. These results are sumarised in Figure \ref{fig:operational}. \\
+
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[width=10cm, trim= 0cm 0cm 0cm 0cm,clip]{buildingenergy.pdf}
+\caption{Breakdown of operational energy consumption for a system with a) no shading, b) with louvers at 45$^\circ$ and c) with an ASF -- not including onsite electricity production.}
+\label{fig:operational}
+\end{center}
+\end{figure}
+
+% ASF, when mounted over a glazed surface has an impact on the energy consumption of the office space behind the facade. In particular 
+% An adaptive shading system reduce the electrical consumption of a building through reductions in heating, cooling and lighting \cite{jayathissa2015abs}. \textcolor{magenta}{\textit{I'd be more verbose. How does it affect energy demand? A "saving" is always relative - so it should probably refer to a base case.}}
+% These electrical savings can be translated into GWP savings based on the emission factor of the European Network of Transmission System Operators for Electricity (ENTSO-E) electricity mix (462.1gCO2/kWh)\cite{itten2012life}.\\
+
 
 
 \item[Dynamic Actuation: ] The energy required for actuation is also taken into account. It takes 1.45Wh to fully open a single actuator. Based on the assumption of four full openings and closings per day per actuator, we approximate the combined energy requirement to be 2286kWh in its 20 year lifetime. 
 %However as seen in Section \ref{ch:results}, this has a \textcolor{magenta}{\sout{very} relatively} small impact.\\
 
-\item[Maintenance: ] Soft robotic actuators currently have a life time of five years, and therefore will need to be replaced three times during the 20 year life time of an ASF.
+\item[Maintenance: ] Soft robotic actuators currently have a life time of five years, and therefore will need to be replaced three times during the 20 year life time of an ASF. No other maintenance efforts are within the boundary of this study.
 
 \begin{table}[H]
 \centering
@@ -197,9 +212,9 @@ Thermal Set Points            & Heating: 22$^{\circ}$ degrees Celcius          \
                               & Cooling: 26$^{\circ}$ degrees Celcius          \\
 Building System               & Hydronic Heating: COP=4                        \\
                               & Hydronic Cooling: COP=3                        \\
-Lighting Control              & Lighting set point: 11.8W/m2                   \\
+Lighting Control              & LED Lighting                                   \\
+                              & Lighting Load: 11.8W/m2                        \\
                               & Lighting Control: 300 lx Threshhold            \\
-                              & LED Lighting                                   \\
 Occupancy                     & Office: Weekdays from 8:00-18:00               \\
                               & People set point: 0.1 persons/m2               \\
                               & Infiltration: 0.5 per hour                     \\
@@ -215,33 +230,24 @@ Actuator Changes              & Every 5 years                                  \
 Full open and closes per day  & 4 per day                                      \\
 \hline
 \end{tabular}
-\caption{Summary of main assumptions for the calculation of operational emissions \textcolor{magenta}{\textit{What thermal resistance? Maybe give surface areas}}}
+\caption{Summary of main assumptions for the calculation of operational emissions}
 \label{tab:AssumptionsOpp}
 \end{table}
 
 
 \end{description}
 
-\subsection{Evaluation Method}
-The life cycle analysis is performed according to the ISO 14040 and ISO 14044 and is performed in five stages 1) goal, 2) scope definition, 3) inventory analysis, and 4) impact assessment.
+\subsection{Impact Assessment}
+The life cycle analysis is performed according to the ISO 14040 and ISO 14044 and is performed in three stages 1) goal, 2) scope definition, and 3) impact assessment.
 
 \begin{description}
 \item[1. Goal] This paper assesses carbon emission reductions. The global warming potential (GWP) impact category is therefore used \textcolor{magenta}{\textit{[IPCC 2013 reference - let me know if you need it]}}). This analysis will also touch on the regional distributions of GWP and terrestrial acidification to give a complete picture.\\
 
-The functional unit is the emission factor (EF) in (gCO$_{2eq}$/kWh). The emission factor is expressed as 
+The functional unit is the electrical power production of the system in kWh. 
 
-\begin{equation}
-EF=\frac{GWP}{\mathrm{G}}
-\label{eq:EF}
-\end{equation}
 
-where ($G$) is the electricity production in (kWh).
+\item[2. Scope] The scope of the assessment is summarised in Figure \ref{fig:BOS}. We analyse the  manufacture, dynamic actuation, maintenance, disposal and the energy savings through adaptive shading. Therefore the scope comprises of a cradle-to-grave approach, where transport to and from site is taken into account. For the database the cut-off approach is used, this means that benefits from recycling are out of the scope of this paper.
 
-\textcolor{magenta}{\textit{Normally a functional unit describes the service or a product being analysed. Now it is defined as an assessment result, which feels like a circular reference :)}}
-
-\item[2. Scope] The scope of the assessment is sumarised in Figure \ref{fig:BOS}. We analyse the GWP of manufacture, dynamic actuation, maintenance, disposal and the GWP savings through adaptive shading. Therefore the scope comprises of a cradle-to-grave approach, where transport to and from site is taken into account. For the database the cut-off approach is used, this means that benefits from recycling are out of the scope of this paper.
-
-\textcolor{magenta}{\textit{At this point I would not talk about GWP. This is about your inventory, which is all kilograms, surfaces, kilowatts, etc. and especially how you determined it. So it should also address building energy consumption. Only after that one can refer to the savings.}}
 
 % The GWP is computed as
 % \begin{equation}
@@ -269,11 +275,20 @@ where ($G$) is the electricity production in (kWh).
 
 % The scope of the LCA comprises of the embodied, operational, and disposal global warming impact of the respective system. Figure \ref{fig:BOS} illustrates the system boundaries of the process flows. The supporting structures are also included in the system boundaries. The reason for this is that technologies within the building envelope also change the design of the supporting structures. The supporting structure of solar panels is referred to as balance of systems (BOS).\\
 
-\item[3. Inventory] The inventory data was obtained from technical drawings, research papers describing the technology, and expert judgement. The Ecoinvent v3.1 database is used as the main LCI database \cite{frischknecht2005ecoinvent}. To keep assumptions consistent, only data from this database is used. \textcolor{magenta}{\textit{(Is that so? Didn't we add a CIGS dataset?)}} Furthermore, the cut-off approach is used for the allocation of recycling and landfill disposal. This means that recycling does not generate any credit for the product and resulting benefits are not taken into account. Furthermore the use of recycled products do not bear the burden of processes higher up the chain.\textcolor{magenta}{\textit{(We do system expansion once we give credits for electricity production.)}}\\
+%\item[3. Inventory] The inventory data was obtained from technical drawings, research papers describing the technology, and expert judgement. The Ecoinvent v3.1 database is used as the main LCI database \cite{frischknecht2005ecoinvent}. To keep assumptions consistent, only data from this database is used. \textcolor{magenta}{\textit{(Is that so? Didn't we add a CIGS dataset?)}} Furthermore, the cut-off approach is used for the allocation of recycling and landfill disposal. This means that recycling does not generate any credit for the product and resulting benefits are not taken into account. Furthermore the use of recycled products do not bear the burden of processes higher up the chain.\textcolor{magenta}{\textit{(We do system expansion once we give credits for electricity production.)}}\\
 
 
 
-\item[4. GWP Assessment] For the assessment the ReciPe midpoint (H) indicator is used \cite{zelm2009recipe}. \textcolor{magenta}{\textit{Now that I read through it: We are not giving any Recipe result?????}} The GWP assessment is performed using the OpenLCA impact assessment tool \cite{ciroth2007ict}. The results of the assessment will be compared with the emission factor of other PV systems \cite{raugei2007life}\\
+\item[4. GWP Assessment] The Assessment is based on the IPCC 2007 methodology through ReCiPe midpoint (H) \cite{zelm2009recipe}. The GWP assessment is performed using the OpenLCA assessment tool \cite{ciroth2007ict}. In the assessment we compare the emission factor (EF) of an ASF with other PV systems. The emission factor is expressed as 
+
+\begin{equation}
+EF=\frac{GWP}{\mathrm{G}}
+\label{eq:EF}
+\end{equation}
+
+where ($G$) is the electricity production in (kWh).
+
+% For the assessment the ReciPe midpoint (H) indicator is used \cite{zelm2009recipe}. \textcolor{magenta}{\textit{Now that I read through it: We are not giving any Recipe result?????}} The GWP assessment is performed using the OpenLCA impact assessment tool \cite{ciroth2007ict}. The results of the assessment will be compared with the emission factor of other PV systems \cite{raugei2007life}\\
 	% we may need to discuss system expansion
 	% PV electricity production not included?
 
