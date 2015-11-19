@@ -1,10 +1,10 @@
 % !TEX root = main.tex
 
-In this section we detail the inventory, energy plus simulation methodology, important assumptions, and the LCA evaluation method. The assessment considers the environmental impacts of the production, operation, and disposal of an ASF. We assume a life time of 20 years based on the product warranty of the PV panels. The impact assessment is performed according to the ISO 14040 and ISO 14044, and is based off the Recipe Midpoint H methodology, which uses the IPCC 2007 methodology for global warming potential.\\
+In this section, we detail the inventory, energy plus simulation methodology, important assumptions, and the LCA evaluation method. The assessment considers the environmental impacts of the production, operation, and disposal of an ASF. We assume a lifetime of 20 years based on the product warranty of the PV panels. The impact assessment is performed according to the ISO 14040 and ISO 14044, and is based off the Recipe Midpoint H methodology, which uses the IPCC 2007 methodology for global warming potential.\\
 
 \subsection{Embodied Life Cycle Inventory}
 
-The inventory data was obtained from technical drawings, research papers describing the technology, and expert judggement. The Ecoinvent v3.1 database is used as the main LCA database \cite{frischknecht2005ecoinvent}. The cut-off approach is used for the allocation of recycling and landfill disposal. This means that recycling does not generate any credit for the product and resulting benefits are not taken into account. Furthermore the use of recycled products do not bear the burden of processes higher up the chain.\\
+The inventory data was obtained from technical drawings, research papers describing the technology, and expert judgment. The Ecoinvent v3.1 database is used as the main LCA database \cite{frischknecht2005ecoinvent}. The cut-off approach is used for the allocation of recycling and landfill disposal. This means that recycling does not generate any credit for the product and resulting benefits are not taken into account. Furthermore, the use of recycled products do not bear the burden of processes higher up the chain.\\
 
 The mechanical components of the ASF can be broken into four parts: a PV panel, actuator, cantilever, and a cable net supporting structure. The PV panel, actuator and cantilever combine to form a dynamic PV module, which is then mounted on a cable net supporting structure. An exploded view of these components can be seen in Figure \ref{fig:explodedView}. There are also additional electronics which exists off the facade in a separate control box. Theses five components along with the assembly, are the main product systems in the manufacture of the ASF as seen in Figure \ref{fig:BOS}. The inventory quantities are given in SMQ (specific mass quantity), which is the mass in kg of the specific materials.
 
@@ -77,7 +77,7 @@ Diode, glass for junction box & 0.011 ${\mathrm{kg/m^2_{facade}}}$\\
 \end{table}
 
 \item[Actuator] \hfill \\
-Traditionally photovoltaic actuation is done through the use of servo motors. Servo motors however become a limiting factor for adaptive facades due to their high upfront costs, and instability in heavy winds. Soft robotic actuators on the other hand are cheaper and more resilient to harsh environmental conditions\cite{Svetozarevic2014a}. The soft robotic actuators however are still in development and have a life time of five years. They will therefore require three rounds of maintenance during the lifetime of the ASF.
+Traditionally photovoltaic actuation is done through the use of servo motors. Servo motors however become a limiting factor for adaptive facades due to their high upfront costs, and instability in heavy winds. Soft robotic actuators on the other hand are cheaper and more resilient to harsh environmental conditions\cite{Svetozarevic2014a}. The soft robotic actuators however are still in development and have a lifetime of five years. They will therefore require three rounds of maintenance during the lifetime of the ASF.
 For the purpose of this analysis we will analyse both servo motors and soft robotic actuators. 
 
 \begin{table}[H]
@@ -113,7 +113,7 @@ Chromium steel fixing clamp  & 0.0284 ${\mathrm{kg/m^2_{facade}}}$\\
 \end{table}
 
 \item[Supporting Structure] \hfill \\
-The supporting structure is the connection point between the array of photovoltaic modules and the building itself. Many different designs are possible, however we will base our analysis of an adaptive solar facade that has already been constructed \cite{nagy2015frontiers}. This design consists of a steel cable-net that spans a steel supporting frame. The steel frame is then mounted on the building facade.\\
+The supporting structure is the connection point between the array of photovoltaic modules and the building itself. Many different designs are possible, however, we will base our analysis of an adaptive solar facade that has already been constructed \cite{nagy2015frontiers}. This design consists of a steel cable-net that spans a steel supporting frame. The steel frame is then mounted on the building facade.\\
 
 \begin{table}[H]
 \centering
@@ -167,7 +167,7 @@ Hoist, diesel  ${<}$18.64kW, idling & 0.5267 ${\mathrm{h/m^2_{facade}}}$ \\
 \subsection{Operational Life Cycle Inventory}
 \label{ch:Meth:Opp}
 
-The operational inventory are categorised as 1) energy consumption of an office room 2) electricity consumption through dynamic actuation, and 3) maintenance.
+The operational inventory is categorised as 1) energy consumption of an office room 2) electricity consumption through dynamic actuation, and 3) maintenance.
 
 \begin{description}
 
@@ -195,7 +195,7 @@ The simulations show a total energy saving of 25\% compared to louvers at 45$^\c
 \item[Dynamic Actuation: ] The energy required for actuation is also taken into account. It takes 0.31Wh to fully open a single actuator. Based on the assumption of four full openings and closings per day per actuator, we approximate the combined energy requirement to be 489kWh in its 20 year lifetime. 
 %However as seen in Section \ref{ch:results}, this has a \textcolor{magenta}{\sout{very} relatively} small impact.\\
 
-\item[Maintenance: ] Soft robotic actuators currently have a life time of five years, and therefore will need to be replaced three times during the 20 year life time of an ASF. No other maintenance efforts are within the boundary of this study.
+\item[Maintenance: ] Soft robotic actuators currently have a lifetime of five years, and therefore will need to be replaced three times during the 20 year lifetime of an ASF. No other maintenance efforts are within the boundary of this study.
 
 \begin{table}[H]
 \centering
@@ -212,7 +212,7 @@ Building System               & Hydronic Heating: COP=4                        \
                               & Hydronic Cooling: COP=3                        \\
 Lighting Control              & LED Lighting                                   \\
                               & Lighting Load: 11.8W/m2                        \\
-                              & Lighting Control: 300 lx Threshhold            \\
+                              & Lighting Control: 300 lx Threshold            \\
 Occupancy                     & Office: Weekdays from 8:00-18:00               \\
                               & People set point: 0.1 persons/m2               \\
                               & Infiltration: 0.5 per hour                     \\
@@ -275,7 +275,7 @@ The functional unit is the electrical power production of the system in kWh.
 
 %\item[3. Inventory] The inventory data was obtained from technical drawings, research papers describing the technology, and expert judgement. The Ecoinvent v3.1 database is used as the main LCI database \cite{frischknecht2005ecoinvent}. To keep assumptions consistent, only data from this database is used. \textcolor{magenta}{\textit{(Is that so? Didn't we add a CIGS dataset?)}} Furthermore, the cut-off approach is used for the allocation of recycling and landfill disposal. This means that recycling does not generate any credit for the product and resulting benefits are not taken into account. Furthermore the use of recycled products do not bear the burden of processes higher up the chain.\textcolor{magenta}{\textit{(We do system expansion once we give credits for electricity production.)}}\\
 
-\item[4. GWP Assessment] The Assessment is based on the IPCC 2007 methodology through ReCiPe midpoint (H) \cite{zelm2009recipe}. The GWP assessment is performed using the OpenLCA assessment tool \cite{ciroth2007ict}. In the assessment we compare the emission factor (EF) of an ASF with other PV systems. The emission factor is expressed as 
+\item[4. GWP Assessment] The Assessment is based on the IPCC 2007 methodology through ReCiPe midpoint (H) \cite{zelm2009recipe}. The GWP assessment is performed using the OpenLCA assessment tool \cite{ciroth2007ict}. In the assessment, we compare the emission factor (EF) of an ASF with other PV systems. The emission factor is expressed as 
 
 \begin{equation}
 EF=\frac{GWP}{\mathrm{G}}
