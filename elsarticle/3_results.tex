@@ -17,12 +17,12 @@ A breakdown of the embodied carbon emissions can be found in Figure  \ref{fig:em
 \subsection{Calculation of Emission Factor}
 The combined GWP of main inputs to the ASF, previously described in Figure \ref{fig:BOS}, can be built up using a waterfall chart as shown in Figure \ref{fig:waterfall}. 
 
-This gives us a total GWP of -5397.9 kg CO$_{2eq}$. We calculate a total electricity production of 580kWh per year, resulting in an emission factor of -465.3gCO${_2}$/kWh.
+This gives us a total GWP of -6229.6 kg CO$_{2eq}$. We calculate a total electricity production of 580kWh per year, resulting in an emission factor of -537.0 gCO${_2}$/kWh.
 
 \begin{figure}[H]
 \begin{center}
 \includegraphics[width=12cm, trim= 0cm 0cm 0cm 0cm,clip]{waterfall}
-\caption{Waterfall diagram of GWP of the ASF. The far left bar details the embodied carbon emissions. The second bar details the emission reduction of the building through the smart shading algorithms of the ASF. The third, fourth and fifth bar shows the effect of dynamic actuation, maintenance, and disposal respectively. This leaves us with a final emissions value (grey bar). When we apply this value to Equation \ref{eq:EF}, we obtain an emission factor per kWh of -465.3 g CO$_2$-eq./kWh.}
+\caption{Waterfall diagram of GWP of the ASF. The far left bar details the embodied carbon emissions. The second bar details the emission reduction of the building through the smart shading algorithms of the ASF. The third, fourth and fifth bar shows the effect of dynamic actuation, maintenance, and disposal respectively. This leaves us with a final emissions value (grey bar). When we apply this value to Equation \ref{eq:EF}, we obtain an emission factor per kWh of -537.0 gCO$_2$-eq./kWh.}
 
 \label{fig:waterfall}
 \end{center}
@@ -59,14 +59,12 @@ The control system design should be carefully thought out due to the high GWP of
 
 %\textcolor{red}{The Monte Carlo Simulation did not yield any significant results / was significant. } \textcolor{blue}{Fill this out once your results come in}
 
-
 % In Switzerland, we see a 6\% reduction compared to the average electricity mix. This is because the Swiss electricity mix is dominated by hydro and nuclear power which has a very low GWP potential [citation needed\textcolor{magenta}{ \textit{ecoinvent?}}]. In Germany on the other hand, the ASF has a 81\% reduction in carbon emissions as the emission factor of the electricity grid is roughly five times higher compared to Switzerland [citation needed] due to the relatively high share in coal-fired power plants.\\
-
 
 \begin{figure}[H]
 \begin{center}
 \includegraphics[width=10cm, trim= 0cm 0cm 0cm 0cm,clip]{sens.pdf}
-\caption{Sensitivity analysis of the emission factor based on electricity mix, actuation system, and control system \textcolor{red}{Wrong Figure)}}
+\caption{Sensitivity analysis of the emission factor based on electricity mix, actuation system, and control system}
 \label{fig:sens}
 \end{center}
 \end{figure}
