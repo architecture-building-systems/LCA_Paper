@@ -1,12 +1,12 @@
 % !TEX root = main.tex
 
-In this section, we detail the inventory, energy plus simulation methodology, important assumptions, and the LCA evaluation method. The assessment considers the environmental impacts of the production, operation, and disposal of an ASF. We assume a lifetime of 20 years based on the product warranty of the PV panels. The impact assessment is performed according to the ISO 14040 and ISO 14044, and is based off the Recipe Midpoint H methodology, which uses the IPCC 2007 methodology for global warming potential.\\
+In this section, we detail the inventory, energy plus simulation methodology, important assumptions, and the LCA evaluation method. The assessment considers the environmental impacts of the production, operation, and disposal of an ASF. We assume a lifetime of 20 years based on the product warranty of the PV panels. The impact assessment is performed according to the ISO 14040 and ISO 14044, and is based off Recipe Midpoint H, which uses the IPCC 2007 methodology for global warming potential (GWP) assessment.\\
 
 \subsection{Embodied Life Cycle Inventory}
 
 The inventory data was obtained from technical drawings, research papers describing the technology, and expert judgment. The Ecoinvent v3.1 database is used as the main LCA database \cite{frischknecht2005ecoinvent}. The cut-off approach is used for the allocation of recycling and landfill disposal. This means that recycling does not generate any credit for the product and resulting benefits are not taken into account. Furthermore, the use of recycled products do not bear the burden of processes higher up the chain.\\
 
-The mechanical components of the ASF can be broken into four parts: a PV panel, actuator, cantilever, and a cable net supporting structure. The PV panel, actuator and cantilever combine to form a dynamic PV module, which is then mounted on a cable net supporting structure. An exploded view of these components can be seen in Figure \ref{fig:explodedView}. There are also additional electronics which exists off the facade in a separate control box. Theses five components along with the assembly, are the main product systems in the manufacture of the ASF as seen in Figure \ref{fig:BOS}. The inventory quantities are given in SMQ (specific mass quantity), which is the mass in kg of the specific materials.
+The mechanical components of an ASF can be broken into four parts: a PV panel, actuator, cantilever, and a cable net supporting structure. The PV panel, actuator and cantilever combine to form a dynamic PV module, which is then mounted on a cable net supporting structure. An exploded view of these components can be seen in Figure \ref{fig:explodedView}. There are also additional electronics which exists off the facade in a separate control box. Theses five components along with the assembly, are the main product systems in the manufacture of an ASF as seen in Figure \ref{fig:BOS}. The inventory quantities are given in SMQ (specific mass quantity), which is the mass in kg of the specific materials.
 
 %\textcolor{magenta}{\textit{\\It is absolutely necessary that we describe the system boundary (what is included and what not (e.g. transport) and why) and also the functional unit! Were all life phases properly described? What happens in the maintenance, disposal phase? Will we have an annex? If so, we should give the ecoinvent inventories there.}}
 
@@ -30,7 +30,7 @@ The mechanical components of the ASF can be broken into four parts: a PV panel, 
 \begin{figure}[ht]
 \begin{center}
 \includegraphics[width=14cm, trim= 0cm 0cm 0cm 0cm,clip]{BOS.pdf}
-\caption{Breakdown of the ASF into five embodied product components and installation costs, operational costs, and disposal}
+\caption{Breakdown of the ASF into five embodied product components, installation, operation, and disposal}
 
 \label{fig:BOS}
 \end{center}
@@ -70,12 +70,12 @@ Polyethylene for junction box & 0.036 ${\mathrm{kg/m^2_{facade}}}$\\
 Diode, glass for junction box & 0.011 ${\mathrm{kg/m^2_{facade}}}$\\
 \hline
 \end{tabular}
-\caption{Inventory of the top five input flows to the PV manufacturing process [ref required]}
+\caption{Inventory of the top five input flows to the PV manufacturing process}
 \label{tab:PVinv}
 \end{table}
 
 \item[Actuator] \hfill \\
-Traditionally photovoltaic actuation is done through the use of servo motors. Servo motors however become a limiting factor for adaptive facades due to their high upfront costs, and instability in heavy winds. Soft robotic actuators on the other hand are cheaper and more resilient to harsh environmental conditions\cite{Svetozarevic2014a}. The soft robotic actuators however are still in development and have a lifetime of five years. They will therefore require three rounds of maintenance during the lifetime of the ASF.
+Traditionally photovoltaic actuation is done through the use of servo motors. Servo motors however become a limiting factor for adaptive facades due to their high upfront costs, and instability in heavy winds. Soft robotic actuators on the other hand are cheaper and more resilient to harsh environmental conditions\cite{Svetozarevic2014a}. The soft robotic actuators however are still in development and have a current lifetime of five years. They will therefore require three rounds of maintenance during the lifetime of the ASF.
 For the purpose of this analysis we will analyse both servo motors and soft robotic actuators. 
 
 \begin{table}[H]
@@ -90,7 +90,7 @@ Polyurethane tubes &0.0933 ${\mathrm{kg/m^2_{facade}}}$\\
 Air compressor, screw type, 0.75kW & 1.7281 ${\mathrm{kg/m^2_{facade}}}$\\
 \hline
 \end{tabular}
-\caption{Inventory of four main input flows to the actuator manufacturing process [ref required]}
+\caption{Inventory of four main input flows to the soft robotic actuator manufacturing process }
 \label{tab:ActuatorInv}
 \end{table}
 
@@ -106,7 +106,7 @@ Chromium steel bracket	 & 1.4220 ${\mathrm{kg/m^2_{facade}}}$ \\
 Chromium steel fixing clamp  & 0.0284 ${\mathrm{kg/m^2_{facade}}}$\\
 \hline
 \end{tabular}
-\caption{Inventory of main input flows to the Cantilever manufacturing process [ref required]}
+\caption{Inventory of main input flows to the Cantilever manufacturing process }
 \label{tab:CantileverInv}
 \end{table}
 
@@ -123,7 +123,7 @@ Chromium steel swaged external thread  &0.2897 ${\mathrm{kg/m^2_{facade}}}$\\
 Chromium steel wire rope WC  & 0.1593 ${\mathrm{kg/m^2_{facade}}}$\\
 \hline
 \end{tabular}
-\caption{Inventory of the four main input flows to the manufacturing process of the Supporting Structure[ref required]}
+\caption{Inventory of the four main input flows to the manufacturing process of the Supporting Structure}
 \label{tab:StructureInv}
 \end{table}
 
@@ -141,7 +141,7 @@ Electronics control\footnote{c-Rio,8-slot, integrated 667Mhz}& 0.0419 ${\mathrm{
 Electronics control\footnote{NI9476 32ch DO with cables and connectors}& 0.0097${\mathrm{kg/m^2_{facade}}}$\\
 \hline
 \end{tabular}
-\caption{Inventory of the four main input flows to the manufacturing process of the Control System[ref required]}
+\caption{Inventory of the four main input flows to the manufacturing process of the Control System}
 \label{tab:ControlInv}
 \end{table}
 
@@ -156,7 +156,7 @@ Material description & SMQ \\ \hline
 Hoist, diesel  ${<}$18.64kW, idling & 0.5267 ${\mathrm{h/m^2_{facade}}}$ \\
 \hline
 \end{tabular}
-\caption{Inventory of main input flows to the Assembly Process[ref required]}
+\caption{Inventory of main input flows to the Assembly Process}
 \label{tab:AssemblyInv}
 \end{table}
 
@@ -173,7 +173,7 @@ The operational inventory is categorised as 1) energy consumption of an office r
 \item[Building Energy Consumption: ] \hfill\\
 An adaptive shading system, when mounted over a glazed facade, has an impact on the energy consumption of the building as described in Section \ref{ch:introduction}. More specifically, it has an impact on the heating cooling and lighting loads. Previously conducted simulations compared three scenarios: 1) facade with no shading, 2) a facade with a static shading system angled at 45$^{\circ}$ to the horizontal axis, and 3) an adaptive solar facade \cite{jayathissa2015abs}.\\
 
-The simulation was conducted on a south facing office room. The room 7.0 meters in length, 4.9 meters wide and 3.1 meters high was modeled using Rhinoceros 3D CAD Package \cite{Rhino}. Grasshopper \cite{grasshopper} was used to model the orientation of each photovoltaic panel. The geometrical input is imported to Energy Plus \cite{energyplus} though the DIVA \cite{DIVA} interface. A single zone thermal analysis was conducted for each possible geometrical configuration of the ASF for each hour of the year. The results were then post processed in MATLAB.\\
+The simulation was conducted on a south facing office room. The room 7.0 meters in length, 4.9 meters wide and 3.1 meters high was modeled using Rhinoceros 3D CAD Package \cite{Rhino}. Grasshopper \cite{grasshopper} was used to model the orientation of each photovoltaic panel. The geometrical input is imported to Energy Plus \cite{energyplus} though the DIVA \cite{DIVA} interface. A single zone thermal analysis was conducted for each possible geometrical configuration of the ASF for each hour of the year. The results were then post processed in MATLAB \cite{MATLAB}.\\
 
 The simulations show a total energy saving of 25\% compared to louvers at 45$^\circ$ and 56\% compared to a case with no facade shading \cite{jayathissa2015abs}. These results are sumarised in Figure \ref{fig:operational}. \\
 
@@ -193,7 +193,7 @@ The simulations show a total energy saving of 25\% compared to louvers at 45$^\c
 \item[Dynamic Actuation: ] The energy required for actuation is also taken into account. It takes 0.31Wh to fully open a single actuator. Based on the assumption of four full openings and closings per day per actuator, we approximate the combined energy requirement to be 489kWh in its 20 year lifetime. 
 %However as seen in Section \ref{ch:results}, this has a \textcolor{magenta}{\sout{very} relatively} small impact.\\
 
-\item[Maintenance: ] Soft robotic actuators currently have a lifetime of five years, and therefore will need to be replaced three times during the 20 year lifetime of an ASF. No other maintenance efforts are within the boundary of this study.
+\item[Maintenance: ] Soft robotic actuators currently have a lifetime of five years, and therefore will need to be replaced three times during the 20 year lifetime of an ASF. No other maintenance efforts are considered.
 
 \begin{table}[H]
 \centering
@@ -238,11 +238,10 @@ The life cycle analysis is performed according to the ISO 14040 and ISO 14044 an
 
 \begin{description}
 \item[1. Goal] This paper assesses carbon emission reductions. The global warming potential (GWP) impact category is therefore used. This analysis will also touch on the regional distributions of GWP and terrestrial acidification to give a complete picture.\\
-
 The functional unit is the electrical power production of the system in kWh. 
 
 
-\item[2. Scope] The scope of the assessment is summarised in Figure \ref{fig:BOS}. We analyse the  manufacture, dynamic actuation, maintenance, disposal and the energy savings through adaptive shading. Therefore the scope comprises of a cradle-to-grave approach, where transport to and from site is taken into account. For the database the cut-off approach is used, this means that benefits from recycling are out of the scope of this paper.
+\item[2. Scope] The scope of the assessment is summarised in Figure \ref{fig:BOS}. We analyse the  manufacture, dynamic actuation, maintenance, disposal and the energy savings through adaptive shading. The scope comprises of a cradle-to-grave approach, where transport to and from site is taken into account. For the database, the cut-off approach is used. This implies that benefits from recycling are out of the scope of this paper.
 
 
 % The GWP is computed as
@@ -273,7 +272,7 @@ The functional unit is the electrical power production of the system in kWh.
 
 %\item[3. Inventory] The inventory data was obtained from technical drawings, research papers describing the technology, and expert judgement. The Ecoinvent v3.1 database is used as the main LCI database \cite{frischknecht2005ecoinvent}. To keep assumptions consistent, only data from this database is used. \textcolor{magenta}{\textit{(Is that so? Didn't we add a CIGS dataset?)}} Furthermore, the cut-off approach is used for the allocation of recycling and landfill disposal. This means that recycling does not generate any credit for the product and resulting benefits are not taken into account. Furthermore the use of recycled products do not bear the burden of processes higher up the chain.\textcolor{magenta}{\textit{(We do system expansion once we give credits for electricity production.)}}\\
 
-\item[4. GWP Assessment] The Assessment is based on the IPCC 2007 methodology through ReCiPe midpoint (H) \cite{zelm2009recipe}. The GWP assessment is performed using the OpenLCA assessment tool \cite{ciroth2007ict}. In the assessment, we compare the emission factor (EF) of an ASF with other PV systems. The emission factor is expressed as 
+\item[4. GWP Assessment] The assessment is based on the IPCC 2007 methodology through ReCiPe midpoint (H) \cite{zelm2009recipe}. The GWP assessment is performed using the OpenLCA assessment tool \cite{ciroth2007ict}. In the assessment, we compare the emission factor (EF) of an ASF with other PV systems. The emission factor is expressed as 
 
 \begin{equation}
 EF=\frac{GWP}{\mathrm{G}}
