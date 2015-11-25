@@ -1,10 +1,69 @@
 % !TEX root = main.tex
 
-In this section, we detail the inventory, energy plus simulation methodology, important assumptions, and the LCA evaluation method. The assessment considers the environmental impacts of the production, operation, and disposal of an ASF. We assume a lifetime of 20 years based on the product warranty of the PV panels. The impact assessment is performed according to the ISO 14040 and ISO 14044, and is based off Recipe Midpoint H, which uses the IPCC 2007 methodology for global warming potential (GWP) assessment.\\
+In this section, we detail the inventory, Energy Plus simulation methodology, important assumptions, and the LCA evaluation method. The assessment considers the environmental impacts of the production, operation, and disposal of an ASF. We assume a lifetime of 20 years based on the product warranty of the PV panels. The impact assessment is performed according to the ISO 14040 and ISO 14044 \cite{finkbeiner2006new}, using the IPCC 2007 methodology \textcolor{cyan}{ADD REF }for global warming potential (GWP) assessment.\\
+
+\subsection{Impact Assessment}
+The life cycle assessment is performed in three stages 1) goal, 2) scope definition, and 3) impact assessment.
+
+\begin{description}
+\item[1. Goal] This paper assesses carbon emission reductions. The global warming potential (GWP) impact category is therefore used. This analysis will also touch on the regional distributions of GWP and terrestrial acidification to give a complete picture.\\
+The functional unit is the electrical power production of the system in kWh. 
+
+
+\item[2. Scope] The scope of the assessment is summarised in Figure \ref{fig:BOS}. We analyse the  manufacture, dynamic actuation, maintenance, disposal and the energy savings through adaptive shading. The scope comprises of a cradle-to-grave approach, where transport to and from site is taken into account. For the database, the cut-off approach is used. This implies that benefits from recycling are out of the scope of this paper.
+
+
+% The GWP is computed as
+% \begin{equation}
+% \sum GWP={\mathrm{GWP_{Em}  + GWP_{Act} + GWP_{M} + GWP_{Disp} - GWP_{Opp} }},
+% \label{eq:GWP}
+% \end{equation}
+% where $GWP_{Em}$ is the Embodied Energy, $GWP_{Act}$ is the Dynamic Actuation, $GWP_{M}$ is Maintenance, and $GWP_{Disp}$ is Disposal. The GWP savings through adaptive shading $GWP_{Opp}$ are subtracted to produce our final GWP. This scope is summarised in Figure \ref{fig:BOS}. 
+
+%\textcolor{red}{\textit{What does the sum sign refer to? This does not make sense to me. It should be GWP = ... // Also, why are those terms in uppercase?}}
+
+% The functional unit needs to be based on the primary function of the technology. For adaptive building integrated photovoltaics this function can be twofold. When the adaptive BIPV acts as a shading system in front of a glass facade area the functional unit of ${\mathrm{m^2}}$ is used, while a comparison with static facade mounted photovoltaic systems requires the functional unit of electricity produced in ${\mathrm{kWh}}$. \textcolor{magenta}{\textit{(We should discuss the functional unit again. It should be defined more precisely / comprehensively.)}}
+
+% In our assessment, we want to obtain the emission factor (gCO$_2$/kWh) of an ASF as expressed in Equation \ref{eq:EF}. 
+
+% The electricity production, G, in kWh is expressed as
+% \begin{equation}
+% G=\frac{{\mathrm{GWP}}}{{\mathrm{I \cdot \eta  \cdot PR \cdot LT \cdot A}}}
+% % what is G
+% \label{eq:solar}
+% \end{equation}
+% based on [REF REQUIRED]. In~(\ref{eq:solar}) \textit{I} is the Irradiation \textcolor{red}{(unit)}, ${\eta}$ is the conversion efficiency, \textit{PR} is the performance ratio, \textit{LT} is the service life \textcolor{red}{(unit)}, and \textit{A} is the module area \textcolor{red}{(unit)}.
+% \textcolor{red}{\textit{I rewrote this a little bit. You should try to a) make the equations part of the text, and b) the way you use the variables in the text should be the same as in the equations. Now you have I in italics in the text but as textrm in the actual equation. If you add the amsmath package you can use $\backslash$eqref to reference equations directly.\\
+% Also why is G even used in this paragraph?}}
+
+
+% The scope of the LCA comprises of the embodied, operational, and disposal global warming impact of the respective system. Figure \ref{fig:BOS} illustrates the system boundaries of the process flows. The supporting structures are also included in the system boundaries. The reason for this is that technologies within the building envelope also change the design of the supporting structures. The supporting structure of solar panels is referred to as balance of systems (BOS).\\
+
+%\item[3. Inventory] The inventory data was obtained from technical drawings, research papers describing the technology, and expert judgement. The Ecoinvent v3.1 database is used as the main LCI database \cite{frischknecht2005ecoinvent}. To keep assumptions consistent, only data from this database is used. \textcolor{magenta}{\textit{(Is that so? Didn't we add a CIGS dataset?)}} Furthermore, the cut-off approach is used for the allocation of recycling and landfill disposal. This means that recycling does not generate any credit for the product and resulting benefits are not taken into account. Furthermore the use of recycled products do not bear the burden of processes higher up the chain.\textcolor{magenta}{\textit{(We do system expansion once we give credits for electricity production.)}}\\
+
+\item[4. GWP Assessment] The assessment is based on the IPCC 2007 methodology through ReCiPe midpoint (H) \cite{zelm2009recipe}. The GWP assessment is performed using the OpenLCA assessment tool \cite{ciroth2007ict}. In the assessment, we compare the emission factor (EF) of an ASF with other PV systems. The emission factor is expressed as 
+
+\begin{equation}
+EF=\frac{GWP}{\mathrm{G}}
+\label{eq:EF}
+\end{equation}
+
+where ($G$) is the electricity production in (kWh).
+
+% For the assessment the ReciPe midpoint (H) indicator is used \cite{zelm2009recipe}. \textcolor{magenta}{\textit{Now that I read through it: We are not giving any Recipe result?????}} The GWP assessment is performed using the OpenLCA impact assessment tool \cite{ciroth2007ict}. The results of the assessment will be compared with the emission factor of other PV systems \cite{raugei2007life}\\
+      % we may need to discuss system expansion
+      % PV electricity production not included?
+
+% what LCI DB (ecoinvent) is used? refer to Annex?
+% see above. Explain what is included and excluded
+
+\end{description}
+
 
 \subsection{Embodied Life Cycle Inventory}
 
-The inventory data was obtained from technical drawings, research papers describing the technology, and expert judgment. The Ecoinvent v3.1 database is used as the main LCA database \cite{frischknecht2005ecoinvent}. The cut-off approach is used for the allocation of recycling and landfill disposal. This means that recycling does not generate any credit for the product and resulting benefits are not taken into account. Furthermore, the use of recycled products do not bear the burden of processes higher up the chain.\\
+%The inventory data was obtained from technical drawings, research papers describing the technology, and expert judgment. 
+The Ecoinvent v3.1 database is used as the main LCA database \cite{frischknecht2005ecoinvent}. The cut-off approach is used for the allocation of recycling and landfill disposal. This means that recycling does not generate any credit for the product and resulting benefits are not taken into account. Furthermore, the use of recycled products do not bear the burden of processes higher up the chain.\\
 
 The mechanical components of an ASF can be broken into four parts: a PV panel, actuator, cantilever, and a cable net supporting structure. The PV panel, actuator and cantilever combine to form a dynamic PV module, which is then mounted on a cable net supporting structure. An exploded view of these components can be seen in Figure \ref{fig:explodedView}. There are also additional electronics which exists off the facade in a separate control box. Theses five components along with the assembly, are the main product systems in the manufacture of an ASF as seen in Figure \ref{fig:BOS}. The inventory quantities are given in SMQ (specific mass quantity), which is the mass in kg of the specific materials.
 
@@ -75,7 +134,7 @@ Diode, glass for junction box & 0.011 ${\mathrm{kg/m^2_{facade}}}$\\
 \end{table}
 
 \item[Actuator] \hfill \\
-Traditionally photovoltaic actuation is done through the use of servo motors. Servo motors however become a limiting factor for adaptive facades due to their high upfront costs, and instability in heavy winds. Soft robotic actuators on the other hand are cheaper and more resilient to harsh environmental conditions\cite{Svetozarevic2014a}. The soft robotic actuators however are still in development and have a current lifetime of five years. They will therefore require three rounds of maintenance during the lifetime of the ASF.
+Traditionally photovoltaic actuation is done through the use of servo motors. Servo motors however become a limiting factor for adaptive facades due to their high upfront costs, and instability in heavy winds. Soft robotic actuators on the other hand are cheaper and more resilient to harsh environmental conditions\cite{Svetozarevic2014a}. The soft robotic actuators however are still in development and have an estimated lifetime of five years. They will therefore require three rounds of maintenance during the lifetime of the ASF.
 For the purpose of this analysis we will analyse both servo motors and soft robotic actuators. 
 
 \begin{table}[H]
@@ -111,7 +170,7 @@ Chromium steel fixing clamp  & 0.0284 ${\mathrm{kg/m^2_{facade}}}$\\
 \end{table}
 
 \item[Supporting Structure] \hfill \\
-The supporting structure is the connection point between the array of photovoltaic modules and the building itself. Many different designs are possible, however, we will base our analysis of an adaptive solar facade that has already been constructed \cite{nagy2015frontiers}. This design consists of a steel cable-net that spans a steel supporting frame. The steel frame is then mounted on the building facade.\\
+The supporting structure is the connection point between the array of photovoltaic modules and the building itself. Many different designs are possible, however, we will base our analysis of an existing adaptive solar facade \cite{nagy2015frontiers}. This design consists of a steel cable-net that spans a steel supporting frame. The steel frame is then mounted on the building facade.\\
 
 \begin{table}[H]
 \centering
@@ -173,7 +232,7 @@ The operational inventory is categorised as 1) energy consumption of an office r
 \item[Building Energy Consumption: ] \hfill\\
 An adaptive shading system, when mounted over a glazed facade, has an impact on the energy consumption of the building as described in Section \ref{ch:introduction}. More specifically, it has an impact on the heating cooling and lighting loads. Previously conducted simulations compared three scenarios: 1) facade with no shading, 2) a facade with a static shading system angled at 45$^{\circ}$ to the horizontal axis, and 3) an adaptive solar facade \cite{jayathissa2015abs}.\\
 
-The simulation was conducted on a south facing office room. The room 7.0 meters in length, 4.9 meters wide and 3.1 meters high was modeled using Rhinoceros 3D CAD Package \cite{Rhino}. Grasshopper \cite{grasshopper} was used to model the orientation of each photovoltaic panel. The geometrical input is imported to Energy Plus \cite{energyplus} though the DIVA \cite{DIVA} interface. A single zone thermal analysis was conducted for each possible geometrical configuration of the ASF for each hour of the year. The results were then post processed in MATLAB \cite{MATLAB}.\\
+The simulation was conducted on a south facing office room. The room, 7.0 meters in length, 4.9 meters wide and 3.1 meters high was modeled using Rhinoceros 3D CAD Package \cite{Rhino}. Grasshopper \cite{grasshopper} was used to model the orientation of each photovoltaic panel. The geometrical input is imported to Energy Plus \cite{energyplus} though the DIVA \cite{DIVA} interface. A single zone thermal analysis was conducted for each possible geometrical configuration of the ASF for each hour of the year. The results were then post processed in MATLAB \cite{MATLAB}.\\
 
 The simulations show a total energy saving of 25\% compared to louvers at 45$^\circ$ and 56\% compared to a case with no facade shading \cite{jayathissa2015abs}. These results are sumarised in Figure \ref{fig:operational}. \\
 
@@ -233,62 +292,7 @@ Full open and closes per day  & 4 per day                                      \
 
 \end{description}
 
-\subsection{Impact Assessment}
-The life cycle analysis is performed according to the ISO 14040 and ISO 14044 and is performed in three stages 1) goal, 2) scope definition, and 3) impact assessment.
 
-\begin{description}
-\item[1. Goal] This paper assesses carbon emission reductions. The global warming potential (GWP) impact category is therefore used. This analysis will also touch on the regional distributions of GWP and terrestrial acidification to give a complete picture.\\
-The functional unit is the electrical power production of the system in kWh. 
-
-
-\item[2. Scope] The scope of the assessment is summarised in Figure \ref{fig:BOS}. We analyse the  manufacture, dynamic actuation, maintenance, disposal and the energy savings through adaptive shading. The scope comprises of a cradle-to-grave approach, where transport to and from site is taken into account. For the database, the cut-off approach is used. This implies that benefits from recycling are out of the scope of this paper.
-
-
-% The GWP is computed as
-% \begin{equation}
-% \sum GWP={\mathrm{GWP_{Em}  + GWP_{Act} + GWP_{M} + GWP_{Disp} - GWP_{Opp} }},
-% \label{eq:GWP}
-% \end{equation}
-% where $GWP_{Em}$ is the Embodied Energy, $GWP_{Act}$ is the Dynamic Actuation, $GWP_{M}$ is Maintenance, and $GWP_{Disp}$ is Disposal. The GWP savings through adaptive shading $GWP_{Opp}$ are subtracted to produce our final GWP. This scope is summarised in Figure \ref{fig:BOS}. 
-
-%\textcolor{red}{\textit{What does the sum sign refer to? This does not make sense to me. It should be GWP = ... // Also, why are those terms in uppercase?}}
-
-% The functional unit needs to be based on the primary function of the technology. For adaptive building integrated photovoltaics this function can be twofold. When the adaptive BIPV acts as a shading system in front of a glass facade area the functional unit of ${\mathrm{m^2}}$ is used, while a comparison with static facade mounted photovoltaic systems requires the functional unit of electricity produced in ${\mathrm{kWh}}$. \textcolor{magenta}{\textit{(We should discuss the functional unit again. It should be defined more precisely / comprehensively.)}}
-
-% In our assessment, we want to obtain the emission factor (gCO$_2$/kWh) of an ASF as expressed in Equation \ref{eq:EF}. 
-
-% The electricity production, G, in kWh is expressed as
-% \begin{equation}
-% G=\frac{{\mathrm{GWP}}}{{\mathrm{I \cdot \eta  \cdot PR \cdot LT \cdot A}}}
-% % what is G
-% \label{eq:solar}
-% \end{equation}
-% based on [REF REQUIRED]. In~(\ref{eq:solar}) \textit{I} is the Irradiation \textcolor{red}{(unit)}, ${\eta}$ is the conversion efficiency, \textit{PR} is the performance ratio, \textit{LT} is the service life \textcolor{red}{(unit)}, and \textit{A} is the module area \textcolor{red}{(unit)}.
-% \textcolor{red}{\textit{I rewrote this a little bit. You should try to a) make the equations part of the text, and b) the way you use the variables in the text should be the same as in the equations. Now you have I in italics in the text but as textrm in the actual equation. If you add the amsmath package you can use $\backslash$eqref to reference equations directly.\\
-% Also why is G even used in this paragraph?}}
-
-
-% The scope of the LCA comprises of the embodied, operational, and disposal global warming impact of the respective system. Figure \ref{fig:BOS} illustrates the system boundaries of the process flows. The supporting structures are also included in the system boundaries. The reason for this is that technologies within the building envelope also change the design of the supporting structures. The supporting structure of solar panels is referred to as balance of systems (BOS).\\
-
-%\item[3. Inventory] The inventory data was obtained from technical drawings, research papers describing the technology, and expert judgement. The Ecoinvent v3.1 database is used as the main LCI database \cite{frischknecht2005ecoinvent}. To keep assumptions consistent, only data from this database is used. \textcolor{magenta}{\textit{(Is that so? Didn't we add a CIGS dataset?)}} Furthermore, the cut-off approach is used for the allocation of recycling and landfill disposal. This means that recycling does not generate any credit for the product and resulting benefits are not taken into account. Furthermore the use of recycled products do not bear the burden of processes higher up the chain.\textcolor{magenta}{\textit{(We do system expansion once we give credits for electricity production.)}}\\
-
-\item[4. GWP Assessment] The assessment is based on the IPCC 2007 methodology through ReCiPe midpoint (H) \cite{zelm2009recipe}. The GWP assessment is performed using the OpenLCA assessment tool \cite{ciroth2007ict}. In the assessment, we compare the emission factor (EF) of an ASF with other PV systems. The emission factor is expressed as 
-
-\begin{equation}
-EF=\frac{GWP}{\mathrm{G}}
-\label{eq:EF}
-\end{equation}
-
-where ($G$) is the electricity production in (kWh).
-
-% For the assessment the ReciPe midpoint (H) indicator is used \cite{zelm2009recipe}. \textcolor{magenta}{\textit{Now that I read through it: We are not giving any Recipe result?????}} The GWP assessment is performed using the OpenLCA impact assessment tool \cite{ciroth2007ict}. The results of the assessment will be compared with the emission factor of other PV systems \cite{raugei2007life}\\
-	% we may need to discuss system expansion
-	% PV electricity production not included?
-
-% what LCI DB (ecoinvent) is used? refer to Annex?
-% see above. Explain what is included and excluded
-
-\end{description}
 
 \subsection{Sensitivity Analysis}
 
