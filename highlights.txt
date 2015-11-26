@@ -1,0 +1,6 @@
+Highlights
+
+•	The embodied environmental impact of a dynamic BIPV system is higher than a static system
+•	Selection of actuators, control system and structural support can reduce environmental impact
+•	Savings through adaptive shading offsets the entire embodied environmental impact
+•	Dynamic BIPV systems are a preferred solution for glazed building surfaces
