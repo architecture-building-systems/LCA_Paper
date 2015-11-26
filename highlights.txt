@@ -1,5 +1,7 @@
 Highlights
 
+See https://www.elsevier.com/authors/journal-authors/highlights for more info
+
 •	The embodied environmental impact of a dynamic BIPV system is higher than a static system
 •	Selection of actuators, control system and structure can reduce its environmental impact
 •	Savings through adaptive shading offsets the entire embodied environmental impact
