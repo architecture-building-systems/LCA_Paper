@@ -3,14 +3,14 @@
 In this section, we detail the inventory, Energy Plus simulation methodology, important assumptions, and the LCA evaluation method. The assessment considers the environmental impacts of the production, operation, and disposal of an ASF. We assume a lifetime of 20 years based on the product warranty of the PV panels. The impact assessment is performed according to the ISO 14040 and ISO 14044 \cite{finkbeiner2006new}, using the IPCC 2007 methodology \cite{solomon2007climate} for global warming potential (GWP) assessment.\\
 
 \subsection{Impact Assessment}
-The life cycle assessment is performed in three stages 1) goal, 2) scope definition, and 3) impact assessment.
+The life cycle assessment is performed in three stages 1) goal, 2) scope definition, and 3) assessment.
 
 \begin{description}
-\item[1. Goal] This paper assesses carbon emission reductions. The global warming potential (GWP) impact category is therefore used. This analysis will also touch on the regional distributions of GWP and terrestrial acidification to give a complete picture.\\
+\item[1. Goal:] This paper assesses carbon emission reductions. The global warming potential (GWP) impact category is therefore used. This analysis will also touch on the regional distributions of GWP and terrestrial acidification to give a complete picture.\\
 The functional unit is the electrical power production of the system in kWh. 
 
 
-\item[2. Scope] The scope of the assessment is summarised in Figure \ref{fig:BOS}. We analyse the  manufacture, dynamic actuation, maintenance, disposal and the energy savings through adaptive shading. The scope comprises of a cradle-to-grave approach, where transport to and from site is taken into account. For the database, the cut-off approach is used. This implies that benefits from recycling are out of the scope of this paper.
+\item[2. Scope:] The scope of the assessment is summarised in Figure \ref{fig:BOS}. We analyse the  manufacture, dynamic actuation, maintenance, disposal and the energy savings through adaptive shading. The scope comprises of a cradle-to-grave approach, where transport to and from site is taken into account. For the database, the cut-off approach is used. This implies that benefits from recycling are out of the scope of this paper. As the analysis is done in Switzerland we assume irradiation on the Facade of 966kWh/m$^2$/year.
 
 
 % The GWP is computed as
@@ -41,7 +41,7 @@ The functional unit is the electrical power production of the system in kWh.
 
 %\item[3. Inventory] The inventory data was obtained from technical drawings, research papers describing the technology, and expert judgement. The Ecoinvent v3.1 database is used as the main LCI database \cite{frischknecht2005ecoinvent}. To keep assumptions consistent, only data from this database is used. \textcolor{magenta}{\textit{(Is that so? Didn't we add a CIGS dataset?)}} Furthermore, the cut-off approach is used for the allocation of recycling and landfill disposal. This means that recycling does not generate any credit for the product and resulting benefits are not taken into account. Furthermore the use of recycled products do not bear the burden of processes higher up the chain.\textcolor{magenta}{\textit{(We do system expansion once we give credits for electricity production.)}}\\
 
-\item[3. GWP Assessment] The assessment is based on the IPCC 2007 methodology \cite{solomon2007climate}. The GWP assessment is performed using the OpenLCA assessment tool \cite{ciroth2007ict}. In the assessment, we compare the emission factor (EF) of an ASF with other PV systems. The emission factor is expressed as 
+\item[3. GWP Assessment:] The assessment is based on the IPCC 2007 methodology \cite{solomon2007climate}. The GWP assessment is performed using the OpenLCA assessment tool \cite{ciroth2007ict}. In the assessment, we compare the emission factor (EF) of an ASF with other PV systems. The emission factor is expressed as 
 
 \begin{equation}
 EF=\frac{GWP}{\mathrm{G}}
@@ -98,9 +98,7 @@ The mechanical components of an ASF can be broken into four parts: a PV panel, a
 \begin{description}
 
 \item[PV Panel] \hfill\\
-Weight is the primary restriction when selecting a PV panel. Any technology that requires glass encapsulation or a heavy substructure can therefore not be used. This limits us to CIGS and amorphous silicon panels.\\
-
-CIGS PV panels were selected as the thin film panel of choice due to its high efficiency, low cost, and ability to be deposited on a polymer or aluminium substrate \cite{chirilua2011highly}. 
+Weight is the primary restriction when selecting a PV panel. Any technology that requires glass encapsulation or a heavy substructure can therefore not be used. The technology also needs to be on the market with high module efficiency. CIGS PV panels were selected as the thin film panel of choice due to its high efficiency, low cost, and ability to be deposited on a polymer or aluminium substrate \cite{chirilua2011highly}. 
 
 
 
@@ -230,7 +228,7 @@ The operational inventory is categorised as 1) energy consumption of an office r
 
 
 \item[Building Energy Consumption: ] \hfill\\
-An adaptive shading system, when mounted over a glazed facade, has an impact on the energy consumption of the building as described in Section \ref{ch:introduction}. More specifically, it has an impact on the heating cooling and lighting loads. Previously conducted simulations compared three scenarios: 1) facade with no shading, 2) a facade with a static shading system angled at 45$^{\circ}$ to the horizontal axis, and 3) an adaptive solar facade \cite{jayathissa2015abs}.\\
+An adaptive shading system, when mounted over a glazed facade, has an impact on the energy consumption of the building as described in Section \ref{ch:introduction}. More specifically, it has an impact on the heating cooling and lighting loads. Previously conducted simulations compared three scenarios: 1) facade with no shading, 2) a facade with a static shading system, optimally angled at 45$^{\circ}$ to the horizontal axis, and 3) an adaptive solar facade \cite{jayathissa2015abs}.\\
 
 The simulation was conducted on a south facing office room. The room, 7.0 meters in length, 4.9 meters wide and 3.1 meters high was modeled using Rhinoceros 3D CAD Package \cite{Rhino}. Grasshopper \cite{grasshopper} was used to model the orientation of each photovoltaic panel. The geometrical input is imported to Energy Plus \cite{energyplus} though the DIVA \cite{DIVA} interface. A single zone thermal analysis was conducted for each possible geometrical configuration of the ASF for each hour of the year. The results were then post processed in MATLAB \cite{MATLAB}.\\
 
@@ -262,14 +260,14 @@ The simulations show a total energy saving of 25\% compared to louvers at 45$^\c
 Office Envelope               & Roof: Adiabatic                                \\
                               & Floor: Adiabatic                               \\
                               & Walls: Adiabatic                               \\
-                              & Window: Double Glazed (e=0.2) 3/13 air \\
+                              & Window: Double Glazed (e=0.2) 3mm/13mm air \\
 Thermal Set Points            & Heating: 22$^{\circ}$ degrees Celcius          \\
                               & Cooling: 26$^{\circ}$ degrees Celcius          \\
 Building System               & Hydronic Heating: COP=4                        \\
                               & Hydronic Cooling: COP=3                        \\
 Lighting Control              & LED Lighting                                   \\
                               & Lighting Load: 11.8W/m2                        \\
-                              & Lighting Control: 300 lx Threshold            \\
+                              & Lighting Control: 300 lx Threshhold            \\
 Occupancy                     & Office: Weekdays from 8:00-18:00               \\
                               & People set point: 0.1 persons/m2               \\
                               & Infiltration: 0.5 per hour                     \\
@@ -277,6 +275,7 @@ Occupancy                     & Office: Weekdays from 8:00-18:00               \
 \textbf{Location Assumptions} &                                                \\
 Weather File                  & Geneva, Switzerland (067000IWEC)               \\
 Electricity Mix               & ENTSO-E \cite{itten2012life}                   \\
+Average Solar Radiation               & 966kWh/m$^2$/year                              \\
                               &                                                \\
 \textbf{Maintenance}          &                                                \\
 Actuator Changes              & Every 5 years                                  \\
