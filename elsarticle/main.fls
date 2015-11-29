@@ -55,6 +55,8 @@ INPUT /usr/local/texlive/2014/texmf-dist/tex/latex/graphics/color.sty
 INPUT /usr/local/texlive/2014/texmf-dist/tex/latex/graphics/color.sty
 INPUT /usr/local/texlive/2014/texmf-dist/tex/latex/latexconfig/color.cfg
 INPUT /usr/local/texlive/2014/texmf-dist/tex/latex/latexconfig/color.cfg
+INPUT /usr/local/texlive/2014/texmf-dist/tex/latex/graphics/lscape.sty
+INPUT /usr/local/texlive/2014/texmf-dist/tex/latex/graphics/lscape.sty
 INPUT main.aux
 INPUT main.aux
 OUTPUT main.aux
