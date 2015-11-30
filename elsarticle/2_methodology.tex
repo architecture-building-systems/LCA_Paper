@@ -45,7 +45,7 @@ The functional unit is the electrical power production of the system in kWh.
 
 \begin{equation}
 EF=\frac{GWP}{\mathrm{G}}   
-\tagaddtext{[$\frac{kg CO2-eq.}{kWh}$]}
+\tagaddtext{[$\frac{kg CO_{2-eq}}{kWh}$]}
 \label{eq:EF}
 \end{equation}
 
@@ -233,7 +233,7 @@ An adaptive shading system, when mounted over a glazed facade, has an impact on 
 
 The simulation was conducted on a south facing office room. The room, 7.0 meters in length, 4.9 meters wide and 3.1 meters high was modeled using Rhinoceros 3D CAD Package \cite{Rhino}. Grasshopper \cite{grasshopper} was used to model the orientation of each photovoltaic panel. The geometrical input is imported to Energy Plus \cite{energyplus} though the DIVA \cite{DIVA} interface. A single zone thermal analysis was conducted for each possible geometrical configuration of the ASF for each hour of the year. The results were then post processed in MATLAB \cite{MATLAB}.\\
 
-The simulations show a total energy saving of 25\% compared to louvers at 45$^\circ$ and 56\% compared to a case with no facade shading \cite{jayathissa2015abs}. These results are sumarised in Figure \ref{fig:operational}. \\
+The simulations show a total energy saving of 25\% compared to static panels at 45$^\circ$ and 56\% compared to a case with no facade shading \cite{jayathissa2015abs}. These results are sumarised in Figure \ref{fig:operational}. \\
 
 
 \begin{figure}[H]
@@ -299,6 +299,7 @@ Full open and closes per day  & 4 per day                                      \
 In order to evaluate the impact of varying parameters on the LCA, we performed a sensitivity analysis on the following assumptions
 \begin{itemize}
 \item The GWP of the electricity mix
+\item A static version of the ASF, where panels are optimally orientated to 45$^{\circ}$
 \item The type of actuation system (servo motors compared to soft robotic actuators)
 \item The complexity of the control system
 %\item The uncertainty in the eco-invent background system (Monte Carlo Analysis)
