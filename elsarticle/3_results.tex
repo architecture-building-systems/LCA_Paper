@@ -1,6 +1,6 @@
 % !TEX root = main.tex
 
-We present the results of the LCA analysis in relation to the 1) Embodied GWP, 2) a calculation of the emission factor, 3) global distribution of GWP, and regional effects of terrestrial acidification, 4) sensitivity of the LCA to design and location, and 5) a comparison to other PV technologies.
+We present the results of the LCA analysis in relation to the 1) Embodied GWP, 2) a calculation of the emission factor, 3) sensitivity of the LCA to design and location, and 4) a comparison to other PV technologies.
 
 \subsection{LCA of the Adaptive Solar Facade Manufacture}
 
@@ -9,7 +9,7 @@ A breakdown of the embodied global warming potential (GWP) can be found in Figur
 \begin{figure}[H]
 \begin{center}
 \includegraphics[width=10cm, trim= 0cm 0cm 0cm 0cm,clip]{pieembodied}
-\caption{Breakdown of greenhouse gas emissions due to material production. The total is GWP is 2676 kg CO$_{2-eq}$\textcolor{magenta}{-eq.  \textit{-- numbers with 1 decimal }} }
+\caption{Breakdown of greenhouse gas emissions due to material production. The total is GWP is 2676 kg CO$_{2-eq}$}
 \label{fig:embodied}
 \end{center}
 \end{figure}
@@ -58,6 +58,8 @@ The results of the sensitivity analysis is shown in Figure \ref{fig:sens}. The G
 %which is 44\% lower than the emission factor in Switzerland. 
 The German mix on the other hand has a higher GWP mix than the ENTSO-E mix due to their high share in coal fire plants. This then reduces the emission factor of the ASF to -792.9 gCO$_{2-eq}$/kWh.\\
 
+We also present a case where we remove the actuators and necessary control system for a dynamic system. Instead we have panels that are optimally orientated at 45$^{\circ}$ to the horizontal axis. This reduces embodied greenhouse gas emissions by 12.1\% from the baseline highlighted in Figure \ref{fig:embodied}. However the reduction in electricity production, and savings through adaptive shading, Figure \ref{fig:operational}, results in a higher emission factor of -507 gCO$_{2-eq}$/kWh.\\
+
 The choice of actuator has a small impact on the embodied carbon emissions. Changing a single Soft Robotic Actuator (including the air compressor, tubing and maintenance) to a classical servo motor increases the embodied GWP from 2675.4 kg CO$_{2-eq}$ to 3251.2 kg CO$_{2-eq}$. However, the lower emissions from actuation and maintenance for servo motors cancels out this increase, resulting in an ASF with servo motors having an emission factor of -588.4 gCO$_{2-eq}$/kWh.
 %\textcolor{magenta}{\textit{(Is this cited or was it also calculated? Do we provide the inventory?)}} \textcolor{red}{\textit{(Calculated, but inventory of motors needs to go in the Appendix)}}.\\
 
@@ -77,8 +79,10 @@ The control system design should be carefully thought out due to the high embodi
 
 \subsection{Comparison to existing PV technologies}
 
-Comparison of the ASF to other PV technologies and the ENTSO-E electricity mix is highlighted in Figure \ref{fig:compPV}. This comparison is conducted in Switzerland with an average irradiation of 966kWh/m$2$/year.
-The orange bars detail systems with no added shading benefits. The blue bars detail systems built over glazed surfaces which also bring energy savings to the building. Because the GWP savings through adaptive shading offsets the entire embodied GWP, we have a system with a negative emission factor.
+Comparison of the ASF to other PV technologies and the ENTSO-E electricity mix is highlighted in Figure \ref{fig:compPV}. This comparison is conducted in Switzerland with an average irradiation of 966kWh/m$2$/year.\
+
+The orange bars detail systems with no added shading benefits. Here we present the ASF, a static optimally orientated facade as detailed in Figure \ref{fig:sens}, and three classical flat facade installations.  
+The blue bars detail systems built over glazed surfaces which also bring energy savings to the building. Because the GWP savings through adaptive shading offsets the entire embodied GWP, we have a system with a negative emission factor.
 
 
 
@@ -87,39 +91,9 @@ The orange bars detail systems with no added shading benefits. The blue bars det
 \begin{figure}[H]
 \begin{center}
 \includegraphics[width=10cm, trim= 0cm 0cm 0cm 0cm,clip]{compPV.pdf}
-\caption{\textcolor{magenta}{consider putting the blue bars last} Comparison of facade installations in Switzerland with an average irradiation of 966kWh/m2/year.
+\caption{Comparison of facade installations in Switzerland with an average irradiation of 966kWh/m2/year.
 We compare an ASF to an optimally orientated static facade, and classic flat facade mounted PV solutions. The blue bars include energy savings through shading.}
 \label{fig:compPV}
 \end{center}
 \end{figure}
 
-% \begin{figure}[H]
-% \begin{center}
-% \includegraphics[width=10cm, trim= 0cm 0cm 0cm 0cm,clip]{regionGridMix.pdf}
-% \caption{Comparison of the ASF when in operated in Switzerland when compared to other countries in the world that have similar climate conditions. Note that the data will have to change because we can't really compare (ASF in Switzerland) with Germany. We should be comparing the ASF in Germany with Germany}
-% \label{fig:compReg}
-% \end{center}
-% \end{figure}
-
-
-
-% - As input parameters of production processes are stochastic, a Monte Carlo simulation is used to include this stochastic behavior in the results, as shown in Figure \ref{fig:monte}...
-
-% \begin{figure}[H]
-% \begin{center}
-% \includegraphics[width=10cm, trim= 0cm 0cm 0cm 0cm,clip]{monte}
-% \caption{Monte carlo simulation based on input uncertainties}
-% \label{fig:monte}
-% \end{center}
-% \end{figure}
-
-% - Sourcing location greatly influences the embodied GWP. For photovoltaic panels, the majority of embodied emissions result from the use of electricity during production. The GWP per kwh of the Chinese electricity mix is 1145.8 ${\mathrm{gCO_2eq/kWh}}$, while in Switzerland this is only 119.6 ${\mathrm{gCO_2eq/kWh}}$.
-% % cool - did we already discuss what other sensitivities to use?
-
-% \begin{figure}[H]
-% \begin{center}
-% \includegraphics[width=10cm, trim= 0cm 0cm 0cm 0cm,clip]{sensitivity}
-% \caption{Sensitivity analysis based on sourcing location}
-% \label{fig:sensitivity}
-% \end{center}
-% \end{figure}
