@@ -187,6 +187,9 @@ INPUT /usr/local/texlive/2014/texmf-dist/tex/latex/base/omscmr.fd
 INPUT /usr/local/texlive/2014/texmf-dist/tex/latex/base/omscmr.fd
 INPUT 3_results.tex
 INPUT 3_results.tex
+INPUT ./Images/pieembodied_CO2.pdf
+INPUT ./Images/pieembodied_CO2.pdf
+INPUT ./Images/pieembodied_CO2.pdf
 INPUT ./Images/pieembodied.pdf
 INPUT ./Images/pieembodied.pdf
 INPUT ./Images/pieembodied.pdf

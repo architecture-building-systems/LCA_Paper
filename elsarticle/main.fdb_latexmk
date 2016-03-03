@@ -1,13 +1,13 @@
 # Fdb version 3
-["bibtex main"] 1457015522 "main.aux" "main.bbl" "main" 1457015524
+["bibtex main"] 1457019416 "main.aux" "main.bbl" "main" 1457021983
   "./elsarticle-num.bst" 1261046140 29353 cbd593ca59c003368735a9d8dbd22298 ""
-  "main.aux" 1457015523 9168 98af6b8b73c690088a3fcd2a17b28bfd ""
+  "main.aux" 1457021983 9583 14aa0d7a5c406465a528a43bafbf75fd ""
   "main.bcf" 0 -1 0 ""
   "references.bib" 1457011414 15935 c680d114ff7a9c25f5c8344c409c2ef4 ""
   (generated)
   "main.blg"
   "main.bbl"
-["pdflatex"] 1457015522 "main.tex" "main.pdf" "main" 1457015524
+["pdflatex"] 1457021982 "main.tex" "main.pdf" "main" 1457021983
   "/usr/local/texlive/2014/texmf-dist/fonts/map/fontname/texfonts.map" 1272929888 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
   "/usr/local/texlive/2014/texmf-dist/fonts/tfm/adobe/symbol/psyr.tfm" 1136768653 1408 5937f58aa508ea2cea4901c07d10f5fe ""
   "/usr/local/texlive/2014/texmf-dist/fonts/tfm/adobe/zapfding/pzdr.tfm" 1136768653 1528 f853c4d1b4e0550255e02831fdc8496f ""
@@ -118,10 +118,10 @@
   "/usr/local/texlive/2014/texmf-var/web2c/pdftex/pdflatex.fmt" 1414197446 3832013 16f1e2e544a8c5a7e058dd88eb86be42 ""
   "/usr/local/texlive/2014/texmf.cnf" 1401025936 577 a59edbde8d3a8c549d0eeaab1739e2ff ""
   "1_introduction.tex" 1448911517 7980 c08bd991af4ec8121f36237b82b5a615 ""
-  "2_methodology.tex" 1457015519 24054 db0b1191bbd4385fc478d45a42712802 ""
-  "3_results.tex" 1448911676 8438 cf606378afb156d9c5d138df3ffaf9c7 ""
-  "5_discussion.tex" 1448911803 6860 2e97b4d35d0751782ba36529f5cd5561 ""
-  "6_conclusion.tex" 1448731203 2780 e9e8bcd3924d20625ae6d8157ae3a4be ""
+  "2_methodology.tex" 1457019269 24114 ef2b23650140f7029b26b2a24fa890d4 ""
+  "3_results.tex" 1457020626 10252 8b48dcbb29534bdf174d7bf8f19836ec ""
+  "5_discussion.tex" 1457021904 6922 0f6cc56da0f2e4803cb90b0253bcf618 ""
+  "6_conclusion.tex" 1457021982 2808 e4e3fa3ed69bfcb5196a80343998e544 ""
   "7_acknowledgments.tex" 1448735945 754 4fe212b7802fc22d571f72a77e2b6aa3 ""
   "8_appendix.tex" 1448558636 1599 dc8f153ad1fa78faa65e35c79ee302be ""
   "Images/BOS.pdf" 1448900639 47468 9a53ae0dcd0f5b97b1d28ff644a713b5 ""
@@ -131,13 +131,14 @@
   "Images/explodedASFV2.png" 1446568804 180726 2d365a74406bb6606ad98b95ccae3d34 ""
   "Images/facadeFunctions.pdf" 1447090681 423290 ad32e7652300f44f0fda54ee654973cc ""
   "Images/honr.jpg" 1432914218 5833788 e2d8fdb39fc7e8998c6cc7b3e44d65c4 ""
-  "Images/pieembodied.pdf" 1448902921 27446 afdaa4ea3da834a8116eac41a6295386 ""
+  "Images/pieembodied.pdf" 1457017738 47267 6eae3230521b0df249850eae744e4820 ""
+  "Images/pieembodied_CO2.pdf" 1448902921 27446 afdaa4ea3da834a8116eac41a6295386 ""
   "Images/sens.pdf" 1448910589 35651 bbca044ebc4192a906af04a82e50d089 ""
   "Images/waterfall.pdf" 1448910560 35486 e72583bc8a5c4fea647c0d043da8151e ""
   "elsarticle.cls" 1446547216 26906 9bbe96da66efcb6afca446895cda4faf ""
-  "main.aux" 1457015523 9168 98af6b8b73c690088a3fcd2a17b28bfd ""
-  "main.bbl" 1457015522 5747 89455a4ccb35c1f70f08edee0ae70c07 "bibtex main"
-  "main.spl" 1457015523 0 d41d8cd98f00b204e9800998ecf8427e ""
+  "main.aux" 1457021983 9583 14aa0d7a5c406465a528a43bafbf75fd ""
+  "main.bbl" 1457019417 5747 89455a4ccb35c1f70f08edee0ae70c07 "bibtex main"
+  "main.spl" 1457021982 0 d41d8cd98f00b204e9800998ecf8427e ""
   "main.tex" 1457015142 3831 f28335fb52fb9bf6caa2a7e317ac39d9 ""
   (generated)
   "main.log"
