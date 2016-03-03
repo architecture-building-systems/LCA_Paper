@@ -1,6 +1,6 @@
 % !TEX root = main.tex
 
-In this section, we detail the inventory, Energy Plus simulation methodology, important assumptions, and the LCA evaluation method. The assessment considers the environmental impacts of the production, operation, and disposal of an ASF. We assume a lifetime of 20 years based on the product warranty of the PV panels. The impact assessment is performed according to the ISO 14040 and ISO 14044 \cite{finkbeiner2006new}, using the IPCC 2007 methodology \cite{solomon2007climate} for global warming potential (GWP) assessment.\\
+In this section, we detail the inventory, Energy Plus simulation methodology, important assumptions, and the LCA evaluation method. The assessment considers the environmental impacts of the production, operation, and disposal of an ASF. We assume a lifetime of 20 years based on the product warranty of the PV panels. The impact assessment is performed according to the ISO 14040 and ISO 14044 \textcolor{cyan}{and is performed in four stages: (1) Goal and Scope Definition, (2) Inventory Analysis, (3) Impact Assessment, and (4) Interpretation} \cite{finkbeiner2006new}.\\\textcolor{magenta}{\sout{using the IPCC 2007 methadology for global warming potential (GWP) assessment}}
 
 
 \subsection{\textcolor{magenta}{\sout{ Impact Assessment}}}
@@ -46,7 +46,7 @@ In this section, we detail the inventory, Energy Plus simulation methodology, im
 \begin{equation}
 EF=\frac{GWP}{\mathrm{G}}   
 \tagaddtext{[$\frac{kg CO_{2-eq}}{kWh}$]}
-\label{eq:EF}
+\label{eq:EFold}
 \end{equation}
 
 \textcolor{magenta}{\sout{ where ($G$) is the electricity production in (kWh).}}
@@ -60,12 +60,34 @@ EF=\frac{GWP}{\mathrm{G}}
 
 \end{description}
 
+\begin{description}
 
+\item[1. Goal and Scope Definition]: \textcolor{cyan}{This paper assesses carbon emission and terrestrial acidification reductions. The global warming potential (GWP) and Acidification Potential (AP) impact categories are therefore used. These categories are most relevant to the technology and most widely used in existing literature \cite{ortiz2009sustainability}.The functional unit is the electrical power production of the system in kWh.}
+\textcolor{cyan}{The scope of the assessment is summarised in Figure \ref{fig:BOS}. We analyse the  manufacture, dynamic actuation, maintenance, disposal and the energy savings through adaptive shading. The scope comprises of a cradle-to-grave approach, where transport to and from site is taken into account. For the database, the cut-off approach is used. This implies that benefits from recycling are out of the scope of this paper. As the baseline analysis is done in Germany we assume irradiation on the Facade of 855kWh/m$^2$/year.}
+
+\item[2. Inventory Analysis]: \textcolor{cyan}{The Ecoinvent v3.1 database is used as the main LCA database \cite{frischknecht2005ecoinvent}. The cut-off approach is used for the allocation of recycling and \textcolor{magenta}{\sout{ landfill}} disposal. This means that recycling does not generate any credit for the product and resulting benefits are not taken into account. Furthermore, the use of recycled products do not bear the burden of processes higher up the chain. A detailed description of the inventory is found in Chapter \ref{ch:meth:Embodied} and \ref{ch:Meth:Opp}.}
+
+\item[3. Impact Assessment]: \textcolor{cyan}{The assessment is based on the IPCC 2007 methodology \cite{solomon2007climate}. The GWP and AP assessment is performed using the OpenLCA assessment tool \cite{ciroth2007ict}. In the assessment, we also compare the emission factor (EF) of an ASF with other PV systems. The emission factor is expressed as}
+
+\begin{equation}
+EF=\frac{GWP}{\mathrm{G}}   
+\tagaddtext{[$\frac{kg CO_{2-eq}}{kWh}$]}
+\label{eq:EF}
+\end{equation}
+
+\textcolor{cyan}{where ($G$) is the electricity production in (kWh).}
+
+
+\item[4. Interpretation]: \textcolor{cyan}{The results of the LCA analysis (not including shading effects) are compared with other facade integrated PV technologies. We then run a system expansion to also include the effects of adaptive shading to the system. Finally a sensitivity analysis is conducted which is further described in Section \ref{ch:meth:sens}.}
+
+
+\end{description}
 
 \subsection{Embodied Life Cycle Inventory}
+\label{ch:meth:Embodied}
 
 %The inventory data was obtained from technical drawings, research papers describing the technology, and expert judgment. 
-The Ecoinvent v3.1 database is used as the main LCA database \cite{frischknecht2005ecoinvent}. The cut-off approach is used for the allocation of recycling and \textcolor{magenta}{\sout{ landfill}} disposal. This means that recycling does not generate any credit for the product and resulting benefits are not taken into account. Furthermore, the use of recycled products do not bear the burden of processes higher up the chain.\\
+
 
 The mechanical components of an ASF can be broken into four parts: a PV panel, actuator, cantilever, and a cable net supporting structure. The PV panel, actuator and cantilever combine to form a dynamic PV module, which is then mounted on a cable net supporting structure. An exploded view of these components can be seen in Figure \ref{fig:explodedView}. There are also additional electronics which exists off the facade in a separate control box. Theses five components along with the assembly, are the main product systems in the manufacture of an ASF as seen in Figure \ref{fig:BOS}. The inventory quantities are given in SMQ (specific mass quantity), which is the mass in kg of the specific materials.
 
@@ -239,9 +261,21 @@ The simulations show a total energy saving of 25\% compared to static panels at 
 
 \begin{figure}[H]
 \begin{center}
-\includegraphics[width=10cm, trim= 0cm 0cm 0cm 0cm,clip]{buildingenergy.pdf}
+\begin{mdframed}[linecolor=magenta, linewidth=2pt]
+\includegraphics[width=10cm, trim= 0cm 0cm 0cm 0cm,clip]{buildingenergy_old.pdf}
 \caption{Breakdown of operational energy consumption for a system with a) no shading, b) with louvers at 45$^\circ$ and c) with an ASF -- not including onsite electricity production.}
+\label{fig:operationalold}
+\end{mdframed}
+\end{center}
+\end{figure}
+
+\begin{figure}[H]
+\begin{center}
+\begin{mdframed}[linecolor=cyan, linewidth=2pt]
+\includegraphics[width=10cm, trim= 0cm 0cm 0cm 0cm,clip]{buildingenergy.pdf}
+\caption{Breakdown of operational energy consumption for a system with a) no shading, b) with louvers at 45$^\circ$ and c) with an ASF for Madrid, Switzerland and Frankfurt am Main -- not including onsite electricity production.}
 \label{fig:operational}
+\end{mdframed}
 \end{center}
 \end{figure}
 
@@ -275,9 +309,9 @@ Occupancy                     & Office: Weekdays from 8:00-18:00               \
                               & Infiltration: 0.5 per hour                     \\
                               &                                                \\
 \textbf{Location Assumptions} &                                                \\
-Weather File                  & Geneva, Switzerland (067000IWEC)               \\
-Electricity Mix               & ENTSO-E \cite{itten2012life}                   \\
-Average Solar Radiation               & 966kWh/m$^2$/year                              \\
+Weather File                  & \textcolor{magenta}{\sout{Geneva}} \textcolor{cyan}{Frankfurt am Main, Germany (106370IWEC)}               \\
+Electricity Mix               & \textcolor{magenta}{\sout{ENTSO-E}} \textcolor{cyan}{Germany (DE)} \cite{itten2012life}                   \\
+Average Solar Radiation               & \textcolor{magenta}{\sout{966}} \textcolor{cyan}{855}kWh/m$^2$/year                              \\
                               &                                                \\
 \textbf{Maintenance}          &                                                \\
 Actuator Changes              & Every 5 years                                  \\
@@ -296,10 +330,11 @@ Full open and closes per day  & 4 per day                                      \
 
 
 \subsection{Sensitivity Analysis}
+\label{ch:meth:sens}
 
 In order to evaluate the impact of varying parameters on the LCA, we performed a sensitivity analysis on the following assumptions
 \begin{itemize}
-\item \textcolor{magenta}{\sout{The GWP of the electricity mix}} \textcolor{cyan}{The location of teh ASF including the effects of the GWP of the local electricity mix.}
+\item \textcolor{magenta}{\sout{The GWP of the electricity mix}} \textcolor{cyan}{The location of the ASF including the effects of the GWP of the local electricity mix.}
 \item A static version of the ASF, where panels are optimally orientated to 45$^{\circ}$
 \item The type of actuation system (servo motors compared to soft robotic actuators)
 \item The complexity of the control system
