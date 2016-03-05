@@ -193,9 +193,15 @@ INPUT ./Images/pieembodied_CO2.pdf
 INPUT ./Images/pieembodied.pdf
 INPUT ./Images/pieembodied.pdf
 INPUT ./Images/pieembodied.pdf
+INPUT ./Images/waterfall_old.pdf
+INPUT ./Images/waterfall_old.pdf
+INPUT ./Images/waterfall_old.pdf
 INPUT ./Images/waterfall.pdf
 INPUT ./Images/waterfall.pdf
 INPUT ./Images/waterfall.pdf
+INPUT ./Images/sens_old.pdf
+INPUT ./Images/sens_old.pdf
+INPUT ./Images/sens_old.pdf
 INPUT ./Images/sens.pdf
 INPUT ./Images/sens.pdf
 INPUT ./Images/sens.pdf
