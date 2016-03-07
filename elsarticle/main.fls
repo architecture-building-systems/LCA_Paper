@@ -205,6 +205,9 @@ INPUT ./Images/sens_old.pdf
 INPUT ./Images/sens.pdf
 INPUT ./Images/sens.pdf
 INPUT ./Images/sens.pdf
+INPUT ./Images/compPV_old.pdf
+INPUT ./Images/compPV_old.pdf
+INPUT ./Images/compPV_old.pdf
 INPUT ./Images/compPV.pdf
 INPUT ./Images/compPV.pdf
 INPUT ./Images/compPV.pdf
@@ -223,7 +226,6 @@ INPUT main.aux
 INPUT /usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
 INPUT /usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb
 INPUT /usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb
-INPUT /usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb
 INPUT /usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb
 INPUT /usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb
 INPUT /usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb
