@@ -1,6 +1,6 @@
 % !TEX root = main.tex
 
-In this section, we detail the inventory, Energy Plus simulation methodology, important assumptions, and the LCA evaluation method. The assessment considers the environmental impacts of the production, operation, and disposal of an ASF. We assume a lifetime of 20 years based on the product warranty of the PV panels. The impact assessment is performed according to the ISO 14040 and ISO 14044 \textcolor{cyan}{and is performed in four stages: (1) Goal and Scope Definition, (2) Inventory Analysis, (3) Impact Assessment, and (4) Interpretation} \cite{finkbeiner2006new}.\\\textcolor{magenta}{\sout{using the IPCC 2007 methadology for global warming potential (GWP) assessment}}
+In this section, we detail the inventory, Energy Plus simulation methodology, important assumptions, and the LCA evaluation method. The assessment considers the environmental impacts of the production, operation, and disposal of an ASF. We assume a lifetime of 20 years based on the product warranty of the PV panels. The impact assessment is performed according to the ISO 14040 and ISO 14044, \textcolor{cyan}{and is performed in four stages: (1) Goal and Scope Definition, (2) Inventory Analysis, (3) Impact Assessment, and (4) Interpretation} \cite{finkbeiner2006new}.\\\textcolor{magenta}{\sout{using the IPCC 2007 methadology for global warming potential (GWP) assessment}}
 
 
 \subsection{\textcolor{magenta}{\sout{ Impact Assessment}}}
@@ -62,13 +62,14 @@ EF=\frac{GWP}{\mathrm{G}}
 
 \begin{description}
 
-\item[1. Goal and Scope Definition]: \textcolor{cyan}{This paper assesses carbon emission and terrestrial acidification reductions. The global warming potential (GWP) and Acidification Potential (AP) impact categories are therefore used. These categories are most relevant to the technology and most widely used in existing literature \cite{ortiz2009sustainability}. The functional unit is the electrical power production of the system in kWh.}
+\item[1. Goal and Scope Definition]: \textcolor{cyan}{This paper primarily assesses carbon emission reductions therefore the global warming potential (GWP) impact category is primarily assessed. The assessment also looks at six other major ReCiPe midpoint indicators: terrestrial acidification potential (TAP), freshwater eutrophication potential (FEP), human toxicity potential (HTP), metal depletion potential (MDP), and photochemical oxidant formation potential (POFP). These categories are most relevant to the technology and most widely used in existing literature \cite{ortiz2009sustainability}. The functional unit is the electrical power production of the system in kWh.}
 
-\textcolor{cyan}{The scope of the assessment is summarised in Figure \ref{fig:BOS}. We analyse the  manufacture, dynamic actuation, maintenance, disposal and the energy savings through adaptive shading. The scope comprises of a cradle-to-grave approach, where transport to and from site is taken into account. For the database, the cut-off approach is used. This implies that benefits from recycling are out of the scope of this paper.} \textcolor{blue}{@Michiel/Niko: Can you expand as to why this is the case, revision B2}
+\textcolor{cyan}{\textcolor{magenta}{\sout{The scope of the assessment is summarised in Figure \ref{fig:BOS}. We analyse the  manufacture, dynamic actuation, maintenance, disposal and the energy savings through adaptive shading. The scope comprises of a cradle-to-grave approach, where transport to and from site is taken into account.}}The scope of the assessment, respectively the system boundary, is summarised in Figure 4. We analyse the manufacture, dynamic actuation, maintenance, and disposal of the solar facade. The scope comprises of a cradle-to-grave approach, where transport to and from site is taken into account. 
+In the sensitivity analysis we expand the system boundary and also include energy savings due to the panels’ shading effect. \textcolor{magenta}{\sout{ For the database, the cut-off approach is used. This implies that benefits from recycling are out of the scope of this paper.}} As the life cycle inventory (LCI) background database we use Ecoinvent v3.1 \cite{frischknecht2005ecoinvent} with the cut-off system model \footnote{http://www.ecoinvent.org/database/system-models-in-ecoinvent-3/cut-off-system-model/allocation-cut-off-by-classification.html}. That means impacts are allocated to the primary use of the product and it receives no credit for the provision of recycled material. Once a product is disposed or recycled, it leaves the system boundary and the recycled product comes “burden-free”.} 
 
 \item[2. Inventory Analysis]: \textcolor{cyan}{The Ecoinvent v3.1 database is used as the main LCA database \cite{frischknecht2005ecoinvent}. The cut-off approach is used for the allocation of recycling and \textcolor{magenta}{\sout{ landfill}} disposal. This means that recycling does not generate any credit for the product and resulting benefits are not taken into account. Furthermore, the use of recycled products do not bear the burden of processes higher up the chain. A detailed description of the inventory is found in Chapter \ref{ch:meth:Embodied} and \ref{ch:Meth:Opp}.}
 
-\item[3. Impact Assessment]: \textcolor{cyan}{The assessment is based on the IPCC 2007 methodology \cite{solomon2007climate}. The GWP and AP assessment is performed using the OpenLCA assessment tool \cite{ciroth2007ict}. In the assessment, we also compare the emission factor (EF) of an ASF with other PV systems. The emission factor is expressed as}
+\item[3. Impact Assessment]: \textcolor{cyan}{The assessment is based on the IPCC 2007 methodology \cite{solomon2007climate}. The GWP assessment is performed using the OpenLCA assessment tool \cite{ciroth2007ict}. In the assessment, we also compare the emission factor (EF) of an ASF with other PV systems. The emission factor is expressed as}
 
 \begin{equation}
 EF=\frac{GWP}{\mathrm{G}}   
@@ -218,7 +219,7 @@ The control system is required for the actuation of panels and the regulation of
 \hline
 Material description & SMQ \\ \hline
 Inverter 1.25kW	 & 0.6090 ${\mathrm{kg/m^2_{facade}}}$ \\
-PV cable  & 3.1995 ${\mathrm{kg/m^2_{facade}}}$\\
+PV cable  &  \textcolor{magenta}{\sout{3.1995}} \textcolor{cyan}{0.256} ${\mathrm{kg/m^2_{facade}}}$\\
 Electronics control\footnote{c-Rio,8-slot, integrated 667Mhz}& 0.0419 ${\mathrm{kg/m^2_{facade}}}$\\
 Electronics control\footnote{NI9476 32ch DO with cables and connectors}& 0.0097${\mathrm{kg/m^2_{facade}}}$\\
 \hline
@@ -338,7 +339,7 @@ In order to evaluate the impact of varying parameters on the LCA, we performed a
 \item \textcolor{magenta}{\sout{The GWP of the electricity mix}} \textcolor{cyan}{The location of the ASF including the effects of the GWP of the local electricity mix.}
 \item A static version of the ASF, where panels are optimally orientated to 45$^{\circ}$
 \item The type of actuation system (servo motors compared to soft robotic actuators)
-\item The complexity of the control system
+\item The complexity of the control system. \textcolor{cyan}{The ASF can be built where each panel is independently actuated, or a case where it is actuated in rows. When the panels are actuated independently more valves and control electronics are required.}
 %\item The uncertainty in the eco-invent background system (Monte Carlo Analysis)
 \end{itemize}
 
