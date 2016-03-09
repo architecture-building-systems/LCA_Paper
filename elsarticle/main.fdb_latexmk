@@ -1,13 +1,13 @@
 # Fdb version 3
-["bibtex main"] 1457446901 "main.aux" "main.bbl" "main" 1457448277
+["bibtex main"] 1457446901 "main.aux" "main.bbl" "main" 1457539302
   "./elsarticle-num.bst" 1261046140 29353 cbd593ca59c003368735a9d8dbd22298 ""
-  "main.aux" 1457448277 11419 f07f484e2c547f61b67a15c3b18c2cf0 ""
+  "main.aux" 1457535336 11419 f07f484e2c547f61b67a15c3b18c2cf0 ""
   "main.bcf" 0 -1 0 ""
   "references.bib" 1457011414 15935 c680d114ff7a9c25f5c8344c409c2ef4 ""
   (generated)
-  "main.bbl"
   "main.blg"
-["pdflatex"] 1457448276 "main.tex" "main.pdf" "main" 1457448277
+  "main.bbl"
+["pdflatex"] 1457535335 "main.tex" "main.pdf" "main" 1457539302
   "/usr/local/texlive/2014/texmf-dist/fonts/map/fontname/texfonts.map" 1272929888 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
   "/usr/local/texlive/2014/texmf-dist/fonts/tfm/adobe/symbol/psyr.tfm" 1136768653 1408 5937f58aa508ea2cea4901c07d10f5fe ""
   "/usr/local/texlive/2014/texmf-dist/fonts/tfm/adobe/zapfding/pzdr.tfm" 1136768653 1528 f853c4d1b4e0550255e02831fdc8496f ""
@@ -118,8 +118,8 @@
   "/usr/local/texlive/2014/texmf.cnf" 1401025936 577 a59edbde8d3a8c549d0eeaab1739e2ff ""
   "1_introduction.tex" 1448911517 7980 c08bd991af4ec8121f36237b82b5a615 ""
   "2_methodology.tex" 1457447657 25434 160a2e736d26d0fdd4212cfc094b4543 ""
-  "3_results.tex" 1457448084 13471 8910a81d1edc01c44012d0e668888f0a ""
-  "5_discussion.tex" 1457435768 7232 74640b434ee026de48e25b0619ed3ba1 ""
+  "3_results.tex" 1457534972 13480 48992c44b17edaf1f23b354fd960b45d ""
+  "5_discussion.tex" 1457535335 7329 3824fdd73f07c6e908ecf0fcdb8659ca ""
   "6_conclusion.tex" 1457448276 2823 ccfb6b5b8e2f3c5348f4e2603e19ed57 ""
   "7_acknowledgments.tex" 1457022545 791 ae62eb04e6068cf9e44619d2fc7f222e ""
   "8_appendix.tex" 1457444401 2798 a685c1f36235b9770dc752ffe34144ce ""
@@ -138,12 +138,12 @@
   "Images/waterfall.pdf" 1457386423 38486 858f8137878805ef8eb4ff0ed3c3991f ""
   "Images/waterfall_old.pdf" 1448910560 35486 e72583bc8a5c4fea647c0d043da8151e ""
   "elsarticle.cls" 1446547216 26906 9bbe96da66efcb6afca446895cda4faf ""
-  "main.aux" 1457448277 11419 f07f484e2c547f61b67a15c3b18c2cf0 ""
+  "main.aux" 1457535336 11419 f07f484e2c547f61b67a15c3b18c2cf0 ""
   "main.bbl" 1457446901 5747 89455a4ccb35c1f70f08edee0ae70c07 "bibtex main"
-  "main.spl" 1457448276 0 d41d8cd98f00b204e9800998ecf8427e ""
+  "main.spl" 1457535335 0 d41d8cd98f00b204e9800998ecf8427e ""
   "main.tex" 1457015142 3831 f28335fb52fb9bf6caa2a7e317ac39d9 ""
   (generated)
-  "main.aux"
   "main.pdf"
-  "main.spl"
   "main.log"
+  "main.spl"
+  "main.aux"
