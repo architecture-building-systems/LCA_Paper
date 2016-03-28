@@ -43,7 +43,7 @@ In this section, we detail the inventory, Energy Plus simulation methodology, im
 The scope of the assessment, respectively the system boundary, is summarised in Figure 4. We analyse the manufacture, dynamic actuation, maintenance, and disposal of the solar facade. The scope comprises of a cradle-to-grave approach, where transport to and from site is taken into account. 
 In order to account for the multi-functionality aspect of the ASF (i.e. electricity production and shading benefit), we carry out a sensitivity analysis and expand the system boundary including operational energy savings through adaptive shading. As the life cycle inventory (LCI) background database we use Ecoinvent v3.1 \cite{frischknecht2005ecoinvent} with the cut-off system model \footnote{http://www.ecoinvent.org/database/system-models-in-ecoinvent-3/cut-off-system-model/allocation-cut-off-by-classification.html   -  \textit{Accessed: 8.2.2016}}. That means impacts are allocated to the primary use of the product and it receives no credit for the provision of recycled material. Once a product is disposed or recycled, it leaves the system boundary and the recycled product comes “burden-free”.
 
-\item[2. Inventory Analysis]: The Ecoinvent v3.1 database is used as the main LCA database \cite{frischknecht2005ecoinvent}. A detailed description of the inventory is found in Chapter \ref{ch:meth:Embodied} and \ref{ch:Meth:Opp}.
+\item[2. Inventory Analysis]: The Ecoinvent v3.1 database is used as the main LCA database \cite{frischknecht2005ecoinvent}. A detailed description of the inventory is found in Section \ref{ch:meth:Embodied} and \ref{ch:Meth:Opp}.
 
 \item[3. Impact Assessment]: The assessment is based on the IPCC 2007 methodology \cite{solomon2007climate}. The GWP assessment is performed using the OpenLCA assessment tool \cite{ciroth2007ict}. In the assessment, we also compare the emission factor (EF) of an ASF with other PV systems. The emission factor is expressed as
 
@@ -134,7 +134,7 @@ Diode, glass for junction box & 0.011 ${\mathrm{kg/m^2_{facade}}}$\\
 \end{table}
 
 \item[Actuator] \hfill \\
-Traditionally photovoltaic actuation is done through the use of servo motors. Servo motors however become a limiting factor for adaptive facades due to their high upfront costs, and instability in heavy winds. Soft robotic actuators on the other hand are cheaper and more resilient to harsh environmental conditions\cite{Svetozarevic2014a}. The soft robotic actuators however are still in development and have an estimated lifetime of five years. They will therefore require three rounds of maintenance during the lifetime of the ASF. For the purpose of this assessment we will run a sensitivity analysis on the use of servo motors and soft robotic actuators. 
+Traditionally photovoltaic actuation is done through the use of servo motors. Servo motors however become a limiting factor for adaptive facades due to their high upfront costs, and instability in heavy winds. Soft robotic actuators on the other hand are cheaper and more resilient to harsh environmental conditions \cite{Svetozarevic2014a}. The soft robotic actuators however are still in development and have an estimated lifetime of five years. They will therefore require three rounds of maintenance during the lifetime of the ASF. For the purpose of this assessment we will run a sensitivity analysis on the use of servo motors and soft robotic actuators. 
 
 \begin{table}[H]
 \centering
@@ -164,7 +164,7 @@ Chromium steel bracket	 & 1.4220 ${\mathrm{kg/m^2_{facade}}}$ \\
 Chromium steel fixing clamp  & 0.0284 ${\mathrm{kg/m^2_{facade}}}$\\
 \hline
 \end{tabular}
-\caption{Inventory of main input flows to the Cantilever manufacturing process }
+\caption{Inventory of main input flows to the cantilever manufacturing process }
 \label{tab:CantileverInv}
 \end{table}
 
@@ -265,15 +265,15 @@ Office Envelope               & Roof: Adiabatic                                \
                               & Floor: Adiabatic                               \\
                               & Walls: Adiabatic                               \\
                               & Window: Double Glazed (e=0.2) 3mm/13mm air \\
-Thermal Set Points            & Heating: 22$^{\circ}$ degrees Celcius          \\
-                              & Cooling: 26$^{\circ}$ degrees Celcius          \\
+Thermal Set Points            & Heating: 22$^{\circ}$C          \\
+                              & Cooling: 26$^{\circ}$C          \\
 Building System               & Hydronic Heating: COP=4                        \\
                               & Hydronic Cooling: COP=3                        \\
-Lighting Control              & Lighting Load: 11.8W/m2                                  \\
+Lighting Control              & Lighting Load: 11.8W/m$^2$                                  \\
                               & Lighting Control: 300 lx Threshhold            \\
 Occupancy                     & Office: Weekdays from 8:00-18:00               \\
-                              & People set point: 0.1 persons/m2               \\
-                              & Infiltration: 0.5 per hour                     \\
+                              & People set point: 0.1 persons/m$^2$               \\
+                              & Infiltration: 0.5 air changes per hour                     \\
                               &                                                \\
 \textbf{Location Assumptions} &                                                \\
 Weather File                  & Frankfurt am Main, Germany (106370IWEC)               \\
@@ -303,7 +303,7 @@ In order to evaluate the impact of varying parameters on the LCA, we performed a
 \begin{itemize}
 \item When an ASF is built over a glazed building surface, thus including the effects of adaptive shading on the building energy consumption.
 \item The location of the ASF including the effects of the GWP of the local electricity mix. Assessments will also be run in Madrid and Geneva.
-\item A static version of the ASF, where panels are optimally orientated to 45$^{\circ}$.
+\item A static version of the ASF, where panels are optimally orientated at 45$^{\circ}$ to the horizontal (altitude) axis.
 \item The type of actuation system (servo motors compared to soft robotic actuators).
 \item The complexity of the control system. The ASF can be built where each panel is independently actuated, or a case where it is actuated in rows. When the panels are actuated independently more valves and control electronics are required.
 %\item The uncertainty in the eco-invent background system (Monte Carlo Analysis)
